@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		440BA2AB1AFA7B8600790A82 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2AA1AFA7B8600790A82 /* main.c */; };
+		440BA2B41AFA80DE00790A82 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2B31AFA80DE00790A82 /* main.c */; };
+		440BA2B91AFA81BD00790A82 /* DSParentsSelect.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2B71AFA81BD00790A82 /* DSParentsSelect.c */; };
+		440BA2BC1AFA81D500790A82 /* DSParentsSelect.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2BA1AFA81D500790A82 /* DSParentsSelect.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,11 @@
 
 /* Begin PBXFileReference section */
 		440BA2A71AFA7B8600790A82 /* DSHomeWork */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHomeWork; sourceTree = BUILT_PRODUCTS_DIR; };
-		440BA2AA1AFA7B8600790A82 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		440BA2B31AFA80DE00790A82 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		440BA2B71AFA81BD00790A82 /* DSParentsSelect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsSelect.c; sourceTree = "<group>"; };
+		440BA2B81AFA81BD00790A82 /* DSParentsSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsSelect.h; sourceTree = "<group>"; };
+		440BA2BA1AFA81D500790A82 /* DSParentsSelect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsSelect.c; sourceTree = "<group>"; };
+		440BA2BB1AFA81D500790A82 /* DSParentsSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsSelect.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				440BA2A91AFA7B8600790A82 /* DSHomeWork */,
+				440BA2B21AFA808500790A82 /* Tests */,
 				440BA2A81AFA7B8600790A82 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,9 +64,45 @@
 		440BA2A91AFA7B8600790A82 /* DSHomeWork */ = {
 			isa = PBXGroup;
 			children = (
-				440BA2AA1AFA7B8600790A82 /* main.c */,
+				440BA2B11AFA805C00790A82 /* Source */,
 			);
 			path = DSHomeWork;
+			sourceTree = "<group>";
+		};
+		440BA2B11AFA805C00790A82 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				440BA2B61AFA819800790A82 /* DSParentsSelect */,
+				440BA2B51AFA815800790A82 /* DSPrintSizeOfType */,
+				440BA2B31AFA80DE00790A82 /* main.c */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		440BA2B21AFA808500790A82 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
+			path = DSHomeWork/Tests;
+			sourceTree = "<group>";
+		};
+		440BA2B51AFA815800790A82 /* DSPrintSizeOfType */ = {
+			isa = PBXGroup;
+			children = (
+				440BA2B71AFA81BD00790A82 /* DSParentsSelect.c */,
+				440BA2B81AFA81BD00790A82 /* DSParentsSelect.h */,
+			);
+			path = DSPrintSizeOfType;
+			sourceTree = "<group>";
+		};
+		440BA2B61AFA819800790A82 /* DSParentsSelect */ = {
+			isa = PBXGroup;
+			children = (
+				440BA2BA1AFA81D500790A82 /* DSParentsSelect.c */,
+				440BA2BB1AFA81D500790A82 /* DSParentsSelect.h */,
+			);
+			path = DSParentsSelect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				440BA2AB1AFA7B8600790A82 /* main.c in Sources */,
+				440BA2BC1AFA81D500790A82 /* DSParentsSelect.c in Sources */,
+				440BA2B91AFA81BD00790A82 /* DSParentsSelect.c in Sources */,
+				440BA2B41AFA80DE00790A82 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
