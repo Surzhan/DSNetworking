@@ -11,4 +11,7 @@
 
 #include <stdio.h>
 
+extern
+void DSSyzeOfTypeOutput(void);
+
 #endif /* defined(__DSHomeWork__DSParentsSelect__) */

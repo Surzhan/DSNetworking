@@ -8,8 +8,12 @@
 
 #include <stdio.h>
 
+#include "DSPrintSizeOfType.h"
+#include "DSParentsSelect.h"
+
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    DSSyzeOfTypeOutput(); // output size of type with sizeof
+    
     return 0;
 }

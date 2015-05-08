@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		440BA2B41AFA80DE00790A82 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2B31AFA80DE00790A82 /* main.c */; };
-		440BA2B91AFA81BD00790A82 /* DSParentsSelect.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2B71AFA81BD00790A82 /* DSParentsSelect.c */; };
+		440BA2B91AFA81BD00790A82 /* DSPrintSizeOfType.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2B71AFA81BD00790A82 /* DSPrintSizeOfType.c */; };
 		440BA2BC1AFA81D500790A82 /* DSParentsSelect.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2BA1AFA81D500790A82 /* DSParentsSelect.c */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +27,8 @@
 /* Begin PBXFileReference section */
 		440BA2A71AFA7B8600790A82 /* DSHomeWork */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHomeWork; sourceTree = BUILT_PRODUCTS_DIR; };
 		440BA2B31AFA80DE00790A82 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		440BA2B71AFA81BD00790A82 /* DSParentsSelect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsSelect.c; sourceTree = "<group>"; };
-		440BA2B81AFA81BD00790A82 /* DSParentsSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsSelect.h; sourceTree = "<group>"; };
+		440BA2B71AFA81BD00790A82 /* DSPrintSizeOfType.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSPrintSizeOfType.c; sourceTree = "<group>"; };
+		440BA2B81AFA81BD00790A82 /* DSPrintSizeOfType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPrintSizeOfType.h; sourceTree = "<group>"; };
 		440BA2BA1AFA81D500790A82 /* DSParentsSelect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsSelect.c; sourceTree = "<group>"; };
 		440BA2BB1AFA81D500790A82 /* DSParentsSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsSelect.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,8 +90,8 @@
 		440BA2B51AFA815800790A82 /* DSPrintSizeOfType */ = {
 			isa = PBXGroup;
 			children = (
-				440BA2B71AFA81BD00790A82 /* DSParentsSelect.c */,
-				440BA2B81AFA81BD00790A82 /* DSParentsSelect.h */,
+				440BA2B71AFA81BD00790A82 /* DSPrintSizeOfType.c */,
+				440BA2B81AFA81BD00790A82 /* DSPrintSizeOfType.h */,
 			);
 			path = DSPrintSizeOfType;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				440BA2BC1AFA81D500790A82 /* DSParentsSelect.c in Sources */,
-				440BA2B91AFA81BD00790A82 /* DSParentsSelect.c in Sources */,
+				440BA2B91AFA81BD00790A82 /* DSPrintSizeOfType.c in Sources */,
 				440BA2B41AFA80DE00790A82 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +280,7 @@
 				440BA2B01AFA7B8600790A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
