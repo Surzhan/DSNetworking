@@ -21,12 +21,16 @@ DSValueOutput(float, %f)
 static
 void DSPrimitiveTypeOutputMethodTest(void);
 
+static
+void DSPrimitiveTypeMacroTest(void);
+
+
 #pragma mark -
 #pragma Public Declaration
 
 void DSPrimitiveTypeOutputTest(void) {
     DSPrimitiveTypeOutputMethodTest();
-    
+    DSPrimitiveTypeMacroTest();
 }
 
 #pragma mark -
@@ -39,4 +43,10 @@ void DSPrimitiveTypeOutputMethodTest(void) {
     DSOutput_long(14);
     DSOutput_float(12.45);
    
+}
+
+void DSPrimitiveTypeMacroTest(void) {
+    DSTypeOutput(short, 34);
+    DSTypeOutput(char, 'F');
+    
 }

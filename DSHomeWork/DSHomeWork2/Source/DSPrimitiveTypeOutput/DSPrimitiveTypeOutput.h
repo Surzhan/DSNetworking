@@ -26,4 +26,7 @@
     printf(#type " value = " #specifier "\n", value); \
 }
 
+#define DSTypeOutput(type, value) \
+    DSOutput_##type(value)
+
 #endif
