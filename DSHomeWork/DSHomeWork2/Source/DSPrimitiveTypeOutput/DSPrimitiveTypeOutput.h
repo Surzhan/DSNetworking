@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 
+
 /*
  1. Создать макрос, который бы генерировал метод для вывода в консоль значения любого примитивного типа. У макроса 
  должно быть 2 параметра: тип, спецификатор вывода. При препроцессинге макрос должен создавать метод output_type, 
@@ -20,8 +21,9 @@
  - создать тестовые методы для проверки того, как работает генерация на всех примитивных типах.
  */
 
-#define DSValueOutput(type, specificator) \
-    void DSOutputValue_#type(type, value) { \
-    printf(#type "value = " #specificator, value)
+#define DSValueOutput(type, specifier) \
+    void DSOutput_##type(type value) { \
+    printf(#type " value = " #specifier "\n", value); \
+}
 
 #endif

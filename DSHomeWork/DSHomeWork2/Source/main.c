@@ -8,8 +8,10 @@
 
 #include <stdio.h>
 
+#include "DSPrimitiveTypeOutputTest.h"
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    DSPrimitiveTypeOutputTest();
+    
     return 0;
 }

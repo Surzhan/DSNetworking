@@ -11,4 +11,9 @@
 
 #include <stdio.h>
 
+
+extern
+void DSPrimitiveTypeOutputTest(void);
+
+
 #endif /* defined(__DSHomeWork__DSPrimitiveTypeOutputTest__) */
