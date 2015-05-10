@@ -13,6 +13,8 @@
 		44D47D761AFF7FA400AA5792 /* DSParentsOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */; };
 		44D47D841AFF90A200AA5792 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D831AFF90A200AA5792 /* main.c */; };
 		44D47D8A1AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D881AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c */; };
+		44D47D981AFFB02300AA5792 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D971AFFB02300AA5792 /* main.c */; };
+		44D47D9C1AFFB15100AA5792 /* DSCreateStructure.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D9A1AFFB15100AA5792 /* DSCreateStructure.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +28,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		44D47D791AFF901C00AA5792 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		44D47D8D1AFFAFC000AA5792 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -50,6 +61,10 @@
 		44D47D861AFF938C00AA5792 /* DSPrimitiveTypeOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPrimitiveTypeOutput.h; sourceTree = "<group>"; };
 		44D47D881AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSPrimitiveTypeOutputTest.c; sourceTree = "<group>"; };
 		44D47D891AFF980400AA5792 /* DSPrimitiveTypeOutputTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPrimitiveTypeOutputTest.h; sourceTree = "<group>"; };
+		44D47D8F1AFFAFC000AA5792 /* DSHomeWork3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHomeWork3; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D47D971AFFB02300AA5792 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		44D47D9A1AFFB15100AA5792 /* DSCreateStructure.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSCreateStructure.c; sourceTree = "<group>"; };
+		44D47D9B1AFFB15100AA5792 /* DSCreateStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCreateStructure.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +82,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44D47D8C1AFFAFC000AA5792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +97,7 @@
 			children = (
 				440BA2A91AFA7B8600790A82 /* DSHomeWork */,
 				44D47D7C1AFF901C00AA5792 /* DSHomeWork2 */,
+				44D47D901AFFAFC000AA5792 /* DSHomeWork3 */,
 				440BA2B21AFA808500790A82 /* Tests */,
 				440BA2A81AFA7B8600790A82 /* Products */,
 			);
@@ -85,6 +108,7 @@
 			children = (
 				440BA2A71AFA7B8600790A82 /* DSHomeWork */,
 				44D47D7B1AFF901C00AA5792 /* DSHomeWork2 */,
+				44D47D8F1AFFAFC000AA5792 /* DSHomeWork3 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,8 +124,8 @@
 		440BA2B11AFA805C00790A82 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				440BA2B61AFA819800790A82 /* DSParentsSelect */,
 				440BA2B51AFA815800790A82 /* DSPrintSizeOfType */,
+				440BA2B61AFA819800790A82 /* DSParentsSelect */,
 				440BA2B31AFA80DE00790A82 /* main.c */,
 			);
 			path = Source;
@@ -178,6 +202,32 @@
 			path = DSPrimitiveTypeOutputTest;
 			sourceTree = "<group>";
 		};
+		44D47D901AFFAFC000AA5792 /* DSHomeWork3 */ = {
+			isa = PBXGroup;
+			children = (
+				44D47D961AFFAFD600AA5792 /* Source */,
+			);
+			path = DSHomeWork3;
+			sourceTree = "<group>";
+		};
+		44D47D961AFFAFD600AA5792 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				44D47D991AFFB11300AA5792 /* DSCreateStructure */,
+				44D47D971AFFB02300AA5792 /* main.c */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		44D47D991AFFB11300AA5792 /* DSCreateStructure */ = {
+			isa = PBXGroup;
+			children = (
+				44D47D9A1AFFB15100AA5792 /* DSCreateStructure.c */,
+				44D47D9B1AFFB15100AA5792 /* DSCreateStructure.h */,
+			);
+			path = DSCreateStructure;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,6 +265,23 @@
 			productReference = 44D47D7B1AFF901C00AA5792 /* DSHomeWork2 */;
 			productType = "com.apple.product-type.tool";
 		};
+		44D47D8E1AFFAFC000AA5792 /* DSHomeWork3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D47D951AFFAFC000AA5792 /* Build configuration list for PBXNativeTarget "DSHomeWork3" */;
+			buildPhases = (
+				44D47D8B1AFFAFC000AA5792 /* Sources */,
+				44D47D8C1AFFAFC000AA5792 /* Frameworks */,
+				44D47D8D1AFFAFC000AA5792 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSHomeWork3;
+			productName = DSHomeWork3;
+			productReference = 44D47D8F1AFFAFC000AA5792 /* DSHomeWork3 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -228,6 +295,9 @@
 						CreatedOnToolsVersion = 6.3.1;
 					};
 					44D47D7A1AFF901C00AA5792 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					44D47D8E1AFFAFC000AA5792 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -246,6 +316,7 @@
 			targets = (
 				440BA2A61AFA7B8600790A82 /* DSHomeWork */,
 				44D47D7A1AFF901C00AA5792 /* DSHomeWork2 */,
+				44D47D8E1AFFAFC000AA5792 /* DSHomeWork3 */,
 			);
 		};
 /* End PBXProject section */
@@ -268,6 +339,15 @@
 			files = (
 				44D47D841AFF90A200AA5792 /* main.c in Sources */,
 				44D47D8A1AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D47D8B1AFFAFC000AA5792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D47D9C1AFFB15100AA5792 /* DSCreateStructure.c in Sources */,
+				44D47D981AFFB02300AA5792 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +463,24 @@
 			};
 			name = Release;
 		};
+		44D47D931AFFAFC000AA5792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		44D47D941AFFAFC000AA5792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,6 +507,15 @@
 			buildConfigurations = (
 				44D47D7F1AFF901C00AA5792 /* Debug */,
 				44D47D801AFF901C00AA5792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D47D951AFFAFC000AA5792 /* Build configuration list for PBXNativeTarget "DSHomeWork3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D47D931AFFAFC000AA5792 /* Debug */,
+				44D47D941AFFAFC000AA5792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -11,6 +11,11 @@
 
 #include <stdio.h>
 
+/*
+ 1. Вывести размер типов через sizeof.
+
+ */
+
 extern
 void DSSyzeOfTypeOutput(void);
 
