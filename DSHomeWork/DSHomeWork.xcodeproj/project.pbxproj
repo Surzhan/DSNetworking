@@ -10,6 +10,7 @@
 		440BA2B41AFA80DE00790A82 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2B31AFA80DE00790A82 /* main.c */; };
 		440BA2B91AFA81BD00790A82 /* DSPrintSizeOfType.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2B71AFA81BD00790A82 /* DSPrintSizeOfType.c */; };
 		440BA2BC1AFA81D500790A82 /* DSParentsSelect.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2BA1AFA81D500790A82 /* DSParentsSelect.c */; };
+		44D47D761AFF7FA400AA5792 /* DSParentsOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		440BA2B81AFA81BD00790A82 /* DSPrintSizeOfType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPrintSizeOfType.h; sourceTree = "<group>"; };
 		440BA2BA1AFA81D500790A82 /* DSParentsSelect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsSelect.c; sourceTree = "<group>"; };
 		440BA2BB1AFA81D500790A82 /* DSParentsSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsSelect.h; sourceTree = "<group>"; };
+		44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsOutput.c; sourceTree = "<group>"; };
+		44D47D751AFF7FA400AA5792 /* DSParentsOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsOutput.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		440BA2B21AFA808500790A82 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				44D47D731AFF7F6800AA5792 /* DSParentsOutput */,
 			);
 			name = Tests;
 			path = DSHomeWork/Tests;
@@ -103,6 +107,15 @@
 				440BA2BB1AFA81D500790A82 /* DSParentsSelect.h */,
 			);
 			path = DSParentsSelect;
+			sourceTree = "<group>";
+		};
+		44D47D731AFF7F6800AA5792 /* DSParentsOutput */ = {
+			isa = PBXGroup;
+			children = (
+				44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */,
+				44D47D751AFF7FA400AA5792 /* DSParentsOutput.h */,
+			);
+			path = DSParentsOutput;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +177,7 @@
 				440BA2BC1AFA81D500790A82 /* DSParentsSelect.c in Sources */,
 				440BA2B91AFA81BD00790A82 /* DSPrintSizeOfType.c in Sources */,
 				440BA2B41AFA80DE00790A82 /* main.c in Sources */,
+				44D47D761AFF7FA400AA5792 /* DSParentsOutput.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

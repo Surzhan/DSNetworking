@@ -10,10 +10,14 @@
 
 #include "DSPrintSizeOfType.h"
 #include "DSParentsSelect.h"
+#include "DSParentsOutput.h"
 
 
 int main(int argc, const char * argv[]) {
     DSSyzeOfTypeOutput(); // output size of type with sizeof
+    printf ("\nEnd of the fist task\n\n");
+    DSParentsOutputTest();
+    printf ("\nEnd of the second task");
     
     return 0;
 }

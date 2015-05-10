@@ -11,4 +11,20 @@
 
 #include <stdio.h>
 
+
+enum {
+    DSParentUndefined,
+    DSMother,
+    DSFather,
+    DSMotherFather
+};
+
+
+extern
+int value;
+
+extern
+int DSChekMotherFother();
+
+
 #endif /* defined(__DSHomeWork__DSParentsSelect__) */
