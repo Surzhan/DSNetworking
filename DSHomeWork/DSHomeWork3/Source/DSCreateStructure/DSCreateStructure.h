@@ -66,7 +66,7 @@ struct DSStructureOptimized {
             bool _random5:1;
             bool _random6:1;
         } flags;
-        char bitFields;
+        uint16_t bitFields;
     };
     
 };
