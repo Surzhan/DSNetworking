@@ -8,8 +8,17 @@
 
 #include <stdio.h>
 
+#include "DSCreateStructure.h"
+#include "DSStructuresTest.h"
+
+#define performTest(testName) \
+    printf(#testName " started...\n\n"); \
+    testName(); \
+    printf("\n..."#testName " finished\n");
+
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    performTest (DSStructureTests);
+    
     return 0;
 }
