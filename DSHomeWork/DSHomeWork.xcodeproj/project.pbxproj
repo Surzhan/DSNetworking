@@ -11,6 +11,8 @@
 		440BA2B91AFA81BD00790A82 /* DSPrintSizeOfType.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2B71AFA81BD00790A82 /* DSPrintSizeOfType.c */; };
 		440BA2BC1AFA81D500790A82 /* DSParentsSelect.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2BA1AFA81D500790A82 /* DSParentsSelect.c */; };
 		449DC5CA1B01248D00F162C2 /* DSStructuresTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 449DC5C71B01248D00F162C2 /* DSStructuresTest.c */; };
+		44D002D71B0A679B00DD1187 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002D61B0A679B00DD1187 /* main.c */; };
+		44D002DF1B0A688500DD1187 /* DSHumanStructure.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002DD1B0A688400DD1187 /* DSHumanStructure.c */; };
 		44D47D761AFF7FA400AA5792 /* DSParentsOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */; };
 		44D47D841AFF90A200AA5792 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D831AFF90A200AA5792 /* main.c */; };
 		44D47D8A1AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D881AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c */; };
@@ -28,7 +30,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		44D002C51B0A608900DD1187 /* CopyFiles */ = {
+		44D002D21B0A679B00DD1187 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -66,7 +68,10 @@
 		440BA2BB1AFA81D500790A82 /* DSParentsSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsSelect.h; sourceTree = "<group>"; };
 		449DC5C71B01248D00F162C2 /* DSStructuresTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSStructuresTest.c; sourceTree = "<group>"; };
 		449DC5C81B01248D00F162C2 /* DSStructuresTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSStructuresTest.h; sourceTree = "<group>"; };
-		44D002C71B0A608900DD1187 /* DSHuman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHuman; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D002D41B0A679B00DD1187 /* DSHuman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHuman; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D002D61B0A679B00DD1187 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../main.c; sourceTree = "<group>"; };
+		44D002DD1B0A688400DD1187 /* DSHumanStructure.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSHumanStructure.c; sourceTree = "<group>"; };
+		44D002DE1B0A688400DD1187 /* DSHumanStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHumanStructure.h; sourceTree = "<group>"; };
 		44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsOutput.c; sourceTree = "<group>"; };
 		44D47D751AFF7FA400AA5792 /* DSParentsOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsOutput.h; sourceTree = "<group>"; };
 		44D47D7B1AFF901C00AA5792 /* DSHomeWork2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHomeWork2; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +93,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44D002C41B0A608900DD1187 /* Frameworks */ = {
+		44D002D11B0A679B00DD1187 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -118,6 +123,7 @@
 				440BA2A91AFA7B8600790A82 /* DSHomeWork */,
 				44D47D7C1AFF901C00AA5792 /* DSHomeWork2 */,
 				44D47D901AFFAFC000AA5792 /* DSHomeWork3 */,
+				44D002D51B0A679B00DD1187 /* DSHuman */,
 				440BA2B21AFA808500790A82 /* Tests */,
 				440BA2A81AFA7B8600790A82 /* Products */,
 			);
@@ -129,7 +135,7 @@
 				440BA2A71AFA7B8600790A82 /* DSHomeWork */,
 				44D47D7B1AFF901C00AA5792 /* DSHomeWork2 */,
 				44D47D8F1AFFAFC000AA5792 /* DSHomeWork3 */,
-				44D002C71B0A608900DD1187 /* DSHuman */,
+				44D002D41B0A679B00DD1187 /* DSHuman */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +194,32 @@
 				449DC5C81B01248D00F162C2 /* DSStructuresTest.h */,
 			);
 			path = DSStructuresTest;
+			sourceTree = "<group>";
+		};
+		44D002D51B0A679B00DD1187 /* DSHuman */ = {
+			isa = PBXGroup;
+			children = (
+				44D002DB1B0A67A400DD1187 /* Source */,
+			);
+			path = DSHuman;
+			sourceTree = "<group>";
+		};
+		44D002DB1B0A67A400DD1187 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				44D002DC1B0A683200DD1187 /* DSHumanStructure */,
+				44D002D61B0A679B00DD1187 /* main.c */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		44D002DC1B0A683200DD1187 /* DSHumanStructure */ = {
+			isa = PBXGroup;
+			children = (
+				44D002DD1B0A688400DD1187 /* DSHumanStructure.c */,
+				44D002DE1B0A688400DD1187 /* DSHumanStructure.h */,
+			);
+			path = DSHumanStructure;
 			sourceTree = "<group>";
 		};
 		44D47D731AFF7F6800AA5792 /* DSParentsOutput */ = {
@@ -279,13 +311,13 @@
 			productReference = 440BA2A71AFA7B8600790A82 /* DSHomeWork */;
 			productType = "com.apple.product-type.tool";
 		};
-		44D002C61B0A608900DD1187 /* DSHuman */ = {
+		44D002D31B0A679B00DD1187 /* DSHuman */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44D002CD1B0A608900DD1187 /* Build configuration list for PBXNativeTarget "DSHuman" */;
+			buildConfigurationList = 44D002D81B0A679B00DD1187 /* Build configuration list for PBXNativeTarget "DSHuman" */;
 			buildPhases = (
-				44D002C31B0A608900DD1187 /* Sources */,
-				44D002C41B0A608900DD1187 /* Frameworks */,
-				44D002C51B0A608900DD1187 /* CopyFiles */,
+				44D002D01B0A679B00DD1187 /* Sources */,
+				44D002D11B0A679B00DD1187 /* Frameworks */,
+				44D002D21B0A679B00DD1187 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -293,7 +325,7 @@
 			);
 			name = DSHuman;
 			productName = DSHuman;
-			productReference = 44D002C71B0A608900DD1187 /* DSHuman */;
+			productReference = 44D002D41B0A679B00DD1187 /* DSHuman */;
 			productType = "com.apple.product-type.tool";
 		};
 		44D47D7A1AFF901C00AA5792 /* DSHomeWork2 */ = {
@@ -342,7 +374,7 @@
 					440BA2A61AFA7B8600790A82 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
-					44D002C61B0A608900DD1187 = {
+					44D002D31B0A679B00DD1187 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 					44D47D7A1AFF901C00AA5792 = {
@@ -368,7 +400,7 @@
 				440BA2A61AFA7B8600790A82 /* DSHomeWork */,
 				44D47D7A1AFF901C00AA5792 /* DSHomeWork2 */,
 				44D47D8E1AFFAFC000AA5792 /* DSHomeWork3 */,
-				44D002C61B0A608900DD1187 /* DSHuman */,
+				44D002D31B0A679B00DD1187 /* DSHuman */,
 			);
 		};
 /* End PBXProject section */
@@ -385,10 +417,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44D002C31B0A608900DD1187 /* Sources */ = {
+		44D002D01B0A679B00DD1187 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D002DF1B0A688500DD1187 /* DSHumanStructure.c in Sources */,
+				44D002D71B0A679B00DD1187 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +539,7 @@
 			};
 			name = Release;
 		};
-		44D002CB1B0A608900DD1187 /* Debug */ = {
+		44D002D91B0A679B00DD1187 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -516,7 +550,7 @@
 			};
 			name = Debug;
 		};
-		44D002CC1B0A608900DD1187 /* Release */ = {
+		44D002DA1B0A679B00DD1187 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -580,11 +614,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44D002CD1B0A608900DD1187 /* Build configuration list for PBXNativeTarget "DSHuman" */ = {
+		44D002D81B0A679B00DD1187 /* Build configuration list for PBXNativeTarget "DSHuman" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44D002CB1B0A608900DD1187 /* Debug */,
-				44D002CC1B0A608900DD1187 /* Release */,
+				44D002D91B0A679B00DD1187 /* Debug */,
+				44D002DA1B0A679B00DD1187 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
