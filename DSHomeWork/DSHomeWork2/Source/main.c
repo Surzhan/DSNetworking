@@ -7,8 +7,8 @@
 //
 
 #include <stdio.h>
-
 #include "DSPrimitiveTypeOutputTest.h"
+
 
 int main(int argc, const char * argv[]) {
     DSPrimitiveTypeOutputTest();

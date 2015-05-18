@@ -25,48 +25,64 @@
  */
 
 typedef struct DSStructureRandom DSStructureRandom;
-typedef struct DSStructureOptimized DSStructureOptimized;
+typedef struct DSStructureOptimize DSStructureOptimize;
+typedef struct DSStructureOptimizedWithUnion DSStructureOptimizedWithUnion;
 
 struct DSStructureRandom {
-    bool _random1;
-    long long _random9;
-    bool _random3;
-    double _random14;
-    bool _random4;
-    short _random11;
-    bool _random6;
-    float _random7;
-    int _random8;
-    char *_random15;
-    short _random10;
-    bool _random5;
-    short _random12;
-    bool _random2;
-    short _random13;
-    
+    bool _bool1;
+    long long _longlong1;
+    bool _bool2;
+    double _double1;
+    bool _bool3;
+    short _short1;
+    bool _bool4;
+    float _float1;
+    int _int1;
+    char *_char1;
+    short _shot2;
+    bool _bool5;
+    short _short3;
+    bool _bool6;
     
 };
 
-struct DSStructureOptimized {
-    double _random14;
-    long long _random9;
-    char *_random15;
-    int _random8;
-    float _random7;
-    short _random10;
-    short _random11;
-    short _random12;
-    short _random13;
+struct DSStructureOptimize {
+    double _double1;
+    long long _longlong1;
+    char *_char1;
+    int _int1;
+    float _float1;
+    short _short1;
+    short _short2;
+    short _short3;
+    bool _bool1;
+    bool _bool2;
+    bool _bool3;
+    bool _bool4;
+    bool _bool5;
+    bool _bool6;
+       
+    };
+
+struct DSStructureOptimizedWithUnion {
+    double _double1;
+    long long _longlong1;
+    char *_char1;
+    int _int1;
+    float _float1;
+    short _short1;
+    short _short2;
+    short _short3;
     union {
         struct {
-            bool _random1:1;
-            bool _random2:1;
-            bool _random3:1;
-            bool _random4:1;
-            bool _random5:1;
-            bool _random6:1;
+            bool _bool1:1;
+            bool _bool2:1;
+            bool _bool3:1;
+            bool _bool4:1;
+            bool _bool5:1;
+            bool _bool6:1;
         } flags;
-        uint16_t bitFields;
+        char bitFields;
     };
     
 };

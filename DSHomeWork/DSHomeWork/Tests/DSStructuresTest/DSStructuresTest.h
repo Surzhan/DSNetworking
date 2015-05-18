@@ -11,6 +11,11 @@
 
 #include <stdio.h>
 
+#define performTest(testName) \
+printf(#testName " started...\n\n"); \
+testName(); \
+printf("\n..."#testName " finished\n");
+
 extern
 void DSStructureTests (void);
 

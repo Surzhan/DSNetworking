@@ -11,11 +11,6 @@
 #include "DSCreateStructure.h"
 #include "DSStructuresTest.h"
 
-#define performTest(testName) \
-    printf(#testName " started...\n\n"); \
-    testName(); \
-    printf("\n..."#testName " finished\n");
-
 
 int main(int argc, const char * argv[]) {
     performTest (DSStructureTests);
