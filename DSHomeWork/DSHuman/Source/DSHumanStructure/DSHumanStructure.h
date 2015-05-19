@@ -56,7 +56,32 @@ struct DSHuman {
     bool _isMarried;
 };
 
+extern
+DSHuman DSHumanCreate (char *name, DSHumanGender DSHumanGender, uint8_t age);
 
+extern
+void DSHumanSetAge (DSHuman *human, int newAge);
+
+extern
+DSHuman DSHumanGetAge (DSHuman *human);
+
+extern
+void DSHumanSetMarried(DSHuman *human, bool married);
+
+extern
+bool DSHumanGetMarried(DSHuman *human);
+
+extern
+void DSHumanSetMother (DSHuman *human, DSHuman *mother);
+
+extern
+DSHuman DSHumanGetMother (DSHuman *human);
+
+extern
+void DSHumanSetFather (DSHuman *human, DSHuman *father);
+
+extern
+DSHuman DSHumanGetFather (DSHuman *human);
 
 
 
