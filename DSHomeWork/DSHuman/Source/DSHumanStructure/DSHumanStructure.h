@@ -50,41 +50,59 @@ struct DSHuman {
     DSHuman *_mother;
     DSHuman *_partner;
     DSHuman *_children[20];
-    DSHumanGender _sex;
+    DSHumanGender _gender;
     uint8_t _age;
     int _childrenCount;
-    bool _isMarried;
 };
 
 extern
-DSHuman DSHumanCreate (char *name, DSHumanGender DSHumanGender, uint8_t age);
+DSHuman DSHumanCreate(
+    char *name,
+    DSHumanGender DSHumanGender,
+    uint8_t age,
+    DSHuman *mother,
+    DSHuman *father);
 
 extern
-void DSHumanSetAge (DSHuman *human, int newAge);
+void DSHumanSetNewName(DSHuman *human, char *name);
 
 extern
-DSHuman DSHumanGetAge (DSHuman *human);
+void *DSHumanGetName(DSHuman *human);
 
 extern
-void DSHumanSetMarried(DSHuman *human, bool married);
+void DSHumanSetAge(DSHuman *human, uint8_t newAge);
 
 extern
-bool DSHumanGetMarried(DSHuman *human);
+DSHuman *DSHumanGetAge(DSHuman *human);
 
 extern
-void DSHumanSetMother (DSHuman *human, DSHuman *mother);
+void DSHumanSetGender(DSHuman *human, DSHumanGender gender);
 
 extern
-DSHuman DSHumanGetMother (DSHuman *human);
+DSHuman *DSHumanGetGender(DSHuman *human);
+                         
+extern
+void DSHumanSetPartner(DSHuman *human, DSHuman *partner);
 
 extern
-void DSHumanSetFather (DSHuman *human, DSHuman *father);
+DSHuman *DSHumanGetPartner(DSHuman *human);
 
 extern
-DSHuman DSHumanGetFather (DSHuman *human);
+void DSHumanSetMother(DSHuman *human, DSHuman *mother);
 
+extern
+DSHuman *DSHumanGetMother(DSHuman *human);
 
+extern
+void DSHumanSetFather(DSHuman *human, DSHuman *father);
 
+extern
+DSHuman *DSHumanGetFather(DSHuman *human);
 
+extern
+void DSHumanSetAddPartner (DSHuman *human, DSHuman *partner);
+
+extern
+DSHuman *DSHumanGetAddPartner (DSHuman *human);
 
 #endif /* defined(__DSHomeWork__DSHumanStructure__) */

@@ -18,6 +18,8 @@
 		44D47D8A1AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D881AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c */; };
 		44D47D981AFFB02300AA5792 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D971AFFB02300AA5792 /* main.c */; };
 		44D47D9C1AFFB15100AA5792 /* DSCreateStructure.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D9A1AFFB15100AA5792 /* DSCreateStructure.c */; };
+		44D5681D1B0C67BD00F171CC /* DSObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D5681B1B0C67BD00F171CC /* DSObject.c */; };
+		44D568211B0C68C900F171CC /* DSHumanBDDTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D5681F1B0C68C900F171CC /* DSHumanBDDTest.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,6 +85,10 @@
 		44D47D971AFFB02300AA5792 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		44D47D9A1AFFB15100AA5792 /* DSCreateStructure.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSCreateStructure.c; sourceTree = "<group>"; };
 		44D47D9B1AFFB15100AA5792 /* DSCreateStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCreateStructure.h; sourceTree = "<group>"; };
+		44D5681B1B0C67BD00F171CC /* DSObject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSObject.c; sourceTree = "<group>"; };
+		44D5681C1B0C67BD00F171CC /* DSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSObject.h; sourceTree = "<group>"; };
+		44D5681F1B0C68C900F171CC /* DSHumanBDDTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSHumanBDDTest.c; sourceTree = "<group>"; };
+		44D568201B0C68C900F171CC /* DSHumanBDDTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHumanBDDTest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,7 @@
 		440BA2B21AFA808500790A82 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				44D5681E1B0C687100F171CC /* DSHumanTests */,
 				449DC5C61B01244D00F162C2 /* DSStructuresTest */,
 				44D47D871AFF97D400AA5792 /* DSPrimitiveTypeOutputTest */,
 				44D47D731AFF7F6800AA5792 /* DSParentsOutput */,
@@ -207,6 +214,7 @@
 		44D002DB1B0A67A400DD1187 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				44D5681A1B0C677E00F171CC /* DSObject */,
 				44D002DC1B0A683200DD1187 /* DSHumanStructure */,
 				44D002D61B0A679B00DD1187 /* main.c */,
 			);
@@ -289,6 +297,24 @@
 				44D47D9B1AFFB15100AA5792 /* DSCreateStructure.h */,
 			);
 			path = DSCreateStructure;
+			sourceTree = "<group>";
+		};
+		44D5681A1B0C677E00F171CC /* DSObject */ = {
+			isa = PBXGroup;
+			children = (
+				44D5681B1B0C67BD00F171CC /* DSObject.c */,
+				44D5681C1B0C67BD00F171CC /* DSObject.h */,
+			);
+			path = DSObject;
+			sourceTree = "<group>";
+		};
+		44D5681E1B0C687100F171CC /* DSHumanTests */ = {
+			isa = PBXGroup;
+			children = (
+				44D5681F1B0C68C900F171CC /* DSHumanBDDTest.c */,
+				44D568201B0C68C900F171CC /* DSHumanBDDTest.h */,
+			);
+			path = DSHumanTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,8 +447,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D5681D1B0C67BD00F171CC /* DSObject.c in Sources */,
 				44D002DF1B0A688500DD1187 /* DSHumanStructure.c in Sources */,
 				44D002D71B0A679B00DD1187 /* main.c in Sources */,
+				44D568211B0C68C900F171CC /* DSHumanBDDTest.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +649,7 @@
 				44D002DA1B0A679B00DD1187 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44D47D811AFF901C00AA5792 /* Build configuration list for PBXNativeTarget "DSHomeWork2" */ = {
 			isa = XCConfigurationList;
