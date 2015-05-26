@@ -56,12 +56,19 @@ struct DSHuman {
 };
 
 extern
-DSHuman DSHumanCreate(
+DSHuman DSHumanCreateWithParametrs(
     char *name,
     DSHumanGender DSHumanGender,
     uint8_t age,
     DSHuman *mother,
     DSHuman *father);
+
+
+extern
+void DSHumanAddChild(DSHuman *mother, DSHuman *father);
+
+extern
+size_t DSHumanGetChildrenCount(DSHuman *human);
 
 extern
 void DSHumanSetNewName(DSHuman *human, char *name);
@@ -82,19 +89,10 @@ extern
 DSHuman *DSHumanGetGender(DSHuman *human);
                          
 extern
-void DSHumanSetPartner(DSHuman *human, DSHuman *partner);
-
-extern
 DSHuman *DSHumanGetPartner(DSHuman *human);
 
 extern
-void DSHumanSetMother(DSHuman *human, DSHuman *mother);
-
-extern
 DSHuman *DSHumanGetMother(DSHuman *human);
-
-extern
-void DSHumanSetFather(DSHuman *human, DSHuman *father);
 
 extern
 DSHuman *DSHumanGetFather(DSHuman *human);
@@ -104,5 +102,18 @@ void DSHumanSetAddPartner (DSHuman *human, DSHuman *partner);
 
 extern
 DSHuman *DSHumanGetAddPartner (DSHuman *human);
+
+extern
+void DSHumanMarried(DSHuman *human, DSHuman *partner);
+
+extern
+bool DSHumanGetMarried(DSHuman *human, DSHuman *partner);
+
+extern
+void DSHumanDivorce(DSHuman *human);
+
+extern
+bool DSHumanGetDivorced(DSHuman *human, DSHuman *partner);
+
 
 #endif /* defined(__DSHomeWork__DSHumanStructure__) */

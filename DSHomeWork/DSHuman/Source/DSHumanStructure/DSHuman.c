@@ -10,11 +10,19 @@
 #include <stdlib.h>
 
 
-#include "DSHumanStructure.h"
+#include "DSHuman.h"
 
 #pragma mark -
 #pragma mark Private Declaration
 
+static
+void DSHumanSetPartner(DSHuman *human, DSHuman *partner);
+
+static
+void DSHumanSetMother(DSHuman *human, DSHuman *mother);
+
+static
+void DSHumanSetFather(DSHuman *human, DSHuman *father);
 
 
 
@@ -22,7 +30,7 @@
 #pragma mark -
 #pragma mark Public Implementations
 
-DSHuman *DSHumanCreate(char *name, DSHumanGender gender, uint8_t age, *mother, *father) {
+DSHuman *DSHumanCreateWithParametrs(char *name, DSHumanGender gender, uint8_t age, *mother, *father) {
     DSHuman *newHuman = calloc(1, sizeof(DSHuman));
     
     assert(NULL != newHuman);
@@ -32,6 +40,8 @@ DSHuman *DSHumanCreate(char *name, DSHumanGender gender, uint8_t age, *mother, *
     DSHumanSetGender(newHuman, gender);
     DSHumanSetMother(newHuman, *mother);
     DSHumanSetMother(newHuman, *father);
+    
+    
     
     return newHuman;
 }

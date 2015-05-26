@@ -10,9 +10,15 @@
 		440BA2B41AFA80DE00790A82 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2B31AFA80DE00790A82 /* main.c */; };
 		440BA2B91AFA81BD00790A82 /* DSPrintSizeOfType.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2B71AFA81BD00790A82 /* DSPrintSizeOfType.c */; };
 		440BA2BC1AFA81D500790A82 /* DSParentsSelect.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2BA1AFA81D500790A82 /* DSParentsSelect.c */; };
+		44327CE81B1512F6006BAEED /* DSBitOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CE61B1512F6006BAEED /* DSBitOutput.c */; };
+		44327CEC1B151439006BAEED /* DSBitOutputTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CEA1B151439006BAEED /* DSBitOutputTest.c */; };
+		44327CF01B151551006BAEED /* DSArray.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CEE1B151551006BAEED /* DSArray.c */; };
+		44327CF41B15157F006BAEED /* DSString.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CF21B15157F006BAEED /* DSString.c */; };
+		44327CF81B1515BB006BAEED /* DSArrayTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CF61B1515BB006BAEED /* DSArrayTests.c */; };
+		44327CFC1B1515E7006BAEED /* DSStringTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CFA1B1515E7006BAEED /* DSStringTests.c */; };
 		449DC5CA1B01248D00F162C2 /* DSStructuresTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 449DC5C71B01248D00F162C2 /* DSStructuresTest.c */; };
 		44D002D71B0A679B00DD1187 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002D61B0A679B00DD1187 /* main.c */; };
-		44D002DF1B0A688500DD1187 /* DSHumanStructure.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002DD1B0A688400DD1187 /* DSHumanStructure.c */; };
+		44D002DF1B0A688500DD1187 /* DSHuman.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002DD1B0A688400DD1187 /* DSHuman.c */; };
 		44D47D761AFF7FA400AA5792 /* DSParentsOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */; };
 		44D47D841AFF90A200AA5792 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D831AFF90A200AA5792 /* main.c */; };
 		44D47D8A1AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D881AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c */; };
@@ -68,12 +74,24 @@
 		440BA2B81AFA81BD00790A82 /* DSPrintSizeOfType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPrintSizeOfType.h; sourceTree = "<group>"; };
 		440BA2BA1AFA81D500790A82 /* DSParentsSelect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsSelect.c; sourceTree = "<group>"; };
 		440BA2BB1AFA81D500790A82 /* DSParentsSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsSelect.h; sourceTree = "<group>"; };
+		44327CE61B1512F6006BAEED /* DSBitOutput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSBitOutput.c; sourceTree = "<group>"; };
+		44327CE71B1512F6006BAEED /* DSBitOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSBitOutput.h; sourceTree = "<group>"; };
+		44327CEA1B151439006BAEED /* DSBitOutputTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSBitOutputTest.c; sourceTree = "<group>"; };
+		44327CEB1B151439006BAEED /* DSBitOutputTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSBitOutputTest.h; sourceTree = "<group>"; };
+		44327CEE1B151551006BAEED /* DSArray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSArray.c; sourceTree = "<group>"; };
+		44327CEF1B151551006BAEED /* DSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSArray.h; sourceTree = "<group>"; };
+		44327CF21B15157F006BAEED /* DSString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSString.c; sourceTree = "<group>"; };
+		44327CF31B15157F006BAEED /* DSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSString.h; sourceTree = "<group>"; };
+		44327CF61B1515BB006BAEED /* DSArrayTests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSArrayTests.c; sourceTree = "<group>"; };
+		44327CF71B1515BB006BAEED /* DSArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSArrayTests.h; sourceTree = "<group>"; };
+		44327CFA1B1515E7006BAEED /* DSStringTests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSStringTests.c; sourceTree = "<group>"; };
+		44327CFB1B1515E7006BAEED /* DSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSStringTests.h; sourceTree = "<group>"; };
 		449DC5C71B01248D00F162C2 /* DSStructuresTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSStructuresTest.c; sourceTree = "<group>"; };
 		449DC5C81B01248D00F162C2 /* DSStructuresTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSStructuresTest.h; sourceTree = "<group>"; };
 		44D002D41B0A679B00DD1187 /* DSHuman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHuman; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D002D61B0A679B00DD1187 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../main.c; sourceTree = "<group>"; };
-		44D002DD1B0A688400DD1187 /* DSHumanStructure.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSHumanStructure.c; sourceTree = "<group>"; };
-		44D002DE1B0A688400DD1187 /* DSHumanStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHumanStructure.h; sourceTree = "<group>"; };
+		44D002DD1B0A688400DD1187 /* DSHuman.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSHuman.c; sourceTree = "<group>"; };
+		44D002DE1B0A688400DD1187 /* DSHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHuman.h; sourceTree = "<group>"; };
 		44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsOutput.c; sourceTree = "<group>"; };
 		44D47D751AFF7FA400AA5792 /* DSParentsOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsOutput.h; sourceTree = "<group>"; };
 		44D47D7B1AFF901C00AA5792 /* DSHomeWork2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHomeWork2; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +185,9 @@
 		440BA2B21AFA808500790A82 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				44327CF91B1515C2006BAEED /* DSStringTests */,
+				44327CF51B151587006BAEED /* DSArrayTests */,
+				44327CE91B1513FD006BAEED /* DSBitOutputTest */,
 				44D5681E1B0C687100F171CC /* DSHumanTests */,
 				449DC5C61B01244D00F162C2 /* DSStructuresTest */,
 				44D47D871AFF97D400AA5792 /* DSPrimitiveTypeOutputTest */,
@@ -194,6 +215,60 @@
 			path = DSParentsSelect;
 			sourceTree = "<group>";
 		};
+		44327CE51B1512AE006BAEED /* DSBitOutput */ = {
+			isa = PBXGroup;
+			children = (
+				44327CE61B1512F6006BAEED /* DSBitOutput.c */,
+				44327CE71B1512F6006BAEED /* DSBitOutput.h */,
+			);
+			path = DSBitOutput;
+			sourceTree = "<group>";
+		};
+		44327CE91B1513FD006BAEED /* DSBitOutputTest */ = {
+			isa = PBXGroup;
+			children = (
+				44327CEA1B151439006BAEED /* DSBitOutputTest.c */,
+				44327CEB1B151439006BAEED /* DSBitOutputTest.h */,
+			);
+			path = DSBitOutputTest;
+			sourceTree = "<group>";
+		};
+		44327CED1B15151B006BAEED /* DSArray */ = {
+			isa = PBXGroup;
+			children = (
+				44327CEE1B151551006BAEED /* DSArray.c */,
+				44327CEF1B151551006BAEED /* DSArray.h */,
+			);
+			path = DSArray;
+			sourceTree = "<group>";
+		};
+		44327CF11B151555006BAEED /* DSString */ = {
+			isa = PBXGroup;
+			children = (
+				44327CF21B15157F006BAEED /* DSString.c */,
+				44327CF31B15157F006BAEED /* DSString.h */,
+			);
+			path = DSString;
+			sourceTree = "<group>";
+		};
+		44327CF51B151587006BAEED /* DSArrayTests */ = {
+			isa = PBXGroup;
+			children = (
+				44327CF61B1515BB006BAEED /* DSArrayTests.c */,
+				44327CF71B1515BB006BAEED /* DSArrayTests.h */,
+			);
+			path = DSArrayTests;
+			sourceTree = "<group>";
+		};
+		44327CF91B1515C2006BAEED /* DSStringTests */ = {
+			isa = PBXGroup;
+			children = (
+				44327CFA1B1515E7006BAEED /* DSStringTests.c */,
+				44327CFB1B1515E7006BAEED /* DSStringTests.h */,
+			);
+			path = DSStringTests;
+			sourceTree = "<group>";
+		};
 		449DC5C61B01244D00F162C2 /* DSStructuresTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,19 +289,22 @@
 		44D002DB1B0A67A400DD1187 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				44327CF11B151555006BAEED /* DSString */,
+				44327CED1B15151B006BAEED /* DSArray */,
 				44D5681A1B0C677E00F171CC /* DSObject */,
-				44D002DC1B0A683200DD1187 /* DSHumanStructure */,
+				44D002DC1B0A683200DD1187 /* DSHuman */,
 				44D002D61B0A679B00DD1187 /* main.c */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		44D002DC1B0A683200DD1187 /* DSHumanStructure */ = {
+		44D002DC1B0A683200DD1187 /* DSHuman */ = {
 			isa = PBXGroup;
 			children = (
-				44D002DD1B0A688400DD1187 /* DSHumanStructure.c */,
-				44D002DE1B0A688400DD1187 /* DSHumanStructure.h */,
+				44D002DD1B0A688400DD1187 /* DSHuman.c */,
+				44D002DE1B0A688400DD1187 /* DSHuman.h */,
 			);
+			name = DSHuman;
 			path = DSHumanStructure;
 			sourceTree = "<group>";
 		};
@@ -285,6 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				44D47D991AFFB11300AA5792 /* DSCreateStructure */,
+				44327CE51B1512AE006BAEED /* DSBitOutput */,
 				44D47D971AFFB02300AA5792 /* main.c */,
 			);
 			path = Source;
@@ -448,9 +527,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				44D5681D1B0C67BD00F171CC /* DSObject.c in Sources */,
-				44D002DF1B0A688500DD1187 /* DSHumanStructure.c in Sources */,
+				44327CFC1B1515E7006BAEED /* DSStringTests.c in Sources */,
+				44327CF41B15157F006BAEED /* DSString.c in Sources */,
+				44D002DF1B0A688500DD1187 /* DSHuman.c in Sources */,
 				44D002D71B0A679B00DD1187 /* main.c in Sources */,
+				44327CF01B151551006BAEED /* DSArray.c in Sources */,
 				44D568211B0C68C900F171CC /* DSHumanBDDTest.c in Sources */,
+				44327CF81B1515BB006BAEED /* DSArrayTests.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +551,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				449DC5CA1B01248D00F162C2 /* DSStructuresTest.c in Sources */,
+				44327CE81B1512F6006BAEED /* DSBitOutput.c in Sources */,
 				44D47D9C1AFFB15100AA5792 /* DSCreateStructure.c in Sources */,
+				44327CEC1B151439006BAEED /* DSBitOutputTest.c in Sources */,
 				44D47D981AFFB02300AA5792 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
