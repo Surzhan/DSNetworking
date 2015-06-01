@@ -9,8 +9,8 @@
 #include <assert.h>
 #include <stdlib.h>
 
-
 #include "DSHuman.h"
+
 
 #pragma mark -
 #pragma mark Private Declaration
@@ -25,30 +25,65 @@ static
 void DSHumanSetFather(DSHuman *human, DSHuman *father);
 
 
-
+const uint kDSMinAgeForMarriage = 16;
 
 #pragma mark -
 #pragma mark Public Implementations
 
-DSHuman *DSHumanCreateWithParametrs(char *name, DSHumanGender gender, uint8_t age, *mother, *father) {
-    DSHuman *newHuman = calloc(1, sizeof(DSHuman));
+
+void __DSHumanDeallocate(void *human) {
+    DSHumanSetName(human, NULL);
+    DSHumanMarried(human, NULL);
+    DSHumanSetMother(human, NULL);
+    DSHumanSetFather(human, NULL);
     
-    assert(NULL != newHuman);
+    __DSObjectDeallocate(human);
+}
+
+
+
+DSHuman *DSHumanCreateWithParameters(DSHumanGender gender) {
+    DSHuman *human = DSObjectCreateOfType(DSHuman);
     
-    DSHumanSetNewName(newHuman, name);
-    DSHumanSetAge(newHuman, age);
-    DSHumanSetGender(newHuman, gender);
-    DSHumanSetMother(newHuman, *mother);
-    DSHumanSetMother(newHuman, *father);
+    DSHumanSetGender(human, gender);
+    
+    return human;
+}
+
+void DSHumanAddChild(DSHuman *mother, DSHuman *father) {
+    
+}
+
+void DSHumanRemoveChild(DSHuman *human, DSHuman *parter) {
     
     
+}
+        
+        
+//size_t DSHumanGetChildrenCount(DSHuman *human) {
+//    
+//    return;
+//}
+
+
+void DSHumanSetName(DSHuman *human, char *name) {
+    if (NULL != human && human->_name != name) {
+        DSObjectRetain(name);
+        DSObjectRelease(human->_name);
+        human->_name = name;
+        assert(NULL != human->_name);
+    }
+}
+
+char *DSHumanGetName(DSHuman *human) {
     
-    return newHuman;
+    return NULL != human ? human->_name : 0;
 }
 
 void DSHumanSetAge(DSHuman *human, uint8_t age) {
-    NULL != human ? human->_age = age; NULL
-    
+    if (NULL != human) {
+        human->_age = age;
+    }
 }
 
 uint8_t DSHumanGetAge(DSHuman *human) {
@@ -57,8 +92,9 @@ uint8_t DSHumanGetAge(DSHuman *human) {
 }
 
 void DSHumanSetGender(DSHuman *human, DSHumanGender gender) {
-    NULL != human ? human->_gender = gender;
-    
+    if (NULL != human) {
+        human->_gender = gender;
+    }
 }
 
 DSHumanGender DSHumanGetGender(DSHuman *human) {
@@ -66,9 +102,21 @@ DSHumanGender DSHumanGetGender(DSHuman *human) {
     return NULL != human ? human->_gender : 0;
 }
 
-void DSHumanSetMother(DSHuman *human, DSHuman *mother) {
-    (NULL != human && NULL != mother) ?  human->_mother = mother : NULL;
+void DSHumanSetPartner(DSHuman *human, DSHuman *partner) {
+    if (NULL != human) {
+        human->_partner = partner;
+    }
+}
+
+DSHuman *DSHumanGetPartner(DSHuman *human){
     
+    return NULL != human ? human->_partner : 0;
+}
+
+void DSHumanSetMother(DSHuman *human, DSHuman *mother) {
+    if (NULL != human && NULL != mother && human != mother && kDSHumanFemale == DSHumanGetGender(mother)) {
+        human->_mother = mother;
+    }
 }
 
 DSHuman *DSHumanGetMother(DSHuman *human) {
@@ -77,8 +125,9 @@ DSHuman *DSHumanGetMother(DSHuman *human) {
 }
 
 void DSHumanSetFather(DSHuman *human, DSHuman *father) {
-    (NULL != human && NULL != father) ?  human->_father = father : NULL;
-    
+    if (NULL != human && NULL != father && human != father && kDSHumanMale == DSHumanGetGender(father)) {
+        human->_father = father;
+    }
 }
 
 DSHuman *DSHumanGetFather(DSHuman *human) {
@@ -86,12 +135,48 @@ DSHuman *DSHumanGetFather(DSHuman *human) {
     return NULL != human ? human->_father : 0;
 }
 
-void DSHumanSetAddPartner (DSHuman *human, DSHuman *partner) {
-    (NULL != human && NULL != partner) ?  human->_partner = partner : NULL;
+void DSHumanMarried (DSHuman *human, DSHuman *partner) {
+    int genderHuman = DSHumanGetGender(human);
+    int genderPartner = DSHumanGetGender(partner);
+    if (NULL == human ||
+        NULL == partner ||
+        human == partner ||
+        genderHuman == kDSHumanUndefined ||
+        genderPartner == kDSHumanUndefined ||
+        genderHuman == genderPartner ||
+        (DSHumanGetAge(human) < kDSMinAgeForMarriage) ||
+        (DSHumanGetAge(partner) < kDSMinAgeForMarriage)) {
+        printf("\nMission impossible\n\n");
+        return;
+    }
+    if (kDSHumanMale == genderHuman) {
+            DSObjectRetain(partner);
+            } else
+                DSObjectRetain(human);
+
+
+    DSHumanDivorce(human);
+    DSHumanDivorce(partner);
+    DSHumanSetPartner (human, partner);
+    DSHumanSetPartner (partner, human);
+}
+
+void DSHumanDivorce(DSHuman *human) {
+    if (false == DSHumanIsMarried(human)) {
+        return;
+    }
+        DSHuman *partnerHuman = DSHumanGetPartner(human);
+        DSHumanSetPartner (human, NULL);
+        DSHumanSetPartner (partnerHuman, NULL);
+    
+    if (kDSHumanMale == DSHumanGetGender(human)) {
+        DSObjectRelease(partnerHuman);
+    } else
+        DSObjectRelease(human);
     
 }
 
-DSHuman *DSHumanGetAddPartner (DSHuman *human) {
+bool DSHumanIsMarried(DSHuman *human) {
     
-    return NULL != human ? human->_partner : 0;
+    return NULL != human && NULL != DSHumanGetPartner(human) ? true : false;
 }

@@ -12,6 +12,9 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+#include "DSObject.h"
+
+
 /*
  1. Создать объектную структуру данных человек, имеющую поля имя, возраст, пол, количество детей, женат или нет, 
  указатель на партнера, на родителей и на массив с детьми, где могло бы быть, максимум, 20 детей.
@@ -38,6 +41,8 @@
 typedef struct DSHuman DSHuman;
 typedef enum DSHumanGender DSHumanGender;
 
+extern const uint kDSMinAgeForMarriage;
+
 enum DSHumanGender {
     kDSHumanUndefined,
     kDSHumanMale,
@@ -45,6 +50,8 @@ enum DSHumanGender {
 };
 
 struct DSHuman {
+    DSObject _super;
+    
     char *_name;
     DSHuman *_father;
     DSHuman *_mother;
@@ -56,37 +63,34 @@ struct DSHuman {
 };
 
 extern
-DSHuman DSHumanCreateWithParametrs(
-    char *name,
-    DSHumanGender DSHumanGender,
-    uint8_t age,
-    DSHuman *mother,
-    DSHuman *father);
-
+DSHuman *DSHumanCreateWithParameters(DSHumanGender DSHumanGender);
 
 extern
-void DSHumanAddChild(DSHuman *mother, DSHuman *father);
+void DSHumanAddChild(DSHuman *human, DSHuman *partner);
+
+extern
+void DSHumanRemoveChild(DSHuman *human, DSHuman *parter);
 
 extern
 size_t DSHumanGetChildrenCount(DSHuman *human);
 
 extern
-void DSHumanSetNewName(DSHuman *human, char *name);
+void DSHumanSetName(DSHuman *human, char *name);
 
 extern
-void *DSHumanGetName(DSHuman *human);
+char *DSHumanGetName(DSHuman *human);
 
 extern
 void DSHumanSetAge(DSHuman *human, uint8_t newAge);
 
 extern
-DSHuman *DSHumanGetAge(DSHuman *human);
+uint8_t DSHumanGetAge(DSHuman *human);
 
 extern
 void DSHumanSetGender(DSHuman *human, DSHumanGender gender);
 
 extern
-DSHuman *DSHumanGetGender(DSHuman *human);
+DSHumanGender DSHumanGetGender(DSHuman *human);
                          
 extern
 DSHuman *DSHumanGetPartner(DSHuman *human);
@@ -98,22 +102,13 @@ extern
 DSHuman *DSHumanGetFather(DSHuman *human);
 
 extern
-void DSHumanSetAddPartner (DSHuman *human, DSHuman *partner);
-
-extern
-DSHuman *DSHumanGetAddPartner (DSHuman *human);
-
-extern
 void DSHumanMarried(DSHuman *human, DSHuman *partner);
-
-extern
-bool DSHumanGetMarried(DSHuman *human, DSHuman *partner);
 
 extern
 void DSHumanDivorce(DSHuman *human);
 
 extern
-bool DSHumanGetDivorced(DSHuman *human, DSHuman *partner);
+bool DSHumanIsMarried(DSHuman *human);
 
 
 #endif /* defined(__DSHomeWork__DSHumanStructure__) */

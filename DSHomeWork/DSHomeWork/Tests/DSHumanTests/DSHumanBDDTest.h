@@ -11,7 +11,9 @@
 
 #include <stdio.h>
 
-#include "DSHumanStructure.h"
+#include "DSHuman.h"
 
+extern
+void DSHumanBDDTest(void);
 
 #endif /* defined(__DSHomeWork__DSHumanBDDTest__) */

@@ -25,7 +25,7 @@ void *__DSObjectCreate(size_t objectSize, DSObjectDeallocatorCallback deallocate
 
 void *DSObjectRetain(void *object) {
     if (NULL != object) {
-        ((IDPObject *)object)->_referenceCount++;
+        ((DSObject *)object)->_referenceCount++;
     }
     
     return object;

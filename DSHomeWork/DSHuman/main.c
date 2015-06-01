@@ -8,12 +8,13 @@
 
 #include <stdio.h>
 
-#include "DSHumanStructure.h"
+#include "DSHuman.h"
+#include "DSHumanBDDTest.h"
 
 
 int main(int argc, const char * argv[]) {
    
-    
+    DSHumanBDDTest();
     
     return 0;
 }
