@@ -10,11 +10,13 @@
 
 #include "DSHuman.h"
 #include "DSHumanBDDTest.h"
+#include "DSArrayTests.h"
 
 
 int main(int argc, const char * argv[]) {
    
     DSHumanBDDTest();
+    DSArrayBehaviorTest();
     
     return 0;
 }

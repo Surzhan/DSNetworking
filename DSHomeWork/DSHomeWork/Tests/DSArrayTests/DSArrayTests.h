@@ -11,4 +11,7 @@
 
 #include <stdio.h>
 
+extern
+void DSArrayBehaviorTest(void);
+
 #endif /* defined(__DSHomeWork__DSArrayTests__) */

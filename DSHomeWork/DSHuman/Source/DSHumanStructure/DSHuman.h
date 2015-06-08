@@ -13,7 +13,7 @@
 #include <stdbool.h>
 
 #include "DSObject.h"
-
+#include "DSArray.h"
 
 /*
  1. Создать объектную структуру данных человек, имеющую поля имя, возраст, пол, количество детей, женат или нет, 
@@ -56,7 +56,7 @@ struct DSHuman {
     DSHuman *_father;
     DSHuman *_mother;
     DSHuman *_partner;
-    DSHuman *_children[20];
+    DSArray *_children;
     DSHumanGender _gender;
     uint8_t _age;
     int _childrenCount;

@@ -92,6 +92,7 @@
 		44D002D61B0A679B00DD1187 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../main.c; sourceTree = "<group>"; };
 		44D002DD1B0A688400DD1187 /* DSHuman.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSHuman.c; sourceTree = "<group>"; };
 		44D002DE1B0A688400DD1187 /* DSHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHuman.h; sourceTree = "<group>"; };
+		44D22FBA1B1E0C7E000B9150 /* DSMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSMacros.h; sourceTree = "<group>"; };
 		44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsOutput.c; sourceTree = "<group>"; };
 		44D47D751AFF7FA400AA5792 /* DSParentsOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsOutput.h; sourceTree = "<group>"; };
 		44D47D7B1AFF901C00AA5792 /* DSHomeWork2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHomeWork2; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,6 +290,8 @@
 		44D002DB1B0A67A400DD1187 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				44D22FB81B1E0C10000B9150 /* DSMacros */,
+				44D2BFB11B2627D600510A41 /* DSAutoreleasePool */,
 				44327CF11B151555006BAEED /* DSString */,
 				44327CED1B15151B006BAEED /* DSArray */,
 				44D5681A1B0C677E00F171CC /* DSObject */,
@@ -306,6 +309,45 @@
 			);
 			name = DSHuman;
 			path = DSHumanStructure;
+			sourceTree = "<group>";
+		};
+		44D22FB81B1E0C10000B9150 /* DSMacros */ = {
+			isa = PBXGroup;
+			children = (
+				44D22FBA1B1E0C7E000B9150 /* DSMacros.h */,
+			);
+			path = DSMacros;
+			sourceTree = "<group>";
+		};
+		44D2BFB11B2627D600510A41 /* DSAutoreleasePool */ = {
+			isa = PBXGroup;
+			children = (
+				44D2BFB41B2628A100510A41 /* DSLinkedListNode */,
+				44D2BFB31B26287300510A41 /* DSLinkedListEnumerator */,
+				44D2BFB21B26282E00510A41 /* DSLinkedList */,
+			);
+			path = DSAutoreleasePool;
+			sourceTree = "<group>";
+		};
+		44D2BFB21B26282E00510A41 /* DSLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DSLinkedList;
+			sourceTree = "<group>";
+		};
+		44D2BFB31B26287300510A41 /* DSLinkedListEnumerator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DSLinkedListEnumerator;
+			sourceTree = "<group>";
+		};
+		44D2BFB41B2628A100510A41 /* DSLinkedListNode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DSLinkedListNode;
 			sourceTree = "<group>";
 		};
 		44D47D731AFF7F6800AA5792 /* DSParentsOutput */ = {
