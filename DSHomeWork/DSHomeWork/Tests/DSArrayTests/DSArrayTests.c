@@ -25,8 +25,8 @@ void DSArrayMultipleObjectBehaviorTest(void);
 #pragma mark Public
 
 void DSArrayBehaviorTest() {
-    performTest(DSArrayOneObjectBehaviorTest);
-    performTest(DSArrayMultipleObjectBehaviorTest);
+   DSArrayOneObjectBehaviorTest();
+   DSArrayMultipleObjectBehaviorTest();
 }
 
 #pragma mark -

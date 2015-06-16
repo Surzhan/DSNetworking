@@ -10,14 +10,7 @@
 #define DSHomeWork_DSMacros_h
 
 
-#define performTest(testFunction) \
-do { \
-_DSPrintTestHeader(); \
-printf(" %s started...\n", #testFunction); \
-testFunction(); \
-_DSPrintTestFooter(); \
-printf(" %s finished.\n", #testFunction); \
-} while(0)
-
+#define DSObjectGetter(object, _iVar) \
+return object ? object->_iVar : NULL;
 
 #endif

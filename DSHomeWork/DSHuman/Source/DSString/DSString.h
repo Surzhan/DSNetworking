@@ -24,19 +24,19 @@ typedef struct {
 
 
 extern
-DSString *DSStringCreate(void);
+DSString *DSStringCreateWithString(char *string);
 
 extern
-char *DSStringGetString(DSString *string);
+char *DSStringGetString(DSString *object);
 
 extern
-void DSStringSetString(void *string, char *newString);
+void DSStringSetString(DSString *object, char *newString);
 
 extern
-uint64_t DSStringGetLength(DSString *string);
+uint64_t DSStringGetLength(DSString *object);
 
 extern
-void __DSStringDeallocate(void *string);
+void __DSStringDeallocate(void *object);
 
 
 #endif /* defined(__DSHomeWork__DSString__) */

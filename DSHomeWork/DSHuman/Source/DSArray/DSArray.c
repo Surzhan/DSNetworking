@@ -19,7 +19,7 @@ static const uint64_t kDSArrayMaximumCapacity = kDSNotFound - 1;
 #pragma mark Private Declaration
 
 static
-void DSArraySetCapacity(DSArray *array, uint64_t capasity);
+void DSArraySetCapacity(DSArray *array, uint64_t capacity);
 
 static
 uint64_t DSArrayGetCapacity(DSArray *array);
@@ -161,7 +161,7 @@ void DSArraySetCapacity(DSArray *array, uint64_t capacity) {
     }
 }
 
-uint64_t DSArrayGetCapasity(DSArray *array) {
+uint64_t DSArrayGetCapacity(DSArray *array) {
     return (NULL != array) ? array->_capacity : 0;
 }
 
@@ -200,7 +200,7 @@ bool DSArrayShouldResize(DSArray *array) {
     return (NULL != array) && (array->_capacity != DSArrayPrefferedCapacity(array));
 }
 
-uint64_t IDPArrayPrefferedCapacity(DSArray *array) {
+uint64_t DSArrayPrefferedCapacity(DSArray *array) {
     if (NULL != array) {
         uint64_t count = DSArrayGetCount(array);
         uint64_t capacity = DSArrayGetCapacity(array);
