@@ -19,7 +19,7 @@ typedef struct {
     DSObject _super;
     
     char *_string;
-    uint64_t _length;
+    size_t _length;
 }DSString;
 
 
@@ -33,7 +33,7 @@ extern
 void DSStringSetString(DSString *object, char *newString);
 
 extern
-uint64_t DSStringGetLength(DSString *object);
+size_t DSStringGetLength(DSString *object);
 
 extern
 void __DSStringDeallocate(void *object);

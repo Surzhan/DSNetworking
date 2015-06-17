@@ -11,12 +11,14 @@
 #include "DSHuman.h"
 #include "DSHumanBDDTest.h"
 #include "DSArrayTests.h"
+#include "DSStringTests.h"
 
 
 int main(int argc, const char * argv[]) {
    
     DSHumanBDDTest();
     DSArrayBehaviorTest();
+    DSStringTests();
     
     return 0;
 }

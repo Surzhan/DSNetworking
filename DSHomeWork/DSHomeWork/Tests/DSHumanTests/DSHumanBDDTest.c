@@ -25,8 +25,8 @@ void DSHumanBDDTest(void) {
     printf("%d age\n",DSHumanGetAge(newHuman));
     
     // named newHuman
-//    DSHumanSetName(newHuman, "Oleg");
-//    printf("%s name\n",DSHumanGetName(newHuman));
+    //    DSHumanSetName(newHuman, "Oleg");
+    //    printf("%s name\n",DSHumanGetName(newHuman));
     
     // they are married?
     printf("%d status newHumenBefore\n",DSHumanIsMarried(newHuman));

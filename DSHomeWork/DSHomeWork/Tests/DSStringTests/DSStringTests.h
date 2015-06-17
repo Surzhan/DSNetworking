@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void DSStringTests(void);
+
 #endif /* defined(__DSHomeWork__DSStringTests__) */

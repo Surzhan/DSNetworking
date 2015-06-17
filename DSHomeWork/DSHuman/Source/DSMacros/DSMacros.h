@@ -11,6 +11,6 @@
 
 
 #define DSObjectGetter(object, _iVar) \
-return object ? object->_iVar : NULL;
+    return NULL != object ? object->_iVar : NULL;
 
 #endif

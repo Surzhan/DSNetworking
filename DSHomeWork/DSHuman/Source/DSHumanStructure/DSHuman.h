@@ -14,6 +14,8 @@
 
 #include "DSObject.h"
 #include "DSArray.h"
+#include "DSString.h"
+#include "DSMacros.h"
 
 /*
  1. Создать объектную структуру данных человек, имеющую поля имя, возраст, пол, количество детей, женат или нет, 
@@ -59,20 +61,19 @@ struct DSHuman {
     DSArray *_children;
     DSHumanGender _gender;
     uint8_t _age;
-    int _childrenCount;
 };
 
 extern
 DSHuman *DSHumanCreateWithParameters(DSHumanGender DSHumanGender);
 
 extern
-void DSHumanAddChild(DSHuman *human, DSHuman *partner);
+void DSHumanAddChild(DSHuman *human, DSHuman *partner, DSHuman *child);
 
 extern
 void DSHumanRemoveChild(DSHuman *human, DSHuman *parter);
 
 extern
-size_t DSHumanGetChildrenCount(DSHuman *human);
+uint64_t DSHumanGetChildrenCount(DSHuman *human);
 
 extern
 void DSHumanSetName(DSHuman *human, char *name);

@@ -61,7 +61,7 @@ void DSStringSetString(DSString *object, char *newString) {
     
 }
 
-uint64_t DSStringGetLength(DSString *object) {
+size_t DSStringGetLength(DSString *object) {
     return (NULL != object) ? object->_length : 0;
 }
 
