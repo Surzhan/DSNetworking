@@ -33,31 +33,20 @@ char *DSStringGetString(DSString *object) {
 }
 
 void DSStringSetString(DSString *object, char *newString) {
-    if (NULL == object) {
-        
+    char *originalString = DSStringGetString(object);
+    if (NULL == object || newString == originalString) {
+   
         return;
     }
-    char *originalString = DSStringGetString(object);
-    if (NULL == newString) {
-        if (newString == originalString) {
-            
-            return;
-        } else {
-            free(DSStringGetString(object));
-            object->_string = NULL;
-            
-            return;
-        }
+    size_t length = 0;
+    if (NULL != newString) {
+        length = strlen(newString) + 1;
+        object->_string = malloc(length);
+        assert(NULL != object->_string);
+        memcpy(object->_string, newString, length);
     }
-    size_t preferredStringLength = strlen(newString) + 1;
     
-    if (NULL == DSStringGetString(object)) {
-        object->_string = (char *)calloc(preferredStringLength, sizeof(char));
-        } else {
-            object->_string = (char *)realloc(DSStringGetString(object), preferredStringLength * sizeof(char));
-        }
-    assert(NULL != DSStringGetString(object));
-    DSStringSetLength(object, preferredStringLength);
+    DSStringSetLength(object, length);
     
 }
 

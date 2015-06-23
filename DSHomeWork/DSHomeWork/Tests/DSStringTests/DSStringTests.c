@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 IDAPGroupCollege. All rights reserved.
 //
 #include <assert.h>
+#include <string.h>
 
 #include "DSStringTests.h"
 #include "DSString.h"
@@ -37,12 +38,20 @@ void DSStringBDDTest(void) {
     assert(NULL != string);
     
     //      recorded data transmitted in the string (Cruz Castillo)
-    printf(" %s \n", DSStringGetString(string));
+    assert(0 == strcmp(DSStringGetString(string), "Cruz Castillo"));
+    assert(DSStringGetString(string) != "Cruz Castillo");
     
     //      the length of the sring set 14
     assert(14 == DSStringGetLength(string));
-    //
-    //
+    
+    //  after change string
+    DSStringSetString(string, "");
+    
+    //      string is not NULL
+    assert(NULL != string);
+    
+    //      the length of the sring set 14
+    assert(1 == DSStringGetLength(string));
 
-     DSObjectRelease(string);
+    DSObjectRelease(string);
 }

@@ -19,6 +19,11 @@
 		449DC5CA1B01248D00F162C2 /* DSStructuresTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 449DC5C71B01248D00F162C2 /* DSStructuresTest.c */; };
 		44D002D71B0A679B00DD1187 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002D61B0A679B00DD1187 /* main.c */; };
 		44D002DF1B0A688500DD1187 /* DSHuman.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002DD1B0A688400DD1187 /* DSHuman.c */; };
+		44D083441B393641008A6C6F /* DSAutoreleaseStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D083421B393641008A6C6F /* DSAutoreleaseStack.c */; };
+		44D083471B393653008A6C6F /* DSLinkedListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D083451B393653008A6C6F /* DSLinkedListNode.c */; };
+		44D0834A1B393666008A6C6F /* DSLinkedListEnumerator.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D083481B393666008A6C6F /* DSLinkedListEnumerator.c */; };
+		44D0834D1B393676008A6C6F /* DSLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0834B1B393676008A6C6F /* DSLinkedList.c */; };
+		44D083501B393688008A6C6F /* DSAutoreleasePool.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0834E1B393688008A6C6F /* DSAutoreleasePool.c */; };
 		44D47D761AFF7FA400AA5792 /* DSParentsOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */; };
 		44D47D841AFF90A200AA5792 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D831AFF90A200AA5792 /* main.c */; };
 		44D47D8A1AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D881AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c */; };
@@ -92,6 +97,16 @@
 		44D002D61B0A679B00DD1187 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../main.c; sourceTree = "<group>"; };
 		44D002DD1B0A688400DD1187 /* DSHuman.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSHuman.c; sourceTree = "<group>"; };
 		44D002DE1B0A688400DD1187 /* DSHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHuman.h; sourceTree = "<group>"; };
+		44D083421B393641008A6C6F /* DSAutoreleaseStack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSAutoreleaseStack.c; sourceTree = "<group>"; };
+		44D083431B393641008A6C6F /* DSAutoreleaseStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAutoreleaseStack.h; sourceTree = "<group>"; };
+		44D083451B393653008A6C6F /* DSLinkedListNode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSLinkedListNode.c; sourceTree = "<group>"; };
+		44D083461B393653008A6C6F /* DSLinkedListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLinkedListNode.h; sourceTree = "<group>"; };
+		44D083481B393666008A6C6F /* DSLinkedListEnumerator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSLinkedListEnumerator.c; sourceTree = "<group>"; };
+		44D083491B393666008A6C6F /* DSLinkedListEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLinkedListEnumerator.h; sourceTree = "<group>"; };
+		44D0834B1B393676008A6C6F /* DSLinkedList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSLinkedList.c; sourceTree = "<group>"; };
+		44D0834C1B393676008A6C6F /* DSLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLinkedList.h; sourceTree = "<group>"; };
+		44D0834E1B393688008A6C6F /* DSAutoreleasePool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSAutoreleasePool.c; sourceTree = "<group>"; };
+		44D0834F1B393688008A6C6F /* DSAutoreleasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAutoreleasePool.h; sourceTree = "<group>"; };
 		44D22FBA1B1E0C7E000B9150 /* DSMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSMacros.h; sourceTree = "<group>"; };
 		44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsOutput.c; sourceTree = "<group>"; };
 		44D47D751AFF7FA400AA5792 /* DSParentsOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsOutput.h; sourceTree = "<group>"; };
@@ -311,6 +326,15 @@
 			path = DSHumanStructure;
 			sourceTree = "<group>";
 		};
+		44D083411B3935FC008A6C6F /* DSAutoreleaseStack */ = {
+			isa = PBXGroup;
+			children = (
+				44D083421B393641008A6C6F /* DSAutoreleaseStack.c */,
+				44D083431B393641008A6C6F /* DSAutoreleaseStack.h */,
+			);
+			path = DSAutoreleaseStack;
+			sourceTree = "<group>";
+		};
 		44D22FB81B1E0C10000B9150 /* DSMacros */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,9 +346,12 @@
 		44D2BFB11B2627D600510A41 /* DSAutoreleasePool */ = {
 			isa = PBXGroup;
 			children = (
+				44D083411B3935FC008A6C6F /* DSAutoreleaseStack */,
 				44D2BFB41B2628A100510A41 /* DSLinkedListNode */,
 				44D2BFB31B26287300510A41 /* DSLinkedListEnumerator */,
 				44D2BFB21B26282E00510A41 /* DSLinkedList */,
+				44D0834E1B393688008A6C6F /* DSAutoreleasePool.c */,
+				44D0834F1B393688008A6C6F /* DSAutoreleasePool.h */,
 			);
 			path = DSAutoreleasePool;
 			sourceTree = "<group>";
@@ -332,6 +359,8 @@
 		44D2BFB21B26282E00510A41 /* DSLinkedList */ = {
 			isa = PBXGroup;
 			children = (
+				44D0834B1B393676008A6C6F /* DSLinkedList.c */,
+				44D0834C1B393676008A6C6F /* DSLinkedList.h */,
 			);
 			path = DSLinkedList;
 			sourceTree = "<group>";
@@ -339,6 +368,8 @@
 		44D2BFB31B26287300510A41 /* DSLinkedListEnumerator */ = {
 			isa = PBXGroup;
 			children = (
+				44D083481B393666008A6C6F /* DSLinkedListEnumerator.c */,
+				44D083491B393666008A6C6F /* DSLinkedListEnumerator.h */,
 			);
 			path = DSLinkedListEnumerator;
 			sourceTree = "<group>";
@@ -346,6 +377,8 @@
 		44D2BFB41B2628A100510A41 /* DSLinkedListNode */ = {
 			isa = PBXGroup;
 			children = (
+				44D083451B393653008A6C6F /* DSLinkedListNode.c */,
+				44D083461B393653008A6C6F /* DSLinkedListNode.h */,
 			);
 			path = DSLinkedListNode;
 			sourceTree = "<group>";
@@ -569,12 +602,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				44D5681D1B0C67BD00F171CC /* DSObject.c in Sources */,
+				44D0834D1B393676008A6C6F /* DSLinkedList.c in Sources */,
 				44327CFC1B1515E7006BAEED /* DSStringTests.c in Sources */,
 				44327CF41B15157F006BAEED /* DSString.c in Sources */,
+				44D083471B393653008A6C6F /* DSLinkedListNode.c in Sources */,
 				44D002DF1B0A688500DD1187 /* DSHuman.c in Sources */,
 				44D002D71B0A679B00DD1187 /* main.c in Sources */,
 				44327CF01B151551006BAEED /* DSArray.c in Sources */,
 				44D568211B0C68C900F171CC /* DSHumanBDDTest.c in Sources */,
+				44D0834A1B393666008A6C6F /* DSLinkedListEnumerator.c in Sources */,
+				44D083441B393641008A6C6F /* DSAutoreleaseStack.c in Sources */,
+				44D083501B393688008A6C6F /* DSAutoreleasePool.c in Sources */,
 				44327CF81B1515BB006BAEED /* DSArrayTests.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
