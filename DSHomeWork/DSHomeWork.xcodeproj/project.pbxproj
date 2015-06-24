@@ -24,6 +24,15 @@
 		44D0834A1B393666008A6C6F /* DSLinkedListEnumerator.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D083481B393666008A6C6F /* DSLinkedListEnumerator.c */; };
 		44D0834D1B393676008A6C6F /* DSLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0834B1B393676008A6C6F /* DSLinkedList.c */; };
 		44D083501B393688008A6C6F /* DSAutoreleasePool.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0834E1B393688008A6C6F /* DSAutoreleasePool.c */; };
+		44D0BCA91B3A7F9C00EE394F /* DSLinkedNodeTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BCA71B3A7F9C00EE394F /* DSLinkedNodeTests.c */; };
+		44D0BCAC1B3A805500EE394F /* DSLinkedListTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BCAA1B3A805500EE394F /* DSLinkedListTests.c */; };
+		44D0BCAF1B3A806600EE394F /* DSLinkedListEnumeratorTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BCAD1B3A806600EE394F /* DSLinkedListEnumeratorTests.c */; };
+		44D0BCB31B3A811A00EE394F /* DSAutoReleasingStackTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BCB11B3A811A00EE394F /* DSAutoReleasingStackTests.c */; };
+		44D0BCB61B3A812E00EE394F /* DSAutoreleasePoolTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BCB41B3A812E00EE394F /* DSAutoreleasePoolTests.c */; };
+		44D0BCB81B3A885200EE394F /* DSMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BCB71B3A885200EE394F /* DSMacros.c */; };
+		44D0BCB91B3A885200EE394F /* DSMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BCB71B3A885200EE394F /* DSMacros.c */; };
+		44D0BCBA1B3A885200EE394F /* DSMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BCB71B3A885200EE394F /* DSMacros.c */; };
+		44D0BCBB1B3A885200EE394F /* DSMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BCB71B3A885200EE394F /* DSMacros.c */; };
 		44D47D761AFF7FA400AA5792 /* DSParentsOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */; };
 		44D47D841AFF90A200AA5792 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D831AFF90A200AA5792 /* main.c */; };
 		44D47D8A1AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D881AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c */; };
@@ -107,6 +116,17 @@
 		44D0834C1B393676008A6C6F /* DSLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLinkedList.h; sourceTree = "<group>"; };
 		44D0834E1B393688008A6C6F /* DSAutoreleasePool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSAutoreleasePool.c; sourceTree = "<group>"; };
 		44D0834F1B393688008A6C6F /* DSAutoreleasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAutoreleasePool.h; sourceTree = "<group>"; };
+		44D0BCA71B3A7F9C00EE394F /* DSLinkedNodeTests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSLinkedNodeTests.c; sourceTree = "<group>"; };
+		44D0BCA81B3A7F9C00EE394F /* DSLinkedNodeTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLinkedNodeTests.h; sourceTree = "<group>"; };
+		44D0BCAA1B3A805500EE394F /* DSLinkedListTests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSLinkedListTests.c; sourceTree = "<group>"; };
+		44D0BCAB1B3A805500EE394F /* DSLinkedListTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLinkedListTests.h; sourceTree = "<group>"; };
+		44D0BCAD1B3A806600EE394F /* DSLinkedListEnumeratorTests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSLinkedListEnumeratorTests.c; sourceTree = "<group>"; };
+		44D0BCAE1B3A806600EE394F /* DSLinkedListEnumeratorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLinkedListEnumeratorTests.h; sourceTree = "<group>"; };
+		44D0BCB11B3A811A00EE394F /* DSAutoReleasingStackTests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSAutoReleasingStackTests.c; sourceTree = "<group>"; };
+		44D0BCB21B3A811A00EE394F /* DSAutoReleasingStackTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAutoReleasingStackTests.h; sourceTree = "<group>"; };
+		44D0BCB41B3A812E00EE394F /* DSAutoreleasePoolTests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSAutoreleasePoolTests.c; sourceTree = "<group>"; };
+		44D0BCB51B3A812E00EE394F /* DSAutoreleasePoolTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAutoreleasePoolTests.h; sourceTree = "<group>"; };
+		44D0BCB71B3A885200EE394F /* DSMacros.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSMacros.c; sourceTree = "<group>"; };
 		44D22FBA1B1E0C7E000B9150 /* DSMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSMacros.h; sourceTree = "<group>"; };
 		44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsOutput.c; sourceTree = "<group>"; };
 		44D47D751AFF7FA400AA5792 /* DSParentsOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsOutput.h; sourceTree = "<group>"; };
@@ -201,6 +221,7 @@
 		440BA2B21AFA808500790A82 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				44D0BCA11B3A7DDE00EE394F /* DSAutoreleasePoolTests */,
 				44327CF91B1515C2006BAEED /* DSStringTests */,
 				44327CF51B151587006BAEED /* DSArrayTests */,
 				44327CE91B1513FD006BAEED /* DSBitOutputTest */,
@@ -335,10 +356,60 @@
 			path = DSAutoreleaseStack;
 			sourceTree = "<group>";
 		};
+		44D0BCA11B3A7DDE00EE394F /* DSAutoreleasePoolTests */ = {
+			isa = PBXGroup;
+			children = (
+				44D0BCA31B3A7E8800EE394F /* DSLinkedListNodeTests */,
+				44D0BCA41B3A7EAC00EE394F /* DSLinkedListTests */,
+				44D0BCA51B3A7EC700EE394F /* DSLinkedListEnumeratorTests */,
+				44D0BCB01B3A809500EE394F /* DSAutoReleasingStackTests */,
+				44D0BCB41B3A812E00EE394F /* DSAutoreleasePoolTests.c */,
+				44D0BCB51B3A812E00EE394F /* DSAutoreleasePoolTests.h */,
+			);
+			path = DSAutoreleasePoolTests;
+			sourceTree = "<group>";
+		};
+		44D0BCA31B3A7E8800EE394F /* DSLinkedListNodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				44D0BCA71B3A7F9C00EE394F /* DSLinkedNodeTests.c */,
+				44D0BCA81B3A7F9C00EE394F /* DSLinkedNodeTests.h */,
+			);
+			path = DSLinkedListNodeTests;
+			sourceTree = "<group>";
+		};
+		44D0BCA41B3A7EAC00EE394F /* DSLinkedListTests */ = {
+			isa = PBXGroup;
+			children = (
+				44D0BCAA1B3A805500EE394F /* DSLinkedListTests.c */,
+				44D0BCAB1B3A805500EE394F /* DSLinkedListTests.h */,
+			);
+			path = DSLinkedListTests;
+			sourceTree = "<group>";
+		};
+		44D0BCA51B3A7EC700EE394F /* DSLinkedListEnumeratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				44D0BCAD1B3A806600EE394F /* DSLinkedListEnumeratorTests.c */,
+				44D0BCAE1B3A806600EE394F /* DSLinkedListEnumeratorTests.h */,
+			);
+			path = DSLinkedListEnumeratorTests;
+			sourceTree = "<group>";
+		};
+		44D0BCB01B3A809500EE394F /* DSAutoReleasingStackTests */ = {
+			isa = PBXGroup;
+			children = (
+				44D0BCB11B3A811A00EE394F /* DSAutoReleasingStackTests.c */,
+				44D0BCB21B3A811A00EE394F /* DSAutoReleasingStackTests.h */,
+			);
+			path = DSAutoReleasingStackTests;
+			sourceTree = "<group>";
+		};
 		44D22FB81B1E0C10000B9150 /* DSMacros */ = {
 			isa = PBXGroup;
 			children = (
 				44D22FBA1B1E0C7E000B9150 /* DSMacros.h */,
+				44D0BCB71B3A885200EE394F /* DSMacros.c */,
 			);
 			path = DSMacros;
 			sourceTree = "<group>";
@@ -593,6 +664,7 @@
 				440BA2BC1AFA81D500790A82 /* DSParentsSelect.c in Sources */,
 				440BA2B91AFA81BD00790A82 /* DSPrintSizeOfType.c in Sources */,
 				440BA2B41AFA80DE00790A82 /* main.c in Sources */,
+				44D0BCB81B3A885200EE394F /* DSMacros.c in Sources */,
 				44D47D761AFF7FA400AA5792 /* DSParentsOutput.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,16 +676,22 @@
 				44D5681D1B0C67BD00F171CC /* DSObject.c in Sources */,
 				44D0834D1B393676008A6C6F /* DSLinkedList.c in Sources */,
 				44327CFC1B1515E7006BAEED /* DSStringTests.c in Sources */,
+				44D0BCBB1B3A885200EE394F /* DSMacros.c in Sources */,
 				44327CF41B15157F006BAEED /* DSString.c in Sources */,
 				44D083471B393653008A6C6F /* DSLinkedListNode.c in Sources */,
 				44D002DF1B0A688500DD1187 /* DSHuman.c in Sources */,
 				44D002D71B0A679B00DD1187 /* main.c in Sources */,
 				44327CF01B151551006BAEED /* DSArray.c in Sources */,
 				44D568211B0C68C900F171CC /* DSHumanBDDTest.c in Sources */,
+				44D0BCAC1B3A805500EE394F /* DSLinkedListTests.c in Sources */,
 				44D0834A1B393666008A6C6F /* DSLinkedListEnumerator.c in Sources */,
 				44D083441B393641008A6C6F /* DSAutoreleaseStack.c in Sources */,
+				44D0BCA91B3A7F9C00EE394F /* DSLinkedNodeTests.c in Sources */,
+				44D0BCAF1B3A806600EE394F /* DSLinkedListEnumeratorTests.c in Sources */,
+				44D0BCB31B3A811A00EE394F /* DSAutoReleasingStackTests.c in Sources */,
 				44D083501B393688008A6C6F /* DSAutoreleasePool.c in Sources */,
 				44327CF81B1515BB006BAEED /* DSArrayTests.c in Sources */,
+				44D0BCB61B3A812E00EE394F /* DSAutoreleasePoolTests.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +701,7 @@
 			files = (
 				44D47D841AFF90A200AA5792 /* main.c in Sources */,
 				44D47D8A1AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c in Sources */,
+				44D0BCB91B3A885200EE394F /* DSMacros.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +714,7 @@
 				44D47D9C1AFFB15100AA5792 /* DSCreateStructure.c in Sources */,
 				44327CEC1B151439006BAEED /* DSBitOutputTest.c in Sources */,
 				44D47D981AFFB02300AA5792 /* main.c in Sources */,
+				44D0BCBA1B3A885200EE394F /* DSMacros.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

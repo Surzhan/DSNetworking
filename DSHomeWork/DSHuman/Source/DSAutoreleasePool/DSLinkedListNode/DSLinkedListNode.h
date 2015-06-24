@@ -26,7 +26,7 @@ extern
 DSLinkedListNode *DSLinkedListNodeCreateWithObject(void *object);
 
 extern
-void __DSLinkedListNodeDeallocate(void *object);
+void __DSLinkedListNodeDeallocate(void *node);
 
 extern
 DSLinkedListNode *DSLinkedListNodeGetNextNode(DSLinkedListNode *node);

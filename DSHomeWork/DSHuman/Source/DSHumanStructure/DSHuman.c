@@ -151,7 +151,6 @@ void DSHumanMarried (DSHuman *human, DSHuman *partner) {
         || genderHuman == genderPartner
         || (DSHumanGetAge(human) < kDSMinAgeForMarriage)
         || (DSHumanGetAge(partner) < kDSMinAgeForMarriage)) {
-        printf("\nMission impossible\n\n");
         
         return;
     }

@@ -9,8 +9,20 @@
 #ifndef DSHomeWork_DSMacros_h
 #define DSHomeWork_DSMacros_h
 
+#define performTest(testFunction) \
+    printf("- %s - Started...\n", #testFunction); \
+    testFunction(); \
+    printf("- %s - Finished.\n\n", #testFunction); \
 
 #define DSObjectGetter(object, _iVar) \
     return NULL != object ? object->_iVar : NULL;
+
+#define DSObjectRetainSetter(object, _iVar, data) \
+    if (NULL != object && object != (void*)data && data != object->_iVar) { \
+        DSObjectRetain(data); \
+        DSObjectRelease(object->_iVar); \
+        object->_iVar = data; \
+}
+
 
 #endif
