@@ -31,6 +31,9 @@ DSArray *DSHumanGetChildrenArray(DSHuman *human);
 static
 void DSHumanRemoveAllChildren(DSHuman *human);
 
+static
+bool DSHumanConditionsOfMarriage(DSHuman *human, DSHuman *partner);
+
 #pragma mark -
 #pragma mark Public Implementations
 
@@ -40,7 +43,7 @@ void __DSHumanDeallocate(void *human) {
     DSHumanMarried(human, NULL);
     DSHumanSetMother(human, NULL);
     DSHumanSetFather(human, NULL);
-    DSHumanRemoveAllChildren (human);
+    DSHumanRemoveAllChildren(human);
     
     __DSObjectDeallocate(human);
 }
@@ -52,33 +55,37 @@ DSHuman *DSHumanCreateWithParameters(DSHumanGender gender) {
     return human;
 }
 
-void DSHumanAddChild(DSHuman *human, DSHuman *partner, DSHuman *child) {
-    if (NULL != human && NULL != partner) {
+void DSHumanAddChild(DSHuman *human, DSHuman *child) {
+    if (NULL != human && NULL != child) {
         int genderHuman = DSHumanGetGender(human);
-        int genderPartner = DSHumanGetGender(partner);
-        if (kDSHumanUndefined == genderHuman
-            && kDSHumanUndefined == genderPartner
-            && genderHuman == genderPartner) {
+        if (kDSHumanUndefined == genderHuman) {
             
             return;
         }
-        
-        if (NULL == child) {
-            DSHuman *child = DSHumanCreateWithParameters(kDSHumanUndefined);
-        }
+        DSObjectRetain(child);
         if (kDSHumanMale == genderHuman) {
+            DSHumanRemoveChild(DSHumanGetFather(child), child);
             DSHumanSetFather(child, human);
-            DSHumanSetMother(child, partner);
-        } else {
-            DSHumanSetFather(child, partner);
+            } else {
+            DSHumanRemoveChild(DSHumanGetMother(child), child);
             DSHumanSetMother(child, human);
         }
+        DSArrayAddObject(DSHumanGetChildrenArray(human), child);
+        DSObjectRelease(child);
     }
 }
 
-void DSHumanRemoveChild(DSHuman *human, DSHuman *parter) {
-    
-    
+void DSHumanRemoveChild(DSHuman *human, DSHuman *child) {
+    if (NULL != human && NULL != child) {
+        void *childrenArrayObject = DSHumanGetChildrenArray(human);
+        void **children = DSArrayGetDatabase(childrenArrayObject);
+        uint64_t count = DSArrayGetCount(childrenArrayObject);
+        for (uint64_t index = 0; index < count; index++) {
+            if (children[index] == child) {
+                DSArrayRemoveObjectAtIndex(childrenArrayObject, index);
+            }
+        }
+    }
 }
 
 uint64_t DSHumanGetChildrenCount(DSHuman *human) {
@@ -141,20 +148,11 @@ DSHuman *DSHumanGetFather(DSHuman *human) {
 }
 
 void DSHumanMarried (DSHuman *human, DSHuman *partner) {
-    int genderHuman = DSHumanGetGender(human);
-    int genderPartner = DSHumanGetGender(partner);
-    if (NULL == human
-        || NULL == partner
-        || human == partner
-        || genderHuman == kDSHumanUndefined
-        || genderPartner == kDSHumanUndefined
-        || genderHuman == genderPartner
-        || (DSHumanGetAge(human) < kDSMinAgeForMarriage)
-        || (DSHumanGetAge(partner) < kDSMinAgeForMarriage)) {
+    if (true == DSHumanConditionsOfMarriage(human, partner)) {
         
         return;
     }
-    if (kDSHumanMale == genderHuman) {
+    if (kDSHumanMale == DSHumanGetGender(human)) {
         DSObjectRetain(partner);
     } else {
         DSObjectRetain(human);
@@ -213,5 +211,20 @@ DSArray *DSHumanGetChildrenArray(DSHuman *human) {
 }
 
 void DSHumanRemoveAllChildren(DSHuman *human) {
-    
+    if (NULL != human) {
+        DSArrayRemoveAllObjects(DSHumanGetChildrenArray(human));
+    }
+}
+
+bool DSHumanConditionsOfMarriage(DSHuman *human, DSHuman *partner) {
+    int genderHuman = DSHumanGetGender(human);
+    int genderPartner = DSHumanGetGender(partner);
+    return (NULL == human
+            || NULL == partner
+            || human == partner
+            || genderHuman == kDSHumanUndefined
+            || genderPartner == kDSHumanUndefined
+            || genderHuman == genderPartner
+            || (DSHumanGetAge(human) < kDSMinAgeForMarriage)
+            || (DSHumanGetAge(partner) < kDSMinAgeForMarriage));
 }

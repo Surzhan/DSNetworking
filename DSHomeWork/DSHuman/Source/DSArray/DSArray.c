@@ -11,7 +11,6 @@
 
 #include "DSArray.h"
 
-
 const uint64_t kDSNotFound = UINT64_MAX;
 static const uint64_t kDSArrayMaximumCapacity = kDSNotFound - 1;
 
@@ -38,7 +37,6 @@ bool DSArrayShouldResize(DSArray *array);
 
 static
 uint64_t DSArrayPrefferedCapacity(DSArray *array);
-
 
 #pragma mark -
 #pragma Pablic Implementation
@@ -133,6 +131,10 @@ bool DSArrayContainsObject(DSArray *array, void *object) {
     return (NULL != array) && (kDSNotFound != DSArrayGetIndexOfObject(array, object));
 }
 
+void **DSArrayGetDatabase(DSArray *array) {
+    return array != NULL ? array->_database : NULL;
+}
+
 #pragma mark -
 #pragma mark Private Implementations
 
@@ -178,7 +180,6 @@ void DSArraySetObjectAtIndex(DSArray *array, void *object, uint64_t index) {
     if (NULL == array) {
         return;
     }
-    
     assert(index < DSArrayGetCount(array));
     
     DSObject *currentObject = array->_database[index];

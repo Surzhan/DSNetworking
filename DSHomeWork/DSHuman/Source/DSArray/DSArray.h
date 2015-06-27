@@ -53,4 +53,7 @@ void *DSArrayGetObjectAtIndex(DSArray *array, uint64_t index);
 extern
 bool DSArrayContainsObject(DSArray *array, void *object);
 
+extern
+void **DSArrayGetDatabase(DSArray *array);
+
 #endif /* defined(__DSHomeWork__DSArray__) */

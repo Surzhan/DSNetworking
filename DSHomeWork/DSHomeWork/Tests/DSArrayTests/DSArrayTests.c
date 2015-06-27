@@ -9,12 +9,8 @@
 #include <assert.h>
 
 #include "DSArrayTests.h"
-#include "DSObject.h"
-#include "DSHuman.h"
 #include "DSArray.h"
-#include "DSMacros.h"
-
-
+#include "DSHuman.h"
 
 static
 void DSArrayOneObjectBehaviorTest(void);
@@ -53,9 +49,10 @@ void DSArrayOneObjectBehaviorTest(void) {
     assert(NULL != newArray);
     
     //      object reference count must be equal to 1
-    assert(DSObjectGetReferenceCount(newArray));
+    assert(1 == DSObjectGetReferenceCount(newArray));
     
     //      object index in array must be invalid (object not found)
+    
     // after object was added to array
     //      array count must be equal to 1
     //      array reference count must not change

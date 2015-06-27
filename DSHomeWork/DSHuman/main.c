@@ -19,17 +19,15 @@
 #include "DSAutoReleasingStackTests.h"
 #include "DSAutoreleasePoolTests.h"
 
-
-
 int main(int argc, const char * argv[]) {
     performTest(DSHumanBDDTest);
     performTest(DSArrayBehaviorTest);
     performTest(DSStringTests);
-    performTest(DSLinkedListNodeTests);
-    performTest(DSLinkedListTests);
-    performTest(DSLinkedListEnumeratorTests);
-    performTest(DSAutoReleasingStackTests);
-    performTest(DSAutoreleasePoolTests);
+//    performTest(DSLinkedListNodeTests);
+//    performTest(DSLinkedListTests);
+//    performTest(DSLinkedListEnumeratorTests);
+//    performTest(DSAutoReleasingStackTests);
+//    performTest(DSAutoreleasePoolTests);
     
     return 0;
 }

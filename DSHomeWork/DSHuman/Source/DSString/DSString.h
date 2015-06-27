@@ -14,14 +14,12 @@
 
 #include "DSObject.h"
 
-
 typedef struct {
     DSObject _super;
     
     char *_string;
     size_t _length;
 }DSString;
-
 
 extern
 DSString *DSStringCreateWithString(char *string);
@@ -37,6 +35,5 @@ size_t DSStringGetLength(DSString *object);
 
 extern
 void __DSStringDeallocate(void *object);
-
 
 #endif /* defined(__DSHomeWork__DSString__) */

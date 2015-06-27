@@ -67,10 +67,10 @@ extern
 DSHuman *DSHumanCreateWithParameters(DSHumanGender DSHumanGender);
 
 extern
-void DSHumanAddChild(DSHuman *human, DSHuman *partner, DSHuman *child);
+void DSHumanAddChild(DSHuman *human, DSHuman *child);
 
 extern
-void DSHumanRemoveChild(DSHuman *human, DSHuman *parter);
+void DSHumanRemoveChild(DSHuman *human, DSHuman *child);
 
 extern
 uint64_t DSHumanGetChildrenCount(DSHuman *human);
