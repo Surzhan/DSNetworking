@@ -54,7 +54,7 @@ enum DSHumanGender {
 struct DSHuman {
     DSObject _super;
     
-    char *_name;
+    DSString *_name;
     DSHuman *_father;
     DSHuman *_mother;
     DSHuman *_partner;
@@ -110,6 +110,5 @@ void DSHumanDivorce(DSHuman *human);
 
 extern
 bool DSHumanIsMarried(DSHuman *human);
-
 
 #endif /* defined(__DSHomeWork__DSHumanStructure__) */

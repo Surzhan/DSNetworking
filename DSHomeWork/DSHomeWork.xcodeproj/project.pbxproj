@@ -128,6 +128,7 @@
 		44D0BCB51B3A812E00EE394F /* DSAutoreleasePoolTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAutoreleasePoolTests.h; sourceTree = "<group>"; };
 		44D0BCB71B3A885200EE394F /* DSMacros.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSMacros.c; sourceTree = "<group>"; };
 		44D22FBA1B1E0C7E000B9150 /* DSMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSMacros.h; sourceTree = "<group>"; };
+		44D33B6C1B40917700D54B65 /* DSLinkedListPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLinkedListPrivate.h; sourceTree = "<group>"; };
 		44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsOutput.c; sourceTree = "<group>"; };
 		44D47D751AFF7FA400AA5792 /* DSParentsOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsOutput.h; sourceTree = "<group>"; };
 		44D47D7B1AFF901C00AA5792 /* DSHomeWork2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHomeWork2; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -432,6 +433,7 @@
 			children = (
 				44D0834B1B393676008A6C6F /* DSLinkedList.c */,
 				44D0834C1B393676008A6C6F /* DSLinkedList.h */,
+				44D33B6C1B40917700D54B65 /* DSLinkedListPrivate.h */,
 			);
 			path = DSLinkedList;
 			sourceTree = "<group>";

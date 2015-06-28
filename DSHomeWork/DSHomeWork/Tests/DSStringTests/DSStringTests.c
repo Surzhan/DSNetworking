@@ -39,7 +39,7 @@ void DSStringBDDTest(void) {
     
     //      recorded data transmitted in the string (Cruz Castillo)
     assert(0 == strcmp(DSStringGetString(string), "Cruz Castillo"));
-    assert(DSStringGetString(string) != "Cruz Castillo");
+    assert("Cruz Castillo" != DSStringGetString(string));
     
     //      the length of the sring set 14
     assert(14 == DSStringGetLength(string));

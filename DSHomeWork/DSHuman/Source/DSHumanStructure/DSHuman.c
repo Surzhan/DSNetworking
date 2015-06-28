@@ -34,6 +34,9 @@ void DSHumanRemoveAllChildren(DSHuman *human);
 static
 bool DSHumanConditionsOfMarriage(DSHuman *human, DSHuman *partner);
 
+static
+void DSHumanSetChildrenArray(DSHuman *human, DSArray *childrenArray);
+
 #pragma mark -
 #pragma mark Public Implementations
 
@@ -56,7 +59,7 @@ DSHuman *DSHumanCreateWithParameters(DSHumanGender gender) {
 }
 
 void DSHumanAddChild(DSHuman *human, DSHuman *child) {
-    if (NULL != human && NULL != child) {
+    if (NULL != human && NULL != child && human != child) {
         int genderHuman = DSHumanGetGender(human);
         if (kDSHumanUndefined == genderHuman) {
             
@@ -70,7 +73,13 @@ void DSHumanAddChild(DSHuman *human, DSHuman *child) {
             DSHumanRemoveChild(DSHumanGetMother(child), child);
             DSHumanSetMother(child, human);
         }
-        DSArrayAddObject(DSHumanGetChildrenArray(human), child);
+        DSArray *childrenArray = DSHumanGetChildrenArray(human);
+        if (NULL == childrenArray) {
+            childrenArray = DSArrayCreateWithCapacity(1);
+            DSHumanSetChildrenArray(human, childrenArray);
+            DSObjectRelease(childrenArray);
+        }
+        DSArrayAddObject(childrenArray, child);
         DSObjectRelease(child);
     }
 }
@@ -98,7 +107,7 @@ uint64_t DSHumanGetChildrenCount(DSHuman *human) {
 
 void DSHumanSetName(DSHuman *human, char *name) {
     if (NULL != human) {
-        char *previousName = human->_name;
+        DSString *previousName = human->_name;
         
         if (NULL != previousName) {
             DSObjectRelease(previousName);
@@ -112,7 +121,7 @@ void DSHumanSetName(DSHuman *human, char *name) {
 }
 
 char *DSHumanGetName(DSHuman *human) {
-    return NULL != human ? human->_name : 0;
+    return DSStringGetString(human->_name);
 }
 
 void DSHumanSetAge(DSHuman *human, uint8_t age) {
@@ -227,4 +236,8 @@ bool DSHumanConditionsOfMarriage(DSHuman *human, DSHuman *partner) {
             || genderHuman == genderPartner
             || (DSHumanGetAge(human) < kDSMinAgeForMarriage)
             || (DSHumanGetAge(partner) < kDSMinAgeForMarriage));
+}
+
+void DSHumanSetChildrenArray(DSHuman *human, DSArray *childrenArray) {
+    DSObjectRetainSetter(human, _children, childrenArray);
 }

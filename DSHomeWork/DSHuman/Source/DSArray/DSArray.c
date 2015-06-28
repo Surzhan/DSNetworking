@@ -56,7 +56,7 @@ void __DSArrayDeallocate(DSArray *array){
 void DSArrayAddObject(DSArray *array, void *object) {
     if (NULL != array && NULL != object) {
         uint64_t count = DSArrayGetCount(array);
-        DSArraySetCount(array, ++count);
+        DSArraySetCount(array, count + 1);
         DSArraySetObjectAtIndex(array, object, count);
     }
 }
@@ -86,7 +86,7 @@ void DSArrayRemoveAllObjects(DSArray *array) {
         for (uint64_t index = 0; index < count; index++) {
             DSArraySetObjectAtIndex(array, NULL, index);
         }
-        
+        DSArraySetCount(array, 0);
         DSArraySetCapacity(array, 0);
     }
     

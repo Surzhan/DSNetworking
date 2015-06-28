@@ -24,5 +24,4 @@
         object->_iVar = data; \
 }
 
-
 #endif
