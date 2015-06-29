@@ -144,6 +144,7 @@
 		44D5681C1B0C67BD00F171CC /* DSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSObject.h; sourceTree = "<group>"; };
 		44D5681F1B0C68C900F171CC /* DSHumanBDDTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSHumanBDDTest.c; sourceTree = "<group>"; };
 		44D568201B0C68C900F171CC /* DSHumanBDDTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHumanBDDTest.h; sourceTree = "<group>"; };
+		44D6BE511B41EF1300B83AAE /* DSLinkedListEnumeratorPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLinkedListEnumeratorPrivate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -443,6 +444,7 @@
 			children = (
 				44D083481B393666008A6C6F /* DSLinkedListEnumerator.c */,
 				44D083491B393666008A6C6F /* DSLinkedListEnumerator.h */,
+				44D6BE511B41EF1300B83AAE /* DSLinkedListEnumeratorPrivate.h */,
 			);
 			path = DSLinkedListEnumerator;
 			sourceTree = "<group>";

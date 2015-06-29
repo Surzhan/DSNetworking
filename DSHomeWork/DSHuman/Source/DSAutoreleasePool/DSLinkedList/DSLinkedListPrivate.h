@@ -22,7 +22,7 @@ typedef struct {
 typedef bool (*DSLinkedListNodeComparisonFunction)(DSLinkedListNode *node, DSLinkedListNodeContext context);
 
 extern
-void DSLinkedListSetHead(DSLinkedList *list, DSLinkedListNode *head);
+void DSLinkedListSetHead(DSLinkedList *list, DSLinkedListNode *node);
 
 extern
 DSLinkedListNode *DSLinkedListGetHead(DSLinkedList *list);
@@ -40,5 +40,8 @@ DSLinkedListNode *DSLinkedListFindNodeWithContext(DSLinkedList *list,
 
 extern
 bool DSLinkedListNodeContainsObject(DSLinkedListNode *node, DSLinkedListNodeContext context);
+
+extern
+DSLinkedListNodeContext DSLinkedListNodeGetContextForListWithObject(DSLinkedList *list, void *object);
 
 #endif

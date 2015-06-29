@@ -39,7 +39,7 @@ static
 uint64_t DSArrayPrefferedCapacity(DSArray *array);
 
 #pragma mark -
-#pragma Pablic Implementation
+#pragma mark Pablic Implementation
 
 void *DSArrayCreateWithCapacity(uint64_t capasity) {
     DSArray *newArray = DSObjectCreateOfType(DSArray);

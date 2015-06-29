@@ -17,6 +17,14 @@
 #define DSObjectGetter(object, _iVar) \
     return NULL != object ? object->_iVar : NULL;
 
+#define DSObjectGetterSimpleTypes(object, _iVar) \
+    return NULL != object ? object->_iVar : 0;
+
+#define DSObjectAssignSetter(object, ivar, newIvar) \
+    if(NULL != object) { \
+    object->ivar = newIvar; \
+}
+
 #define DSObjectRetainSetter(object, _iVar, data) \
     if (NULL != object && object != (void*)data && data != object->_iVar) { \
         DSObjectRetain(data); \

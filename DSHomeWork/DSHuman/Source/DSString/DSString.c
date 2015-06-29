@@ -19,7 +19,7 @@ static
 void DSStringSetLength(DSString *object, uint64_t length);
 
 #pragma mark -
-#pragma Pablic Implementation
+#pragma mark Pablic Implementation
 
 DSString *DSStringCreateWithString(char *string) {
     DSString *newObject = DSObjectCreateOfType(DSString);
