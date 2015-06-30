@@ -8,7 +8,6 @@
 #include <string.h>
 
 #include "DSLinkedListPrivate.h"
-#include "DSLinkedListNode.h"
 #include "DSLinkedListEnumeratorPrivate.h"
 #include "DSMacros.h"
 
