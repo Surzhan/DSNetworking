@@ -13,26 +13,27 @@
 
 #include "DSObject.h"
 
-typedef enum {
-    kDSAutoreleasingStackPoppedNULL,
-    kDSAutoreleasingStackPoppedObject
-} DSAutoreleasingStackPopType;
-
-typedef struct DSAutoReleasingStack DSAutoreleasingStack;
+typedef struct DSAutoreleasingStack DSAutoreleasingStack;
 
 struct DSAutoreleasingStack {
     DSObject _super;
     
     void **_data;
-    size_t _size;
-    size_t _count;
+    uint32_t _size;
+    uint32_t _count;
 };
 
-extern
-DSAutoreleasingStack *DSAutoreleasingStackCreateWithSize(size_t size);
+typedef enum {
+    kDSAutoreleasingStackPoppedNULL,
+    kDSAutoreleasingStackPoppedObject
+} DSAutoreleasingStackPopType;
+
 
 extern
-void __DSAutoReleasingStackDeallocate(void *object);
+DSAutoreleasingStack *DSAutoreleasingStackCreateWithSize(uint32_t size);
+
+extern
+void __DSAutoreleasingStackDeallocate(void *object);
 
 extern
 bool DSAutoreleasingStackIsEmpty(DSAutoreleasingStack *stack);
