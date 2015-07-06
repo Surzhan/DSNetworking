@@ -16,6 +16,8 @@
 		44327CF41B15157F006BAEED /* DSString.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CF21B15157F006BAEED /* DSString.c */; };
 		44327CF81B1515BB006BAEED /* DSArrayTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CF61B1515BB006BAEED /* DSArrayTests.c */; };
 		44327CFC1B1515E7006BAEED /* DSStringTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CFA1B1515E7006BAEED /* DSStringTests.c */; };
+		443765251B4AC9E50020B3A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 443765241B4AC9E50020B3A8 /* main.m */; };
+		4437652D1B4ACAF50020B3A8 /* DLSSyntax.m in Sources */ = {isa = PBXBuildFile; fileRef = 4437652C1B4ACAF50020B3A8 /* DLSSyntax.m */; };
 		449DC5CA1B01248D00F162C2 /* DSStructuresTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 449DC5C71B01248D00F162C2 /* DSStructuresTest.c */; };
 		44D002D71B0A679B00DD1187 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002D61B0A679B00DD1187 /* main.c */; };
 		44D002DF1B0A688500DD1187 /* DSHuman.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002DD1B0A688400DD1187 /* DSHuman.c */; };
@@ -44,6 +46,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		440BA2A51AFA7B8600790A82 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		443765201B4AC9E50020B3A8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -100,6 +111,10 @@
 		44327CF71B1515BB006BAEED /* DSArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSArrayTests.h; sourceTree = "<group>"; };
 		44327CFA1B1515E7006BAEED /* DSStringTests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSStringTests.c; sourceTree = "<group>"; };
 		44327CFB1B1515E7006BAEED /* DSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSStringTests.h; sourceTree = "<group>"; };
+		443765221B4AC9E50020B3A8 /* DLSObjCHomework */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DLSObjCHomework; sourceTree = BUILT_PRODUCTS_DIR; };
+		443765241B4AC9E50020B3A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4437652B1B4ACAF50020B3A8 /* DLSSyntax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSSyntax.h; sourceTree = "<group>"; };
+		4437652C1B4ACAF50020B3A8 /* DLSSyntax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSSyntax.m; sourceTree = "<group>"; };
 		449DC5C71B01248D00F162C2 /* DSStructuresTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSStructuresTest.c; sourceTree = "<group>"; };
 		449DC5C81B01248D00F162C2 /* DSStructuresTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSStructuresTest.h; sourceTree = "<group>"; };
 		44D002D41B0A679B00DD1187 /* DSHuman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHuman; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +170,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4437651F1B4AC9E50020B3A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		44D002D11B0A679B00DD1187 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +208,7 @@
 				44D47D7C1AFF901C00AA5792 /* DSHomeWork2 */,
 				44D47D901AFFAFC000AA5792 /* DSHomeWork3 */,
 				44D002D51B0A679B00DD1187 /* DSHuman */,
+				443765231B4AC9E50020B3A8 /* DLSObjCHomework */,
 				440BA2B21AFA808500790A82 /* Tests */,
 				440BA2A81AFA7B8600790A82 /* Products */,
 			);
@@ -198,6 +221,7 @@
 				44D47D7B1AFF901C00AA5792 /* DSHomeWork2 */,
 				44D47D8F1AFFAFC000AA5792 /* DSHomeWork3 */,
 				44D002D41B0A679B00DD1187 /* DSHuman */,
+				443765221B4AC9E50020B3A8 /* DLSObjCHomework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -306,6 +330,32 @@
 				44327CFB1B1515E7006BAEED /* DSStringTests.h */,
 			);
 			path = DSStringTests;
+			sourceTree = "<group>";
+		};
+		443765231B4AC9E50020B3A8 /* DLSObjCHomework */ = {
+			isa = PBXGroup;
+			children = (
+				443765291B4ACA1A0020B3A8 /* Source */,
+			);
+			path = DLSObjCHomework;
+			sourceTree = "<group>";
+		};
+		443765291B4ACA1A0020B3A8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4437652A1B4ACA9F0020B3A8 /* DLSSyntax */,
+				443765241B4AC9E50020B3A8 /* main.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4437652A1B4ACA9F0020B3A8 /* DLSSyntax */ = {
+			isa = PBXGroup;
+			children = (
+				4437652B1B4ACAF50020B3A8 /* DLSSyntax.h */,
+				4437652C1B4ACAF50020B3A8 /* DLSSyntax.m */,
+			);
+			path = DLSSyntax;
 			sourceTree = "<group>";
 		};
 		449DC5C61B01244D00F162C2 /* DSStructuresTest */ = {
@@ -567,6 +617,23 @@
 			productReference = 440BA2A71AFA7B8600790A82 /* DSHomeWork */;
 			productType = "com.apple.product-type.tool";
 		};
+		443765211B4AC9E50020B3A8 /* DLSObjCHomework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 443765261B4AC9E50020B3A8 /* Build configuration list for PBXNativeTarget "DLSObjCHomework" */;
+			buildPhases = (
+				4437651E1B4AC9E50020B3A8 /* Sources */,
+				4437651F1B4AC9E50020B3A8 /* Frameworks */,
+				443765201B4AC9E50020B3A8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLSObjCHomework;
+			productName = DLSObjCHomework;
+			productReference = 443765221B4AC9E50020B3A8 /* DLSObjCHomework */;
+			productType = "com.apple.product-type.tool";
+		};
 		44D002D31B0A679B00DD1187 /* DSHuman */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44D002D81B0A679B00DD1187 /* Build configuration list for PBXNativeTarget "DSHuman" */;
@@ -630,6 +697,9 @@
 					440BA2A61AFA7B8600790A82 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
+					443765211B4AC9E50020B3A8 = {
+						CreatedOnToolsVersion = 6.4;
+					};
 					44D002D31B0A679B00DD1187 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
@@ -657,6 +727,7 @@
 				44D47D7A1AFF901C00AA5792 /* DSHomeWork2 */,
 				44D47D8E1AFFAFC000AA5792 /* DSHomeWork3 */,
 				44D002D31B0A679B00DD1187 /* DSHuman */,
+				443765211B4AC9E50020B3A8 /* DLSObjCHomework */,
 			);
 		};
 /* End PBXProject section */
@@ -671,6 +742,15 @@
 				440BA2B41AFA80DE00790A82 /* main.c in Sources */,
 				44D0BCB81B3A885200EE394F /* DSMacros.c in Sources */,
 				44D47D761AFF7FA400AA5792 /* DSParentsOutput.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4437651E1B4AC9E50020B3A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4437652D1B4ACAF50020B3A8 /* DLSSyntax.m in Sources */,
+				443765251B4AC9E50020B3A8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,6 +897,24 @@
 			};
 			name = Release;
 		};
+		443765271B4AC9E50020B3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		443765281B4AC9E50020B3A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		44D002D91B0A679B00DD1187 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -891,6 +989,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		443765261B4AC9E50020B3A8 /* Build configuration list for PBXNativeTarget "DLSObjCHomework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				443765271B4AC9E50020B3A8 /* Debug */,
+				443765281B4AC9E50020B3A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		44D002D81B0A679B00DD1187 /* Build configuration list for PBXNativeTarget "DSHuman" */ = {
 			isa = XCConfigurationList;
