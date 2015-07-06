@@ -1,5 +1,5 @@
 //
-//  DLSSyntax.h
+//  DLSHumanTests.m
 //  DSHomeWork
 //
 //  Created by Denis Surzhan on 06.07.15.
@@ -7,7 +7,3 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface DLSSyntax : NSObject
-
-@end

@@ -17,7 +17,8 @@
 		44327CF81B1515BB006BAEED /* DSArrayTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CF61B1515BB006BAEED /* DSArrayTests.c */; };
 		44327CFC1B1515E7006BAEED /* DSStringTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CFA1B1515E7006BAEED /* DSStringTests.c */; };
 		443765251B4AC9E50020B3A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 443765241B4AC9E50020B3A8 /* main.m */; };
-		4437652D1B4ACAF50020B3A8 /* DLSSyntax.m in Sources */ = {isa = PBXBuildFile; fileRef = 4437652C1B4ACAF50020B3A8 /* DLSSyntax.m */; };
+		443765311B4ACDF90020B3A8 /* DLSHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = 443765301B4ACDF90020B3A8 /* DLSHuman.m */; };
+		443765351B4AE2A10020B3A8 /* DLSHumanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 443765341B4AE2A10020B3A8 /* DLSHumanTests.m */; };
 		449DC5CA1B01248D00F162C2 /* DSStructuresTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 449DC5C71B01248D00F162C2 /* DSStructuresTest.c */; };
 		44D002D71B0A679B00DD1187 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002D61B0A679B00DD1187 /* main.c */; };
 		44D002DF1B0A688500DD1187 /* DSHuman.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002DD1B0A688400DD1187 /* DSHuman.c */; };
@@ -113,8 +114,9 @@
 		44327CFB1B1515E7006BAEED /* DSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSStringTests.h; sourceTree = "<group>"; };
 		443765221B4AC9E50020B3A8 /* DLSObjCHomework */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DLSObjCHomework; sourceTree = BUILT_PRODUCTS_DIR; };
 		443765241B4AC9E50020B3A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4437652B1B4ACAF50020B3A8 /* DLSSyntax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSSyntax.h; sourceTree = "<group>"; };
-		4437652C1B4ACAF50020B3A8 /* DLSSyntax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSSyntax.m; sourceTree = "<group>"; };
+		4437652F1B4ACDF90020B3A8 /* DLSHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSHuman.h; sourceTree = "<group>"; };
+		443765301B4ACDF90020B3A8 /* DLSHuman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSHuman.m; sourceTree = "<group>"; };
+		443765341B4AE2A10020B3A8 /* DLSHumanTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSHumanTests.m; sourceTree = "<group>"; };
 		449DC5C71B01248D00F162C2 /* DSStructuresTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSStructuresTest.c; sourceTree = "<group>"; };
 		449DC5C81B01248D00F162C2 /* DSStructuresTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSStructuresTest.h; sourceTree = "<group>"; };
 		44D002D41B0A679B00DD1187 /* DSHuman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHuman; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -343,19 +345,36 @@
 		443765291B4ACA1A0020B3A8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4437652A1B4ACA9F0020B3A8 /* DLSSyntax */,
+				443765321B4ADB110020B3A8 /* Tests */,
+				4437652E1B4ACDCE0020B3A8 /* DLSHuman */,
 				443765241B4AC9E50020B3A8 /* main.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		4437652A1B4ACA9F0020B3A8 /* DLSSyntax */ = {
+		4437652E1B4ACDCE0020B3A8 /* DLSHuman */ = {
 			isa = PBXGroup;
 			children = (
-				4437652B1B4ACAF50020B3A8 /* DLSSyntax.h */,
-				4437652C1B4ACAF50020B3A8 /* DLSSyntax.m */,
+				4437652F1B4ACDF90020B3A8 /* DLSHuman.h */,
+				443765301B4ACDF90020B3A8 /* DLSHuman.m */,
 			);
-			path = DLSSyntax;
+			path = DLSHuman;
+			sourceTree = "<group>";
+		};
+		443765321B4ADB110020B3A8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				443765331B4AE2660020B3A8 /* DLSHumanTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		443765331B4AE2660020B3A8 /* DLSHumanTests */ = {
+			isa = PBXGroup;
+			children = (
+				443765341B4AE2A10020B3A8 /* DLSHumanTests.m */,
+			);
+			path = DLSHumanTests;
 			sourceTree = "<group>";
 		};
 		449DC5C61B01244D00F162C2 /* DSStructuresTest */ = {
@@ -749,8 +768,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4437652D1B4ACAF50020B3A8 /* DLSSyntax.m in Sources */,
+				443765351B4AE2A10020B3A8 /* DLSHumanTests.m in Sources */,
 				443765251B4AC9E50020B3A8 /* main.m in Sources */,
+				443765311B4ACDF90020B3A8 /* DLSHuman.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -900,6 +920,7 @@
 		443765271B4AC9E50020B3A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -911,6 +932,7 @@
 		443765281B4AC9E50020B3A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
