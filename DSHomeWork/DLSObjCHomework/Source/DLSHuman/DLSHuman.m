@@ -8,7 +8,15 @@
 
 #import "DLSHuman.h"
 
+@interface DLSHuman ()
+
+@property (nonatomic, retain) NSMutableArray *mutableChildren;
+
+@end
+
 @implementation DLSHuman
+
+@dynamic children;
 
 #pragma mark -
 #pragma mark Class Methods
@@ -17,7 +25,8 @@
 #pragma mark Initializations and Deallocations
 
 - (void)dealloc {
-    self->_name = nil;
+    self.name = nil;
+    self.mutableChildren = nil;
     
     [super dealloc];
 }
@@ -28,18 +37,25 @@
 #pragma mark -
 #pragma mark Public
 
-- (void)humanSayHello {
+- (void)sayHello {
     NSLog(@"Hello!");
 }
 
-- (void)humanFight {
+- (void)fight {
     NSLog(@"I fight");
 }
 
-- (void)humanBirthChild {
+- (void)birthChild {
     NSLog(@"I gave birth to children");
 }
 
+- (void)addChild:(DLSHuman *)child {
+    [self.mutableChildren addObject:child];
+}
+
+- (void)removeChild:(DLSHuman *)child {
+    [self.mutableChildren removeObject:child];
+}
 
 #pragma mark -
 #pragma mark Private
