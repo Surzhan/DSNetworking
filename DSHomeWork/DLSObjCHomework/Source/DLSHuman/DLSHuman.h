@@ -44,16 +44,18 @@ typedef enum DLSHumanGender {
 
 @interface DLSHuman : NSObject
 
-@property (nonatomic, copy, readwrite)      NSString    *name;
-@property (nonatomic, retain, readonly)    NSArray     *children;
-@property (nonatomic, assign, readwrite)    DLSHumanGender gender;
-@property (nonatomic, assign, readwrite)    uint16_t age;
-@property (nonatomic, assign, readwrite)    float weight;
+@property (nonatomic, copy)                 NSString        *name;
+@property (nonatomic, copy, readonly)       NSArray         *children;
+@property (nonatomic, assign)               DLSHumanGender  gender;
+@property (nonatomic, assign)               NSUInteger        age;
+@property (nonatomic, assign)               float           weight;
 
+- (instancetype)initWithName:(NSString *)name
+                         age:(NSUInteger)age;
 - (void)sayHello;
-- (void)fight;
-- (void)birthChild;
 - (void)addChild:(DLSHuman *)child;
 - (void)removeChild:(DLSHuman *)child;
+- (id)performGenderSpecificOperation;
+
 
 @end

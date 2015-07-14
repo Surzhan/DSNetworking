@@ -8,6 +8,8 @@
 
 #import "DLSHuman.h"
 
+static const NSString *const kSayHello = @"Hello!";
+
 @interface DLSHuman ()
 
 @property (nonatomic, retain) NSMutableArray *mutableChildren;
@@ -31,22 +33,29 @@
     [super dealloc];
 }
 
+- (instancetype)initWithName:(NSString *)name
+                         age:(NSUInteger)age
+{
+    self = [super init];
+    if (self) {
+        self.name = name;
+        self.age = age;
+    }
+    
+    return self;
+}
+
 #pragma mark -
 #pragma mark Accessors
+
+//- (NSArray *)children {
+//    return [[self.mutableChildren copy] autorelease];
 
 #pragma mark -
 #pragma mark Public
 
 - (void)sayHello {
-    NSLog(@"Hello!");
-}
-
-- (void)fight {
-    NSLog(@"I fight");
-}
-
-- (void)birthChild {
-    NSLog(@"I gave birth to children");
+    NSLog(kSayHello);
 }
 
 - (void)addChild:(DLSHuman *)child {
@@ -55,6 +64,11 @@
 
 - (void)removeChild:(DLSHuman *)child {
     [self.mutableChildren removeObject:child];
+}
+
+- (id)performGenderSpecificOperation {
+    
+    return nil;
 }
 
 #pragma mark -

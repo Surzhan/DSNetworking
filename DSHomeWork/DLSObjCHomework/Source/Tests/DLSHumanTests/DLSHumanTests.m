@@ -10,4 +10,8 @@
 
 @implementation DLSHumanTests
 
++ (void)testDLSHuman {
+    
+}
+
 @end

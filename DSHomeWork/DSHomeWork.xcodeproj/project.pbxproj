@@ -18,6 +18,11 @@
 		44327CFC1B1515E7006BAEED /* DSStringTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CFA1B1515E7006BAEED /* DSStringTests.c */; };
 		443765251B4AC9E50020B3A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 443765241B4AC9E50020B3A8 /* main.m */; };
 		443765311B4ACDF90020B3A8 /* DLSHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = 443765301B4ACDF90020B3A8 /* DLSHuman.m */; };
+		446046681B54E1B50081DCCB /* NSObject+DLSObjectExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 446046671B54E1B50081DCCB /* NSObject+DLSObjectExtensions.m */; };
+		4460466D1B54EB9E0081DCCB /* DLSFemaleHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = 4460466C1B54EB9E0081DCCB /* DLSFemaleHuman.m */; };
+		446046701B54EBB80081DCCB /* DLSMaleHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = 4460466F1B54EBB80081DCCB /* DLSMaleHuman.m */; };
+		446046751B54F0FA0081DCCB /* DLSCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 446046741B54F0FA0081DCCB /* DLSCar.m */; };
+		446046791B54F1480081DCCB /* DLSBuilding.m in Sources */ = {isa = PBXBuildFile; fileRef = 446046781B54F1480081DCCB /* DLSBuilding.m */; };
 		449DC5CA1B01248D00F162C2 /* DSStructuresTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 449DC5C71B01248D00F162C2 /* DSStructuresTest.c */; };
 		44D002D71B0A679B00DD1187 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002D61B0A679B00DD1187 /* main.c */; };
 		44D002DF1B0A688500DD1187 /* DSHuman.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002DD1B0A688400DD1187 /* DSHuman.c */; };
@@ -116,6 +121,16 @@
 		443765241B4AC9E50020B3A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4437652F1B4ACDF90020B3A8 /* DLSHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSHuman.h; sourceTree = "<group>"; };
 		443765301B4ACDF90020B3A8 /* DLSHuman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSHuman.m; sourceTree = "<group>"; };
+		446046661B54E1B50081DCCB /* NSObject+DLSObjectExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLSObjectExtensions.h"; sourceTree = "<group>"; };
+		446046671B54E1B50081DCCB /* NSObject+DLSObjectExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLSObjectExtensions.m"; sourceTree = "<group>"; };
+		4460466B1B54EB9E0081DCCB /* DLSFemaleHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSFemaleHuman.h; sourceTree = "<group>"; };
+		4460466C1B54EB9E0081DCCB /* DLSFemaleHuman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSFemaleHuman.m; sourceTree = "<group>"; };
+		4460466E1B54EBB80081DCCB /* DLSMaleHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSMaleHuman.h; sourceTree = "<group>"; };
+		4460466F1B54EBB80081DCCB /* DLSMaleHuman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSMaleHuman.m; sourceTree = "<group>"; };
+		446046731B54F0FA0081DCCB /* DLSCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSCar.h; sourceTree = "<group>"; };
+		446046741B54F0FA0081DCCB /* DLSCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSCar.m; sourceTree = "<group>"; };
+		446046771B54F1480081DCCB /* DLSBuilding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSBuilding.h; sourceTree = "<group>"; };
+		446046781B54F1480081DCCB /* DLSBuilding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSBuilding.m; sourceTree = "<group>"; };
 		449DC5C71B01248D00F162C2 /* DSStructuresTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSStructuresTest.c; sourceTree = "<group>"; };
 		449DC5C81B01248D00F162C2 /* DSStructuresTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSStructuresTest.h; sourceTree = "<group>"; };
 		44D002D41B0A679B00DD1187 /* DSHuman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHuman; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -339,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				443765291B4ACA1A0020B3A8 /* Source */,
+				443765321B4ADB110020B3A8 /* Tests */,
 			);
 			path = DLSObjCHomework;
 			sourceTree = "<group>";
@@ -346,7 +362,10 @@
 		443765291B4ACA1A0020B3A8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				443765321B4ADB110020B3A8 /* Tests */,
+				446046711B54F0350081DCCB /* DLSCarWash */,
+				4460466A1B54EB3E0081DCCB /* DLSFemaleHuman */,
+				446046691B54EB1C0081DCCB /* DLSMaleHuman */,
+				446046641B54E12A0081DCCB /* DLSExtensions */,
 				4437652E1B4ACDCE0020B3A8 /* DLSHuman */,
 				443765241B4AC9E50020B3A8 /* main.m */,
 			);
@@ -367,7 +386,8 @@
 			children = (
 				443765331B4AE2660020B3A8 /* DLSHumanTests */,
 			);
-			path = Tests;
+			name = Tests;
+			path = Source/Tests;
 			sourceTree = "<group>";
 		};
 		443765331B4AE2660020B3A8 /* DLSHumanTests */ = {
@@ -377,6 +397,68 @@
 				44D3DDD61B4C577A008A5E54 /* DLSHumanTests.m */,
 			);
 			path = DLSHumanTests;
+			sourceTree = "<group>";
+		};
+		446046641B54E12A0081DCCB /* DLSExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				446046651B54E15E0081DCCB /* DLSObjectExtensions */,
+			);
+			path = DLSExtensions;
+			sourceTree = "<group>";
+		};
+		446046651B54E15E0081DCCB /* DLSObjectExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				446046661B54E1B50081DCCB /* NSObject+DLSObjectExtensions.h */,
+				446046671B54E1B50081DCCB /* NSObject+DLSObjectExtensions.m */,
+			);
+			path = DLSObjectExtensions;
+			sourceTree = "<group>";
+		};
+		446046691B54EB1C0081DCCB /* DLSMaleHuman */ = {
+			isa = PBXGroup;
+			children = (
+				4460466E1B54EBB80081DCCB /* DLSMaleHuman.h */,
+				4460466F1B54EBB80081DCCB /* DLSMaleHuman.m */,
+			);
+			path = DLSMaleHuman;
+			sourceTree = "<group>";
+		};
+		4460466A1B54EB3E0081DCCB /* DLSFemaleHuman */ = {
+			isa = PBXGroup;
+			children = (
+				4460466B1B54EB9E0081DCCB /* DLSFemaleHuman.h */,
+				4460466C1B54EB9E0081DCCB /* DLSFemaleHuman.m */,
+			);
+			path = DLSFemaleHuman;
+			sourceTree = "<group>";
+		};
+		446046711B54F0350081DCCB /* DLSCarWash */ = {
+			isa = PBXGroup;
+			children = (
+				446046761B54F1100081DCCB /* DLSBuilding */,
+				446046721B54F0D20081DCCB /* DLSCar */,
+			);
+			path = DLSCarWash;
+			sourceTree = "<group>";
+		};
+		446046721B54F0D20081DCCB /* DLSCar */ = {
+			isa = PBXGroup;
+			children = (
+				446046731B54F0FA0081DCCB /* DLSCar.h */,
+				446046741B54F0FA0081DCCB /* DLSCar.m */,
+			);
+			path = DLSCar;
+			sourceTree = "<group>";
+		};
+		446046761B54F1100081DCCB /* DLSBuilding */ = {
+			isa = PBXGroup;
+			children = (
+				446046771B54F1480081DCCB /* DLSBuilding.h */,
+				446046781B54F1480081DCCB /* DLSBuilding.m */,
+			);
+			path = DLSBuilding;
 			sourceTree = "<group>";
 		};
 		449DC5C61B01244D00F162C2 /* DSStructuresTest */ = {
@@ -770,8 +852,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				446046701B54EBB80081DCCB /* DLSMaleHuman.m in Sources */,
+				446046791B54F1480081DCCB /* DLSBuilding.m in Sources */,
 				44D3DDD71B4C577A008A5E54 /* DLSHumanTests.m in Sources */,
 				443765251B4AC9E50020B3A8 /* main.m in Sources */,
+				446046751B54F0FA0081DCCB /* DLSCar.m in Sources */,
+				446046681B54E1B50081DCCB /* NSObject+DLSObjectExtensions.m in Sources */,
+				4460466D1B54EB9E0081DCCB /* DLSFemaleHuman.m in Sources */,
 				443765311B4ACDF90020B3A8 /* DLSHuman.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
