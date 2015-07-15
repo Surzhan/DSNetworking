@@ -8,7 +8,13 @@
 
 #import "DLSFemaleHuman.h"
 
-static const NSString *const kBirthChild = @"I gave birth to children";
+static const NSString *const kDLSBirthChild = @"I gave birth to children";
+
+@interface DLSFemaleHuman ()
+
+- (void)birthChild;
+
+@end
 
 @implementation DLSFemaleHuman
 
@@ -26,7 +32,7 @@ static const NSString *const kBirthChild = @"I gave birth to children";
 #pragma mark Private
 
 - (void)birthChild {
-    NSLog(kBirthChild);
+    NSLog(kDLSBirthChild);
 }
 
 @end

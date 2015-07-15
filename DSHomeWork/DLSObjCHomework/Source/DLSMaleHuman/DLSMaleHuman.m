@@ -8,9 +8,15 @@
 
 #import "DLSMaleHuman.h"
 
-@implementation DLSMaleHuman
+static const NSString *const kDLSFight = @"I fight";
 
-static const NSString *const kFight = @"I fight";
+@interface DLSMaleHuman ()
+
+- (void)fight;
+
+@end
+
+@implementation DLSMaleHuman
 
 #pragma mark -
 #pragma mark Public
@@ -26,8 +32,7 @@ static const NSString *const kFight = @"I fight";
 #pragma mark Private
 
 - (void)fight {
-    NSLog(kFight);
+    NSLog(kDLSFight);
 }
-
 
 @end

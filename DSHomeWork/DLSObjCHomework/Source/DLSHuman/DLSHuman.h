@@ -37,13 +37,12 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum DLSHumanGender {
+typedef NS_ENUM(NSUInteger, DLSHumanGender) {
     kDLSHumanMale,
     kDLSHumanFemale,
-} DLSHumanGender;
+};
 
 @interface DLSHuman : NSObject
-
 @property (nonatomic, copy)                 NSString        *name;
 @property (nonatomic, copy, readonly)       NSArray         *children;
 @property (nonatomic, assign)               DLSHumanGender  gender;
@@ -53,9 +52,9 @@ typedef enum DLSHumanGender {
 - (instancetype)initWithName:(NSString *)name
                          age:(NSUInteger)age;
 - (void)sayHello;
-- (void)addChild:(DLSHuman *)child;
-- (void)removeChild:(DLSHuman *)child;
 - (id)performGenderSpecificOperation;
 
+- (void)addChild:(DLSHuman *)child;
+- (void)removeChild:(DLSHuman *)child;
 
 @end
