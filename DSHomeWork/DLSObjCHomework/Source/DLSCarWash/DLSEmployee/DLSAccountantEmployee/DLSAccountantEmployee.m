@@ -1,14 +1,14 @@
 //
-//  DLSCar.m
+//  DLSAccountantEmployee.m
 //  DSHomeWork
 //
-//  Created by Denis Surzhan on 14.07.15.
+//  Created by Denis Surzhan on 20.07.15.
 //  Copyright (c) 2015 IDAPGroupCollege. All rights reserved.
 //
 
-#import "DLSCar.h"
+#import "DLSAccountantEmployee.h"
 
-@implementation DLSCar
+@implementation DLSAccountantEmployee
 
 #pragma mark -
 #pragma mark Class Methods

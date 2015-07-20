@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+#import "DLSRoom.h"
+
 @interface DLSBuilding : NSObject
+@property (nonatomic, copy)     NSString    *name;
+@property (nonatomic, readonly) NSArray     *rooms;
+
+- (instancetype)initWithRoom:(NSArray *)rooms;
+
+- (void)addRoom:(DLSRoom *)room;
+- (void)removeRoom:(DLSRoom *)room;
 
 @end

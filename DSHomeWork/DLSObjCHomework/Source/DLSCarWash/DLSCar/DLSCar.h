@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface DLSCar : NSObject
+@property (nonatomic, assign) BOOL    dirty;
 
 @end
