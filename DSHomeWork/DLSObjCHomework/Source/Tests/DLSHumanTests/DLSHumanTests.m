@@ -14,8 +14,8 @@
 @implementation DLSHumanTests
 
 + (void)testDLSHuman {
-    NSMutableArray *creatures = [NSMutableArray arrayWithCapacity:10];
-    for (NSUInteger i = 0; i < 10; ++i) {
+    NSMutableArray *creatures = [NSMutableArray arrayWithCapacity:5];
+    for (NSUInteger i = 0; i < 5; ++i) {
         DLSHumanGender gender = (arc4random() % 2) + 1;
         DLSHuman *newHuman = [[[DLSHuman alloc] initWithGender:gender] autorelease];
         DLSHuman *child = [newHuman performGenderSpecificOperation];
@@ -27,7 +27,7 @@
         [creatures addObject:newHuman];
     }
 
-    assert(10 == creatures.count);
+    NSAssert(5 == creatures.count, @"error");
     
     for (DLSHuman *creature in creatures) {
         [creature performGenderSpecificOperation];
