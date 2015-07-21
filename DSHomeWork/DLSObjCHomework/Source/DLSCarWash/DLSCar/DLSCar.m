@@ -8,6 +8,8 @@
 
 #import "DLSCar.h"
 
+#import "DLSTransactionsWithMoney.h"
+
 @implementation DLSCar
 
 #pragma mark -

@@ -8,6 +8,8 @@
 
 #import "DLSEmployee.h"
 
+#import "DLSTransactionsWithMoney.h"
+
 @implementation DLSEmployee
 
 #pragma mark -
