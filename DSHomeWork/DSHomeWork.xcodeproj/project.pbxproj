@@ -157,6 +157,7 @@
 		446046781B54F1480081DCCB /* DLSBuilding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSBuilding.m; sourceTree = "<group>"; };
 		449DC5C71B01248D00F162C2 /* DSStructuresTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSStructuresTest.c; sourceTree = "<group>"; };
 		449DC5C81B01248D00F162C2 /* DSStructuresTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSStructuresTest.h; sourceTree = "<group>"; };
+		44A66CCD1B5D945B009468FB /* CarWashTasks */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CarWashTasks; sourceTree = "<group>"; };
 		44D002D41B0A679B00DD1187 /* DSHuman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHuman; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D002D61B0A679B00DD1187 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../main.c; sourceTree = "<group>"; };
 		44D002DD1B0A688400DD1187 /* DSHuman.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSHuman.c; sourceTree = "<group>"; };
@@ -548,6 +549,7 @@
 		446046711B54F0350081DCCB /* DLSCarWash */ = {
 			isa = PBXGroup;
 			children = (
+				44A66CCD1B5D945B009468FB /* CarWashTasks */,
 				443D2BE51B5D774E00FD8F7E /* DLSEnterprise */,
 				446046761B54F1100081DCCB /* DLSBuilding */,
 				443D2BE91B5D77C500FD8F7E /* DLSRoom */,

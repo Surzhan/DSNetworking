@@ -12,7 +12,7 @@ static const NSString *const kDLSBirthChild = @"I gave birth to children";
 
 @interface DLSFemaleHuman ()
 
-- (void)birthChild;
+- (id)birthChild;
 
 @end
 
@@ -31,8 +31,12 @@ static const NSString *const kDLSBirthChild = @"I gave birth to children";
 #pragma mark -
 #pragma mark Private
 
-- (void)birthChild {
+- (id)birthChild {
     NSLog(kDLSBirthChild);
+    
+    DLSHumanGender randomGender = (arc4random() % 2) + 1;
+    
+    return [[[DLSHuman alloc] initWithGender:randomGender] autorelease];
 }
 
 @end

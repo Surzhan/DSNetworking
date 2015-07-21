@@ -7,11 +7,17 @@
 //
 
 #import "DLSHuman.h"
+#import "DLSMaleHuman.h"
+#import "DLSFemaleHuman.h"
+
+#import "NSObject+DLSObjectExtensions.h"
 
 static const NSString *const kDLSSayHello = @"Hello!";
 
 @interface DLSHuman ()
 @property (nonatomic, retain) NSMutableArray *mutableChildren;
+
++ (Class)humanClassForGender:(DLSHumanGender)gender;
 
 @end
 
@@ -21,6 +27,10 @@ static const NSString *const kDLSSayHello = @"Hello!";
 
 #pragma mark -
 #pragma mark Class Methods
+
++ (Class)humanClassForGender:(DLSHumanGender)gender {
+    return kDLSHumanMale == gender ? [DLSMaleHuman class] : [DLSFemaleHuman class];
+}
 
 #pragma mark -
 #pragma mark Initializations and Deallocations
@@ -32,16 +42,13 @@ static const NSString *const kDLSSayHello = @"Hello!";
     [super dealloc];
 }
 
-- (instancetype)initWithName:(NSString *)name
-                         age:(NSUInteger)age
-{
+- (instancetype)initWithGender:(DLSHumanGender)gender {
     self = [super init];
-    if (self) {
-        self.name = name;
-        self.age = age;
-    }
     
-    return self;
+    Class humanClass = [[self class] humanClassForGender:gender];
+    [self release];
+    
+    return [[humanClass alloc] init];
 }
 
 #pragma mark -
@@ -68,17 +75,13 @@ static const NSString *const kDLSSayHello = @"Hello!";
 }
 
 - (void)addChild:(DLSHuman *)child {
+    if (nil != child && (NO == [self.mutableChildren containsObject:child])) {
     [self.mutableChildren addObject:child];
+    }
 }
 
 - (void)removeChild:(DLSHuman *)child {
     [self.mutableChildren removeObject:child];
 }
-
-#pragma mark -
-#pragma mark Private
-
-#pragma mark -
-#pragma mark Protocol
 
 @end

@@ -13,6 +13,7 @@
 @interface DLSBuilding : NSObject
 @property (nonatomic, copy)     NSString    *name;
 @property (nonatomic, readonly) NSArray     *rooms;
+@property (nonatomic, assign)   NSInteger   roomsCapacity;
 
 - (instancetype)initWithRoom:(NSArray *)rooms;
 

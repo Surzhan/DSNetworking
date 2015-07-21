@@ -10,5 +10,6 @@
 
 @interface DLSRoom : NSObject
 @property (nonatomic, retain)   NSArray     *employees;
+@property (nonatomic, assign)   NSUInteger  employeesCapacity;
 
 @end

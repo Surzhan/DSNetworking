@@ -18,6 +18,7 @@
 
 - (void)dealloc {
     self.name = nil;
+    self.wallet = nil;
     
     [super dealloc];
 }

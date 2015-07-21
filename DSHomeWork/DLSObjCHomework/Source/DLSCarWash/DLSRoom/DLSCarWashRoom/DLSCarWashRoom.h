@@ -9,6 +9,7 @@
 #import "DLSRoom.h"
 
 @interface DLSCarWashRoom : DLSRoom
-@property (nonatomic, retain)   NSArray *cars;
+@property (nonatomic, retain)   NSArray     *cars;
+@property (nonatomic, assign)   NSUInteger  carsCapacity;
 
 @end

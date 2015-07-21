@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface DLSCar : NSObject
-@property (nonatomic, assign) BOOL    dirty;
+@property (nonatomic, assign)   BOOL            dirty;
+@property (nonatomic, assign)   NSDecimalNumber *wallet;
 
 @end

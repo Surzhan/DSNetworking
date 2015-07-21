@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface DLSEmployee : NSObject
-@property (nonatomic, copy)     NSString    *name;
-@property (nonatomic, assign)   BOOL        status; // YES == busy or NO == free
+@property (nonatomic, copy)     NSString        *name;
+@property (nonatomic, assign)   NSDecimalNumber *wallet;
+@property (nonatomic, assign)   NSUInteger      experience;
+@property (nonatomic, assign)   BOOL            status; // YES == busy or NO == free
 
 - (id)performSpecificOperation;
 

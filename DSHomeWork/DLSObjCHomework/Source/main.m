@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+#import "DLSHumanTests.h"
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-       
+        [DLSHumanTests testDLSHuman];
     }
     
     return 0;

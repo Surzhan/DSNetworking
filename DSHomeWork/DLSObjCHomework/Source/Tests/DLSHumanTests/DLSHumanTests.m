@@ -7,11 +7,31 @@
 //
 
 #import "DLSHumanTests.h"
+#import "DLSHuman.h"
+#import "DLSMaleHuman.h"
+#import "DLSFemaleHuman.h"
 
 @implementation DLSHumanTests
 
 + (void)testDLSHuman {
+    NSMutableArray *creatures = [NSMutableArray arrayWithCapacity:10];
+    for (NSUInteger i = 0; i < 10; ++i) {
+        DLSHumanGender gender = (arc4random() % 2) + 1;
+        DLSHuman *newHuman = [[[DLSHuman alloc] initWithGender:gender] autorelease];
+        DLSHuman *child = [newHuman performGenderSpecificOperation];
     
+        if (child != nil) {
+            [newHuman addChild:child];
+        }
+        
+        [creatures addObject:newHuman];
+    }
+
+    assert(10 == creatures.count);
+    
+    for (DLSHuman *creature in creatures) {
+        [creature performGenderSpecificOperation];
+    }
 }
 
 @end
