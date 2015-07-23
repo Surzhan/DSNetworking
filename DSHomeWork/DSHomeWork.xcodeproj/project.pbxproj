@@ -10,6 +10,8 @@
 		440BA2B41AFA80DE00790A82 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2B31AFA80DE00790A82 /* main.c */; };
 		440BA2B91AFA81BD00790A82 /* DSPrintSizeOfType.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2B71AFA81BD00790A82 /* DSPrintSizeOfType.c */; };
 		440BA2BC1AFA81D500790A82 /* DSParentsSelect.c in Sources */ = {isa = PBXBuildFile; fileRef = 440BA2BA1AFA81D500790A82 /* DSParentsSelect.c */; };
+		441F8A2A1B60B83900E967E2 /* DLSCarWashKiwiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 441F8A291B60B83900E967E2 /* DLSCarWashKiwiTests.m */; };
+		441F8A2B1B60B83900E967E2 /* DLSCarWashKiwiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 441F8A291B60B83900E967E2 /* DLSCarWashKiwiTests.m */; };
 		44327CE81B1512F6006BAEED /* DSBitOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CE61B1512F6006BAEED /* DSBitOutput.c */; };
 		44327CEC1B151439006BAEED /* DSBitOutputTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CEA1B151439006BAEED /* DSBitOutputTest.c */; };
 		44327CF01B151551006BAEED /* DSArray.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CEE1B151551006BAEED /* DSArray.c */; };
@@ -48,7 +50,6 @@
 		44D0BCB91B3A885200EE394F /* DSMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BCB71B3A885200EE394F /* DSMacros.c */; };
 		44D0BCBA1B3A885200EE394F /* DSMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BCB71B3A885200EE394F /* DSMacros.c */; };
 		44D0BCBB1B3A885200EE394F /* DSMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BCB71B3A885200EE394F /* DSMacros.c */; };
-		44D3DDD71B4C577A008A5E54 /* DLSHumanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D3DDD61B4C577A008A5E54 /* DLSHumanTests.m */; };
 		44D47D761AFF7FA400AA5792 /* DSParentsOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */; };
 		44D47D841AFF90A200AA5792 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D831AFF90A200AA5792 /* main.c */; };
 		44D47D8A1AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D881AFF980400AA5792 /* DSPrimitiveTypeOutputTest.c */; };
@@ -56,6 +57,10 @@
 		44D47D9C1AFFB15100AA5792 /* DSCreateStructure.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D47D9A1AFFB15100AA5792 /* DSCreateStructure.c */; };
 		44D5681D1B0C67BD00F171CC /* DSObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D5681B1B0C67BD00F171CC /* DSObject.c */; };
 		44D568211B0C68C900F171CC /* DSHumanBDDTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D5681F1B0C68C900F171CC /* DSHumanBDDTest.c */; };
+		44DF7C271B60A5C100D2B084 /* DLSHumanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DF7C261B60A5C100D2B084 /* DLSHumanTests.m */; };
+		44DF7C401B60A7B500D2B084 /* DLSCarWashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DF7C3F1B60A7B500D2B084 /* DLSCarWashTests.m */; };
+		44DF7C441B60A81000D2B084 /* DLSCarWashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DF7C3F1B60A7B500D2B084 /* DLSCarWashTests.m */; };
+		DD86AEA016E79DE931B5A7D4 /* libPods-DLSCarWashTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6746C62BC733A9E99BC12438 /* libPods-DLSCarWashTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -107,12 +112,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		22312E38E5AC2E023B0B1E96 /* Pods-DLSCarWashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLSCarWashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLSCarWashTests/Pods-DLSCarWashTests.release.xcconfig"; sourceTree = "<group>"; };
 		440BA2A71AFA7B8600790A82 /* DSHomeWork */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHomeWork; sourceTree = BUILT_PRODUCTS_DIR; };
 		440BA2B31AFA80DE00790A82 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		440BA2B71AFA81BD00790A82 /* DSPrintSizeOfType.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSPrintSizeOfType.c; sourceTree = "<group>"; };
 		440BA2B81AFA81BD00790A82 /* DSPrintSizeOfType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPrintSizeOfType.h; sourceTree = "<group>"; };
 		440BA2BA1AFA81D500790A82 /* DSParentsSelect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsSelect.c; sourceTree = "<group>"; };
 		440BA2BB1AFA81D500790A82 /* DSParentsSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsSelect.h; sourceTree = "<group>"; };
+		441F8A291B60B83900E967E2 /* DLSCarWashKiwiTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSCarWashKiwiTests.m; sourceTree = "<group>"; };
 		44327CE61B1512F6006BAEED /* DSBitOutput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSBitOutput.c; sourceTree = "<group>"; };
 		44327CE71B1512F6006BAEED /* DSBitOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSBitOutput.h; sourceTree = "<group>"; };
 		44327CEA1B151439006BAEED /* DSBitOutputTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSBitOutputTest.c; sourceTree = "<group>"; };
@@ -186,8 +193,6 @@
 		44D0BCB71B3A885200EE394F /* DSMacros.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSMacros.c; sourceTree = "<group>"; };
 		44D22FBA1B1E0C7E000B9150 /* DSMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSMacros.h; sourceTree = "<group>"; };
 		44D33B6C1B40917700D54B65 /* DSLinkedListPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLinkedListPrivate.h; sourceTree = "<group>"; };
-		44D3DDD51B4C577A008A5E54 /* DLSHumanTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSHumanTests.h; sourceTree = "<group>"; };
-		44D3DDD61B4C577A008A5E54 /* DLSHumanTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSHumanTests.m; sourceTree = "<group>"; };
 		44D47D741AFF7FA400AA5792 /* DSParentsOutput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSParentsOutput.c; sourceTree = "<group>"; };
 		44D47D751AFF7FA400AA5792 /* DSParentsOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSParentsOutput.h; sourceTree = "<group>"; };
 		44D47D7B1AFF901C00AA5792 /* DSHomeWork2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHomeWork2; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +209,13 @@
 		44D5681F1B0C68C900F171CC /* DSHumanBDDTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSHumanBDDTest.c; sourceTree = "<group>"; };
 		44D568201B0C68C900F171CC /* DSHumanBDDTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHumanBDDTest.h; sourceTree = "<group>"; };
 		44D6BE511B41EF1300B83AAE /* DSLinkedListEnumeratorPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLinkedListEnumeratorPrivate.h; sourceTree = "<group>"; };
+		44DF7C251B60A5C100D2B084 /* DLSHumanTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSHumanTests.h; sourceTree = "<group>"; };
+		44DF7C261B60A5C100D2B084 /* DLSHumanTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSHumanTests.m; sourceTree = "<group>"; };
+		44DF7C3B1B60A7B500D2B084 /* DLSCarWashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLSCarWashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DF7C3E1B60A7B500D2B084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44DF7C3F1B60A7B500D2B084 /* DLSCarWashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLSCarWashTests.m; sourceTree = "<group>"; };
+		6746C62BC733A9E99BC12438 /* libPods-DLSCarWashTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLSCarWashTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E2C7461C48B12A3550A1C56 /* Pods-DLSCarWashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLSCarWashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLSCarWashTests/Pods-DLSCarWashTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,19 +254,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44DF7C381B60A7B500D2B084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD86AEA016E79DE931B5A7D4 /* libPods-DLSCarWashTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D3672D28B074C79142834AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6746C62BC733A9E99BC12438 /* libPods-DLSCarWashTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		440BA29E1AFA7B8600790A82 = {
 			isa = PBXGroup;
 			children = (
-				440BA2A91AFA7B8600790A82 /* DSHomeWork */,
-				44D47D7C1AFF901C00AA5792 /* DSHomeWork2 */,
-				44D47D901AFFAFC000AA5792 /* DSHomeWork3 */,
-				44D002D51B0A679B00DD1187 /* DSHuman */,
+				44D05F391B60A1A000897451 /* DLSCHomework */,
 				443765231B4AC9E50020B3A8 /* DLSObjCHomework */,
-				440BA2B21AFA808500790A82 /* Tests */,
+				44DF7C3C1B60A7B500D2B084 /* DLSCarWashTests */,
 				440BA2A81AFA7B8600790A82 /* Products */,
+				A0FF49924326FDE127E2E610 /* Pods */,
+				0D3672D28B074C79142834AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,6 +293,7 @@
 				44D47D8F1AFFAFC000AA5792 /* DSHomeWork3 */,
 				44D002D41B0A679B00DD1187 /* DSHuman */,
 				443765221B4AC9E50020B3A8 /* DLSObjCHomework */,
+				44DF7C3B1B60A7B500D2B084 /* DLSCarWashTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -410,20 +438,10 @@
 		443765321B4ADB110020B3A8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				443D2C051B5D7C1700FD8F7E /* DLSCarWashTests */,
-				443765331B4AE2660020B3A8 /* DLSHumanTests */,
+				44DF7C241B60A5C100D2B084 /* DLSHumanTests */,
 			);
 			name = Tests;
 			path = Source/Tests;
-			sourceTree = "<group>";
-		};
-		443765331B4AE2660020B3A8 /* DLSHumanTests */ = {
-			isa = PBXGroup;
-			children = (
-				44D3DDD51B4C577A008A5E54 /* DLSHumanTests.h */,
-				44D3DDD61B4C577A008A5E54 /* DLSHumanTests.m */,
-			);
-			path = DLSHumanTests;
 			sourceTree = "<group>";
 		};
 		443D2BE51B5D774E00FD8F7E /* DLSEnterprise */ = {
@@ -501,13 +519,6 @@
 				443D2C031B5D7B5700FD8F7E /* DLSDirectorEmployee.m */,
 			);
 			path = DLSDirectorEmployee;
-			sourceTree = "<group>";
-		};
-		443D2C051B5D7C1700FD8F7E /* DLSCarWashTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DLSCarWashTests;
 			sourceTree = "<group>";
 		};
 		446046641B54E12A0081DCCB /* DLSExtensions */ = {
@@ -618,6 +629,18 @@
 			);
 			name = DSHuman;
 			path = DSHumanStructure;
+			sourceTree = "<group>";
+		};
+		44D05F391B60A1A000897451 /* DLSCHomework */ = {
+			isa = PBXGroup;
+			children = (
+				440BA2A91AFA7B8600790A82 /* DSHomeWork */,
+				44D47D7C1AFF901C00AA5792 /* DSHomeWork2 */,
+				44D47D901AFFAFC000AA5792 /* DSHomeWork3 */,
+				44D002D51B0A679B00DD1187 /* DSHuman */,
+				440BA2B21AFA808500790A82 /* Tests */,
+			);
+			name = DLSCHomework;
 			sourceTree = "<group>";
 		};
 		44D083411B3935FC008A6C6F /* DSAutoreleasingStack */ = {
@@ -745,7 +768,7 @@
 				44D47D821AFF903000AA5792 /* Source */,
 			);
 			path = DSHomeWork2;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		44D47D821AFF903000AA5792 /* Source */ = {
 			isa = PBXGroup;
@@ -816,6 +839,43 @@
 				44D568201B0C68C900F171CC /* DSHumanBDDTest.h */,
 			);
 			path = DSHumanTests;
+			sourceTree = "<group>";
+		};
+		44DF7C241B60A5C100D2B084 /* DLSHumanTests */ = {
+			isa = PBXGroup;
+			children = (
+				44DF7C251B60A5C100D2B084 /* DLSHumanTests.h */,
+				44DF7C261B60A5C100D2B084 /* DLSHumanTests.m */,
+			);
+			name = DLSHumanTests;
+			path = DLSObjCHomework/Tests/DLSHumanTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		44DF7C3C1B60A7B500D2B084 /* DLSCarWashTests */ = {
+			isa = PBXGroup;
+			children = (
+				44DF7C3F1B60A7B500D2B084 /* DLSCarWashTests.m */,
+				441F8A291B60B83900E967E2 /* DLSCarWashKiwiTests.m */,
+				44DF7C3D1B60A7B500D2B084 /* Supporting Files */,
+			);
+			path = DLSCarWashTests;
+			sourceTree = "<group>";
+		};
+		44DF7C3D1B60A7B500D2B084 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44DF7C3E1B60A7B500D2B084 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0FF49924326FDE127E2E610 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E2C7461C48B12A3550A1C56 /* Pods-DLSCarWashTests.debug.xcconfig */,
+				22312E38E5AC2E023B0B1E96 /* Pods-DLSCarWashTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -906,6 +966,25 @@
 			productReference = 44D47D8F1AFFAFC000AA5792 /* DSHomeWork3 */;
 			productType = "com.apple.product-type.tool";
 		};
+		44DF7C3A1B60A7B500D2B084 /* DLSCarWashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44DF7C411B60A7B500D2B084 /* Build configuration list for PBXNativeTarget "DLSCarWashTests" */;
+			buildPhases = (
+				C6F0EB2ECCE976C443D54872 /* Check Pods Manifest.lock */,
+				44DF7C371B60A7B500D2B084 /* Sources */,
+				44DF7C381B60A7B500D2B084 /* Frameworks */,
+				44DF7C391B60A7B500D2B084 /* Resources */,
+				69DB29AB9865B7AA207975AC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLSCarWashTests;
+			productName = DLSCarWashTests;
+			productReference = 44DF7C3B1B60A7B500D2B084 /* DLSCarWashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -930,6 +1009,9 @@
 					44D47D8E1AFFAFC000AA5792 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
+					44DF7C3A1B60A7B500D2B084 = {
+						CreatedOnToolsVersion = 6.4;
+					};
 				};
 			};
 			buildConfigurationList = 440BA2A21AFA7B8600790A82 /* Build configuration list for PBXProject "DSHomeWork" */;
@@ -949,9 +1031,53 @@
 				44D47D8E1AFFAFC000AA5792 /* DSHomeWork3 */,
 				44D002D31B0A679B00DD1187 /* DSHuman */,
 				443765211B4AC9E50020B3A8 /* DLSObjCHomework */,
+				44DF7C3A1B60A7B500D2B084 /* DLSCarWashTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44DF7C391B60A7B500D2B084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69DB29AB9865B7AA207975AC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DLSCarWashTests/Pods-DLSCarWashTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6F0EB2ECCE976C443D54872 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		440BA2A31AFA7B8600790A82 /* Sources */ = {
@@ -971,18 +1097,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				443D2BFC1B5D7AA200FD8F7E /* DLSCarWasherEmployee.m in Sources */,
+				441F8A2A1B60B83900E967E2 /* DLSCarWashKiwiTests.m in Sources */,
 				446046701B54EBB80081DCCB /* DLSMaleHuman.m in Sources */,
 				446046791B54F1480081DCCB /* DLSBuilding.m in Sources */,
 				443D2BE81B5D778B00FD8F7E /* DLSEnterprise.m in Sources */,
 				443D2BF81B5D7A0B00FD8F7E /* DLSEmployee.m in Sources */,
-				44D3DDD71B4C577A008A5E54 /* DLSHumanTests.m in Sources */,
 				443D2BF41B5D798200FD8F7E /* DLSCarWashRoom.m in Sources */,
 				443765251B4AC9E50020B3A8 /* main.m in Sources */,
 				446046751B54F0FA0081DCCB /* DLSCar.m in Sources */,
 				443D2BEC1B5D77F700FD8F7E /* DLSRoom.m in Sources */,
+				44DF7C271B60A5C100D2B084 /* DLSHumanTests.m in Sources */,
 				443D2C001B5D7B0500FD8F7E /* DLSAccountantEmployee.m in Sources */,
 				446046681B54E1B50081DCCB /* NSObject+DLSObjectExtensions.m in Sources */,
 				443D2BF01B5D794500FD8F7E /* DLSOfficeRoom.m in Sources */,
+				44DF7C441B60A81000D2B084 /* DLSCarWashTests.m in Sources */,
 				4460466D1B54EB9E0081DCCB /* DLSFemaleHuman.m in Sources */,
 				443765311B4ACDF90020B3A8 /* DLSHuman.m in Sources */,
 				443D2C041B5D7B5700FD8F7E /* DLSDirectorEmployee.m in Sources */,
@@ -1035,6 +1163,15 @@
 				44327CEC1B151439006BAEED /* DSBitOutputTest.c in Sources */,
 				44D47D981AFFB02300AA5792 /* main.c in Sources */,
 				44D0BCBA1B3A885200EE394F /* DSMacros.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DF7C371B60A7B500D2B084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DF7C401B60A7B500D2B084 /* DLSCarWashTests.m in Sources */,
+				441F8A2B1B60B83900E967E2 /* DLSCarWashKiwiTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1206,6 +1343,40 @@
 			};
 			name = Release;
 		};
+		44DF7C421B60A7B500D2B084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E2C7461C48B12A3550A1C56 /* Pods-DLSCarWashTests.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DLSCarWashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		44DF7C431B60A7B500D2B084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22312E38E5AC2E023B0B1E96 /* Pods-DLSCarWashTests.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DLSCarWashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1259,6 +1430,15 @@
 			buildConfigurations = (
 				44D47D931AFFAFC000AA5792 /* Debug */,
 				44D47D941AFFAFC000AA5792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44DF7C411B60A7B500D2B084 /* Build configuration list for PBXNativeTarget "DLSCarWashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44DF7C421B60A7B500D2B084 /* Debug */,
+				44DF7C431B60A7B500D2B084 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
