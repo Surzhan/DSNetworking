@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DLSEmployee : NSObject
+#import "DLSTransactionsWithMoney.h"
+
+@interface DLSEmployee : NSObject <DLSTransactionsWithMoney>
 @property (nonatomic, copy)     NSString        *name;
 @property (nonatomic, assign)   NSDecimalNumber *wallet;
 @property (nonatomic, assign)   NSUInteger      experience;

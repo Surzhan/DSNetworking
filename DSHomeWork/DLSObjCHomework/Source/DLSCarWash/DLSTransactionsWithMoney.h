@@ -9,10 +9,12 @@
 #ifndef DSHomeWork_DLSTransactionsWithMoney_h
 #define DSHomeWork_DLSTransactionsWithMoney_h
 
-@protocol DLSTransactionsWithMoney
+@class DLSEmployee;
 
-- (void)addIncome:(NSDecimalNumber *)amount;
-- (void)addExpense:(NSDecimalNumber *)amount;
+@protocol DLSTransactionsWithMoney <NSObject>
+- (BOOL)youSolvent:(NSDecimalNumber *)amount;
+- (void)giveMoney:(NSDecimalNumber *)amount receiver:(DLSEmployee *)employee;
+- (void)getMoney:(NSDecimalNumber *)amount transmitter:(DLSEmployee *)employee;
 
 @end
 
