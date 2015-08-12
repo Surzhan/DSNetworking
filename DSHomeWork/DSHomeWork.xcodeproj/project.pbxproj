@@ -18,6 +18,10 @@
 		44327CF41B15157F006BAEED /* DSString.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CF21B15157F006BAEED /* DSString.c */; };
 		44327CF81B1515BB006BAEED /* DSArrayTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CF61B1515BB006BAEED /* DSArrayTests.c */; };
 		44327CFC1B1515E7006BAEED /* DSStringTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 44327CFA1B1515E7006BAEED /* DSStringTests.c */; };
+		4437650F1B7B1B28007B4AEB /* DLSAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4437650E1B7B1B28007B4AEB /* DLSAlphabet.m */; };
+		443765161B7B1EA5007B4AEB /* DLSRangeAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 443765151B7B1EA5007B4AEB /* DLSRangeAlphabet.m */; };
+		4437651A1B7B1EF6007B4AEB /* DLSStingAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 443765191B7B1EF6007B4AEB /* DLSStingAlphabet.m */; };
+		4437651E1B7B20A4007B4AEB /* DLSClusterAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4437651D1B7B20A4007B4AEB /* DLSClusterAlphabet.m */; };
 		443765251B4AC9E50020B3A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 443765241B4AC9E50020B3A8 /* main.m */; };
 		443765311B4ACDF90020B3A8 /* DLSHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = 443765301B4ACDF90020B3A8 /* DLSHuman.m */; };
 		443D2BE81B5D778B00FD8F7E /* DLSEnterprise.m in Sources */ = {isa = PBXBuildFile; fileRef = 443D2BE71B5D778B00FD8F7E /* DLSEnterprise.m */; };
@@ -132,6 +136,14 @@
 		44327CF71B1515BB006BAEED /* DSArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSArrayTests.h; sourceTree = "<group>"; };
 		44327CFA1B1515E7006BAEED /* DSStringTests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSStringTests.c; sourceTree = "<group>"; };
 		44327CFB1B1515E7006BAEED /* DSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSStringTests.h; sourceTree = "<group>"; };
+		4437650D1B7B1B28007B4AEB /* DLSAlphabet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSAlphabet.h; sourceTree = "<group>"; };
+		4437650E1B7B1B28007B4AEB /* DLSAlphabet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSAlphabet.m; sourceTree = "<group>"; };
+		443765141B7B1EA5007B4AEB /* DLSRangeAlphabet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSRangeAlphabet.h; sourceTree = "<group>"; };
+		443765151B7B1EA5007B4AEB /* DLSRangeAlphabet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSRangeAlphabet.m; sourceTree = "<group>"; };
+		443765181B7B1EF6007B4AEB /* DLSStingAlphabet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSStingAlphabet.h; sourceTree = "<group>"; };
+		443765191B7B1EF6007B4AEB /* DLSStingAlphabet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSStingAlphabet.m; sourceTree = "<group>"; };
+		4437651C1B7B20A4007B4AEB /* DLSClusterAlphabet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSClusterAlphabet.h; sourceTree = "<group>"; };
+		4437651D1B7B20A4007B4AEB /* DLSClusterAlphabet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSClusterAlphabet.m; sourceTree = "<group>"; };
 		443765221B4AC9E50020B3A8 /* DLSObjCHomework */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DLSObjCHomework; sourceTree = BUILT_PRODUCTS_DIR; };
 		443765241B4AC9E50020B3A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4437652F1B4ACDF90020B3A8 /* DLSHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSHuman.h; sourceTree = "<group>"; };
@@ -278,7 +290,7 @@
 			children = (
 				44D05F391B60A1A000897451 /* DLSCHomework */,
 				443765231B4AC9E50020B3A8 /* DLSObjCHomework */,
-				44DF7C3C1B60A7B500D2B084 /* DLSCarWashTests */,
+				44DF7C3C1B60A7B500D2B084 /* DLSObjCHomeworkTests */,
 				440BA2A81AFA7B8600790A82 /* Products */,
 				A0FF49924326FDE127E2E610 /* Pods */,
 				0D3672D28B074C79142834AA /* Frameworks */,
@@ -404,6 +416,68 @@
 			path = DSStringTests;
 			sourceTree = "<group>";
 		};
+		4437650C1B7B1AA5007B4AEB /* DLSAlphabet */ = {
+			isa = PBXGroup;
+			children = (
+				443765101B7B1B30007B4AEB /* Private */,
+				4437650D1B7B1B28007B4AEB /* DLSAlphabet.h */,
+				4437650E1B7B1B28007B4AEB /* DLSAlphabet.m */,
+			);
+			path = DLSAlphabet;
+			sourceTree = "<group>";
+		};
+		443765101B7B1B30007B4AEB /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				4437651B1B7B207B007B4AEB /* DLSClusterAlphabet */,
+				443765171B7B1ECD007B4AEB /* DLSStingAlphabet */,
+				443765131B7B1E5C007B4AEB /* DLSRangeAlphabet */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		443765111B7B1C97007B4AEB /* DLSProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				44CE7A6C1B5E184800A0B159 /* DLSTransactionsWithMoney.h */,
+			);
+			path = DLSProtocols;
+			sourceTree = "<group>";
+		};
+		443765121B7B1E21007B4AEB /* DLSConstans */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DLSConstans;
+			sourceTree = "<group>";
+		};
+		443765131B7B1E5C007B4AEB /* DLSRangeAlphabet */ = {
+			isa = PBXGroup;
+			children = (
+				443765141B7B1EA5007B4AEB /* DLSRangeAlphabet.h */,
+				443765151B7B1EA5007B4AEB /* DLSRangeAlphabet.m */,
+			);
+			path = DLSRangeAlphabet;
+			sourceTree = "<group>";
+		};
+		443765171B7B1ECD007B4AEB /* DLSStingAlphabet */ = {
+			isa = PBXGroup;
+			children = (
+				443765181B7B1EF6007B4AEB /* DLSStingAlphabet.h */,
+				443765191B7B1EF6007B4AEB /* DLSStingAlphabet.m */,
+			);
+			path = DLSStingAlphabet;
+			sourceTree = "<group>";
+		};
+		4437651B1B7B207B007B4AEB /* DLSClusterAlphabet */ = {
+			isa = PBXGroup;
+			children = (
+				4437651C1B7B20A4007B4AEB /* DLSClusterAlphabet.h */,
+				4437651D1B7B20A4007B4AEB /* DLSClusterAlphabet.m */,
+			);
+			path = DLSClusterAlphabet;
+			sourceTree = "<group>";
+		};
 		443765231B4AC9E50020B3A8 /* DLSObjCHomework */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,9 +490,12 @@
 		443765291B4ACA1A0020B3A8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				443765121B7B1E21007B4AEB /* DLSConstans */,
+				443765111B7B1C97007B4AEB /* DLSProtocols */,
 				446046641B54E12A0081DCCB /* DLSExtensions */,
-				446046711B54F0350081DCCB /* DLSCarWash */,
 				4437652E1B4ACDCE0020B3A8 /* DLSHuman */,
+				4437650C1B7B1AA5007B4AEB /* DLSAlphabet */,
+				446046711B54F0350081DCCB /* DLSCarWash */,
 				443765241B4AC9E50020B3A8 /* main.m */,
 			);
 			path = Source;
@@ -562,7 +639,6 @@
 			isa = PBXGroup;
 			children = (
 				44A66CCD1B5D945B009468FB /* CarWashTasks */,
-				44CE7A6C1B5E184800A0B159 /* DLSTransactionsWithMoney.h */,
 				443D2BE51B5D774E00FD8F7E /* DLSEnterprise */,
 				446046761B54F1100081DCCB /* DLSBuilding */,
 				443D2BE91B5D77C500FD8F7E /* DLSRoom */,
@@ -851,13 +927,14 @@
 			path = DLSObjCHomework/Tests/DLSHumanTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		44DF7C3C1B60A7B500D2B084 /* DLSCarWashTests */ = {
+		44DF7C3C1B60A7B500D2B084 /* DLSObjCHomeworkTests */ = {
 			isa = PBXGroup;
 			children = (
 				44DF7C3F1B60A7B500D2B084 /* DLSCarWashTests.m */,
 				441F8A291B60B83900E967E2 /* DLSCarWashKiwiTests.m */,
 				44DF7C3D1B60A7B500D2B084 /* Supporting Files */,
 			);
+			name = DLSObjCHomeworkTests;
 			path = DLSCarWashTests;
 			sourceTree = "<group>";
 		};
@@ -1100,20 +1177,24 @@
 				441F8A2A1B60B83900E967E2 /* DLSCarWashKiwiTests.m in Sources */,
 				446046701B54EBB80081DCCB /* DLSMaleHuman.m in Sources */,
 				446046791B54F1480081DCCB /* DLSBuilding.m in Sources */,
+				4437650F1B7B1B28007B4AEB /* DLSAlphabet.m in Sources */,
 				443D2BE81B5D778B00FD8F7E /* DLSEnterprise.m in Sources */,
 				443D2BF81B5D7A0B00FD8F7E /* DLSEmployee.m in Sources */,
 				443D2BF41B5D798200FD8F7E /* DLSCarWashRoom.m in Sources */,
 				443765251B4AC9E50020B3A8 /* main.m in Sources */,
 				446046751B54F0FA0081DCCB /* DLSCar.m in Sources */,
+				443765161B7B1EA5007B4AEB /* DLSRangeAlphabet.m in Sources */,
 				443D2BEC1B5D77F700FD8F7E /* DLSRoom.m in Sources */,
 				44DF7C271B60A5C100D2B084 /* DLSHumanTests.m in Sources */,
 				443D2C001B5D7B0500FD8F7E /* DLSAccountantEmployee.m in Sources */,
 				446046681B54E1B50081DCCB /* NSObject+DLSObjectExtensions.m in Sources */,
+				4437651A1B7B1EF6007B4AEB /* DLSStingAlphabet.m in Sources */,
 				443D2BF01B5D794500FD8F7E /* DLSOfficeRoom.m in Sources */,
 				44DF7C441B60A81000D2B084 /* DLSCarWashTests.m in Sources */,
 				4460466D1B54EB9E0081DCCB /* DLSFemaleHuman.m in Sources */,
 				443765311B4ACDF90020B3A8 /* DLSHuman.m in Sources */,
 				443D2C041B5D7B5700FD8F7E /* DLSDirectorEmployee.m in Sources */,
+				4437651E1B7B20A4007B4AEB /* DLSClusterAlphabet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -45,7 +45,7 @@ typedef NS_ENUM(NSUInteger, DLSHumanGender) {
 @interface DLSHuman : NSObject
 @property (nonatomic, copy)                 NSString        *name;
 @property (nonatomic, copy, readonly)       NSArray         *children;
-@property (nonatomic, assign)               NSUInteger        age;
+@property (nonatomic, assign)               NSUInteger      age;
 @property (nonatomic, assign)               float           weight;
 
 - (instancetype)initWithGender:(DLSHumanGender)gender NS_DESIGNATED_INITIALIZER;
