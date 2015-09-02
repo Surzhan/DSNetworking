@@ -10,4 +10,6 @@
 
 @interface DLSClusterAlphabet : DLSAlphabet
 
+- (id)initWithAlphabets:(NSArray *)alphabets;
+
 @end

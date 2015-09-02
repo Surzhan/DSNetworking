@@ -12,6 +12,8 @@
 @class DLSEmployee;
 
 @protocol DLSTransactionsWithMoney <NSObject>
+
+@optional
 - (BOOL)youSolvent:(NSDecimalNumber *)amount;
 - (void)giveMoney:(NSDecimalNumber *)amount receiver:(DLSEmployee *)employee;
 - (void)getMoney:(NSDecimalNumber *)amount transmitter:(DLSEmployee *)employee;

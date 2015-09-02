@@ -10,4 +10,6 @@
 
 @interface DLSRangeAlphabet : DLSAlphabet
 
+- (id)initWithRange:(NSRange)range;
+
 @end

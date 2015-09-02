@@ -8,6 +8,8 @@
 
 #import "DLSAlphabet.h"
 
-@interface DLSStingAlphabet : DLSAlphabet
+@interface DLSStringAlphabet : DLSAlphabet
+
+- (id)initWithStrings:(NSArray *)strings;
 
 @end
