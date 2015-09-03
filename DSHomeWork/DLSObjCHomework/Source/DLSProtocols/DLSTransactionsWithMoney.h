@@ -6,8 +6,7 @@
 //  Copyright (c) 2015 IDAPGroupCollege. All rights reserved.
 //
 
-#ifndef DSHomeWork_DLSTransactionsWithMoney_h
-#define DSHomeWork_DLSTransactionsWithMoney_h
+#import <Foundation/Foundation.h>
 
 @class DLSEmployee;
 
@@ -19,5 +18,3 @@
 - (void)getMoney:(NSDecimalNumber *)amount transmitter:(DLSEmployee *)employee;
 
 @end
-
-#endif

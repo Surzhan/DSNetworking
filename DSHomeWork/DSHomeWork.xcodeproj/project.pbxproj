@@ -41,6 +41,7 @@
 		449DC5CA1B01248D00F162C2 /* DSStructuresTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 449DC5C71B01248D00F162C2 /* DSStructuresTest.c */; };
 		44CF1C871B97961400AB8EC6 /* DLSAlphabetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF1C861B97961400AB8EC6 /* DLSAlphabetTests.m */; };
 		44CF1C8B1B97A3A600AB8EC6 /* DLSQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF1C8A1B97A3A600AB8EC6 /* DLSQueue.m */; };
+		44CF1C8F1B97A8B200AB8EC6 /* DLSDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF1C8E1B97A8B200AB8EC6 /* DLSDispatcher.m */; };
 		44D002D71B0A679B00DD1187 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002D61B0A679B00DD1187 /* main.c */; };
 		44D002DF1B0A688500DD1187 /* DSHuman.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D002DD1B0A688400DD1187 /* DSHuman.c */; };
 		44D05E181B9605CA00AA8070 /* DLSCarWashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DF7C3F1B60A7B500D2B084 /* DLSCarWashTests.m */; };
@@ -186,6 +187,9 @@
 		44CF1C861B97961400AB8EC6 /* DLSAlphabetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSAlphabetTests.m; sourceTree = "<group>"; };
 		44CF1C891B97A3A600AB8EC6 /* DLSQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSQueue.h; sourceTree = "<group>"; };
 		44CF1C8A1B97A3A600AB8EC6 /* DLSQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSQueue.m; sourceTree = "<group>"; };
+		44CF1C8D1B97A8B200AB8EC6 /* DLSDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSDispatcher.h; sourceTree = "<group>"; };
+		44CF1C8E1B97A8B200AB8EC6 /* DLSDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSDispatcher.m; sourceTree = "<group>"; };
+		44CF1C901B97A95E00AB8EC6 /* DLSEmployeeObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLSEmployeeObserver.h; sourceTree = "<group>"; };
 		44D002D41B0A679B00DD1187 /* DSHuman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSHuman; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D002D61B0A679B00DD1187 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../main.c; sourceTree = "<group>"; };
 		44D002DD1B0A688400DD1187 /* DSHuman.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSHuman.c; sourceTree = "<group>"; };
@@ -451,6 +455,7 @@
 			isa = PBXGroup;
 			children = (
 				44CE7A6C1B5E184800A0B159 /* DLSTransactionsWithMoney.h */,
+				44CF1C901B97A95E00AB8EC6 /* DLSEmployeeObserver.h */,
 			);
 			path = DLSProtocols;
 			sourceTree = "<group>";
@@ -657,6 +662,7 @@
 				443D2BE51B5D774E00FD8F7E /* DLSEnterprise */,
 				446046761B54F1100081DCCB /* DLSBuilding */,
 				443D2BE91B5D77C500FD8F7E /* DLSRoom */,
+				44CF1C8C1B97A86D00AB8EC6 /* DLSDispatcher */,
 				443D2BF51B5D799300FD8F7E /* DLSEmployee */,
 				446046721B54F0D20081DCCB /* DLSCar */,
 			);
@@ -706,6 +712,15 @@
 				44CF1C8A1B97A3A600AB8EC6 /* DLSQueue.m */,
 			);
 			path = DLSQueue;
+			sourceTree = "<group>";
+		};
+		44CF1C8C1B97A86D00AB8EC6 /* DLSDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				44CF1C8D1B97A8B200AB8EC6 /* DLSDispatcher.h */,
+				44CF1C8E1B97A8B200AB8EC6 /* DLSDispatcher.m */,
+			);
+			path = DLSDispatcher;
 			sourceTree = "<group>";
 		};
 		44D002D51B0A679B00DD1187 /* DSHuman */ = {
@@ -1236,6 +1251,7 @@
 				446784DB1B88B3AA003E2E0C /* DLSObservableObject.m in Sources */,
 				4460466D1B54EB9E0081DCCB /* DLSFemaleHuman.m in Sources */,
 				443765311B4ACDF90020B3A8 /* DLSHuman.m in Sources */,
+				44CF1C8F1B97A8B200AB8EC6 /* DLSDispatcher.m in Sources */,
 				443D2C041B5D7B5700FD8F7E /* DLSDirectorEmployee.m in Sources */,
 				4437651E1B7B20A4007B4AEB /* DLSClusterAlphabet.m in Sources */,
 				44CF1C8B1B97A3A600AB8EC6 /* DLSQueue.m in Sources */,
