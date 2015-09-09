@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#include "DLSHolderViewSquare.h"
+
 @interface DLSUserViewController : UIViewController
+@property (nonatomic, readonly) DLSHolderViewSquare   *squareView;
 
 @end
