@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM (NSUInteger, DLSSquarePosition) {
+    DLSTopLeftCorner,
+    DLSTopRightCorner,
+    DLSBottomLeftCorner,
+    DLSBottomRightCorner
+};
+
 @interface DLSViewSquare : UIView
+@property (nonatomic, strong)   IBOutlet    UIView      *squareView;
+@property (nonatomic, unsafe_unretained)    DLSSquarePosition   squarePosition;
 
 @end
