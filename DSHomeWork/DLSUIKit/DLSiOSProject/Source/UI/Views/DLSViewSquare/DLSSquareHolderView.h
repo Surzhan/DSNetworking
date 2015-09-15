@@ -9,21 +9,24 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM (NSUInteger, DLSSquarePosition) {
-    DLSTopLeftCorner,
-    DLSTopRightCorner,
-    DLSBottomLeftCorner,
-    DLSBottomRightCorner
+    DLSTopLeftCornerSquarePosition,
+    DLSTopRightCornerSquarePosition,
+    DLSBottomLeftCornerSquarePosition,
+    DLSBottomRightCornerSquarePosition,
+    DLSSquarePositionCount
 };
 
-@interface DLSHolderViewSquare : UIView
-@property (nonatomic, strong)   IBOutlet    UIView      *squareView;
+@interface DLSSquareHolderView : UIView
+@property (nonatomic, strong)   IBOutlet    UIView              *squareView;
+@property (nonatomic, strong)   IBOutlet    UIButton            *animatindSquareButton;
 @property (nonatomic, unsafe_unretained)    DLSSquarePosition   squarePosition;
 
-- (void)setSquarePosition:(DLSSquarePosition)squarePosition;
 - (void)setSquarePosition:(DLSSquarePosition)squarePosition
                  animated:(BOOL)animation;
 - (void)setSquarePosition:(DLSSquarePosition)squarePosition
                  animated:(BOOL)animation
         completionHandler:(void(^)(void))animationCompletion;
+
+- (void)squareAnimate;
 
 @end

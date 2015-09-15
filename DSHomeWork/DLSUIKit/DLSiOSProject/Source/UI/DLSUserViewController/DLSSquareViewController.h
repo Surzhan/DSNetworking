@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-#include "DLSHolderViewSquare.h"
+#include "DLSSquareHolderView.h"
 
-@interface DLSUserViewController : UIViewController
-@property (nonatomic, readonly) DLSHolderViewSquare   *squareView;
+@interface DLSSquareViewController : UIViewController
+
+- (IBAction)onAnimateButton:(id)sender;
 
 @end

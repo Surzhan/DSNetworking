@@ -7,7 +7,9 @@
 //
 
 #import "DLSAppDelegate.h"
-#import "DLSUserViewController.h"
+#import "DLSSquareViewController.h"
+#import "UIWindow+DLSExtensions.h"
+#import "NSObject+DLSExtensions.h"
 
 @interface DLSAppDelegate ()
 
@@ -15,12 +17,11 @@
 
 @implementation DLSAppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIWindow *window = [UIWindow window];
     self.window = window;
     
-    window.rootViewController = [DLSUserViewController new];
+    window.rootViewController = [DLSSquareViewController object];
     window.backgroundColor = [UIColor whiteColor];
     
     [window makeKeyAndVisible];
