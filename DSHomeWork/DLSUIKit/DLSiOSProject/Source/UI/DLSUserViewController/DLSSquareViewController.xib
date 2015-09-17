@@ -19,7 +19,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cu0-mu-J68" userLabel="animatindSquareButton">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cu0-mu-J68" userLabel="animatingSquareButton">
                     <rect key="frame" x="120" y="269" width="80" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -36,7 +36,7 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
-                <outlet property="animatindSquareButton" destination="cu0-mu-J68" id="PdQ-lD-5pP"/>
+                <outlet property="animatingSquareButton" destination="cu0-mu-J68" id="zzD-sH-DOX"/>
                 <outlet property="squareView" destination="kXV-vn-ZkG" id="Q4R-4O-z9F"/>
             </connections>
             <point key="canvasLocation" x="201" y="296"/>

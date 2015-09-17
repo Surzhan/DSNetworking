@@ -9,6 +9,9 @@
 #import "DLSSquareHolderView.h"
 #import "DLSConstants.h"
 
+static NSString * kDLSAnimateButtonTitleStart   = @"START";
+static NSString * kDLSAnimateButtonTitleStop    = @"STOP";
+
 @interface DLSSquareHolderView ()
 @property (nonatomic, assign, getter=isMoving)  BOOL  animate;
 
@@ -53,7 +56,7 @@
 
 - (void)squareAnimate {
     self.animate = !self.animate;
-    [self.animatindSquareButton setTitle:[self changeTitleAnimateButton] forState:UIControlStateNormal];
+    [self.animatingSquareButton setTitle:[self changeTitleAnimateButton] forState:UIControlStateNormal];
     [self animate];
     
 }

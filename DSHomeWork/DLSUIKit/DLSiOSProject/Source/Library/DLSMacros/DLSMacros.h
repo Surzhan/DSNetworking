@@ -6,8 +6,28 @@
 //  Copyright (c) 2015 IDAPGroupCollege. All rights reserved.
 //
 
-#ifndef DLSiOSProject_DLSMacros_h
-#define DLSiOSProject_DLSMacros_h
+#define DLSDefineBaseViewProperty(propertyName, viewClass) \
+    @property (nonatomic, readonly) viewClass   *propertyName;
 
+#define DLSViewGetterSynthesize(selector, viewClass) \
+    - (viewClass *)selector { \
+        if ([self isViewLoaded] && [self.view isKindOfClass:[viewClass class]]) { \
+            return (viewClass *)self.view; \
+        } \
+        \
+        return nil; \
+    }
 
-#endif
+#define DLSViewControllerBaseViewProperty(viewControllerClass, propertyName, viewClass) \
+    @interface viewControllerClass (__##viewClass_##propertyName) \
+    DLSDefineBaseViewProperty(propertyName, viewClass) \
+    \
+    @end \
+    \
+    @implementation viewControllerClass (__##viewClass_##propertyName) \
+    \
+    @dynamic propertyName; \
+    \
+    DLSViewGetterSynthesize(propertyName, viewClass) \
+    \
+    @end

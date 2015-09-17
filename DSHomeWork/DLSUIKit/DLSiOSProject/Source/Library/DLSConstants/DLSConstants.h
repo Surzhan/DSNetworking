@@ -9,9 +9,6 @@
 #ifndef DLSiOSProject_DLSConstants_h
 #define DLSiOSProject_DLSConstants_h
 
-static NSString * kDLSAnimateButtonTitleStart   = @"START";
-static NSString * kDLSAnimateButtonTitleStop    = @"STOP";
-
 static const NSTimeInterval kDLSAnimationDuration   = 1;
 static const NSTimeInterval kDLSAnimationDelay      = 0;
 

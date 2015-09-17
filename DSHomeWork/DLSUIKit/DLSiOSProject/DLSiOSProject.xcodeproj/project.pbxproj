@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		446811AE1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m in Sources */ = {isa = PBXBuildFile; fileRef = 446811AD1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m */; };
 		44CE6DB61BA8B6D80098FCE8 /* UIWindow+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CE6DB51BA8B6D80098FCE8 /* UIWindow+DLSExtensions.m */; };
 		44CE6DBA1BA8BAD50098FCE8 /* NSObject+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CE6DB91BA8BAD50098FCE8 /* NSObject+DLSExtensions.m */; };
 		44D357F61B9F6A1700B111D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D357F51B9F6A1700B111D6 /* main.m */; };
@@ -33,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		1EA679365432FA879AEBC945 /* Pods-DLSiOSProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLSiOSProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLSiOSProjectTests/Pods-DLSiOSProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		446811AC1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DLSExtentions.h"; sourceTree = "<group>"; };
+		446811AD1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DLSExtentions.m"; sourceTree = "<group>"; };
 		44CE6DA71BA8B25B0098FCE8 /* DLSMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSMacros.h; sourceTree = "<group>"; };
 		44CE6DA81BA8B2750098FCE8 /* DLSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSConstants.h; sourceTree = "<group>"; };
 		44CE6DB41BA8B6D80098FCE8 /* UIWindow+DLSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+DLSExtensions.h"; sourceTree = "<group>"; };
@@ -78,9 +81,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		446811AB1BAAA4BB00A2BDA7 /* UIViewController+DLSExtentions */ = {
+			isa = PBXGroup;
+			children = (
+				446811AC1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.h */,
+				446811AD1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m */,
+			);
+			path = "UIViewController+DLSExtentions";
+			sourceTree = "<group>";
+		};
 		44CE6DA41BA8B1950098FCE8 /* DLSCategories */ = {
 			isa = PBXGroup;
 			children = (
+				446811AB1BAAA4BB00A2BDA7 /* UIViewController+DLSExtentions */,
 				44CE6DB71BA8BA8B0098FCE8 /* NSObject+DLSExtensions */,
 				44CE6DB31BA8B6A60098FCE8 /* UIWindow+DLSExtensions */,
 			);
@@ -401,6 +414,7 @@
 			files = (
 				44CE6DB61BA8B6D80098FCE8 /* UIWindow+DLSExtensions.m in Sources */,
 				44CE6DBA1BA8BAD50098FCE8 /* NSObject+DLSExtensions.m in Sources */,
+				446811AE1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m in Sources */,
 				44D357F91B9F6A1700B111D6 /* DLSAppDelegate.m in Sources */,
 				44D3583B1B9F927300B111D6 /* DLSSquareHolderView.m in Sources */,
 				44D357F61B9F6A1700B111D6 /* main.m in Sources */,

@@ -8,25 +8,12 @@
 
 #import "DLSSquareViewController.h"
 
-@interface DLSSquareViewController ()
-@property (nonatomic, readonly) DLSSquareHolderView   *squareView;
+#import "DLSSquareHolderView.h"
+#import "DLSMacros.h"
 
-@end
+DLSViewControllerBaseViewProperty(DLSSquareViewController, squareView, DLSSquareHolderView);
 
 @implementation DLSSquareViewController
-
-@dynamic squareView;
-
-#pragma mark -
-#pragma mark Accessors
-
-- (DLSSquareHolderView *)squareView {
-    if ([self isViewLoaded] && [self.view isKindOfClass:[DLSSquareHolderView class]]) {
-        return (DLSSquareHolderView *)self.view;
-    }
-    
-    return nil;
-}
 
 #pragma mark -
 #pragma mark Public
