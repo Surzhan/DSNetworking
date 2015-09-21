@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		446811AE1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m in Sources */ = {isa = PBXBuildFile; fileRef = 446811AD1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m */; };
+		44CE6DB61BA8B6D80098FCE8 /* UIWindow+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CE6DB51BA8B6D80098FCE8 /* UIWindow+DLSExtensions.m */; };
+		44CE6DBA1BA8BAD50098FCE8 /* NSObject+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CE6DB91BA8BAD50098FCE8 /* NSObject+DLSExtensions.m */; };
+		44D357F61B9F6A1700B111D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D357F51B9F6A1700B111D6 /* main.m */; };
+		44D357F91B9F6A1700B111D6 /* DLSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D357F81B9F6A1700B111D6 /* DLSAppDelegate.m */; };
+		44D358041B9F6A1700B111D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D358021B9F6A1700B111D6 /* LaunchScreen.xib */; };
+		44D358101B9F6A1700B111D6 /* DLSiOSProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D3580F1B9F6A1700B111D6 /* DLSiOSProjectTests.m */; };
+		44D358221B9F758800B111D6 /* UIKitStudyPlan in Resources */ = {isa = PBXBuildFile; fileRef = 44D358211B9F758800B111D6 /* UIKitStudyPlan */; };
+		44D358341B9F8E0100B111D6 /* DLSSquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D358321B9F8E0100B111D6 /* DLSSquareViewController.m */; };
+		44D358351B9F8E0100B111D6 /* DLSSquareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D358331B9F8E0100B111D6 /* DLSSquareViewController.xib */; };
+		44D3583B1B9F927300B111D6 /* DLSSquareHolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D3583A1B9F927300B111D6 /* DLSSquareHolderView.m */; };
+		44D3583F1B9F935F00B111D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D3583D1B9F935F00B111D6 /* Images.xcassets */; };
+		5510FD2DC8DCFA6A9C521A9F /* libPods-DLSiOSProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C1CD52294499A49585D4348 /* libPods-DLSiOSProjectTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44D3580A1B9F6A1700B111D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44D357E81B9F6A1700B111D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44D357EF1B9F6A1700B111D6;
+			remoteInfo = DLSiOSProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EA679365432FA879AEBC945 /* Pods-DLSiOSProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLSiOSProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLSiOSProjectTests/Pods-DLSiOSProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		446811AC1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DLSExtentions.h"; sourceTree = "<group>"; };
+		446811AD1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DLSExtentions.m"; sourceTree = "<group>"; };
+		44CE6DA71BA8B25B0098FCE8 /* DLSMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSMacros.h; sourceTree = "<group>"; };
+		44CE6DA81BA8B2750098FCE8 /* DLSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSConstants.h; sourceTree = "<group>"; };
+		44CE6DB41BA8B6D80098FCE8 /* UIWindow+DLSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+DLSExtensions.h"; sourceTree = "<group>"; };
+		44CE6DB51BA8B6D80098FCE8 /* UIWindow+DLSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+DLSExtensions.m"; sourceTree = "<group>"; };
+		44CE6DB81BA8BAD50098FCE8 /* NSObject+DLSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLSExtensions.h"; sourceTree = "<group>"; };
+		44CE6DB91BA8BAD50098FCE8 /* NSObject+DLSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLSExtensions.m"; sourceTree = "<group>"; };
+		44D357F01B9F6A1700B111D6 /* DLSiOSProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLSiOSProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D357F41B9F6A1700B111D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D357F51B9F6A1700B111D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44D357F71B9F6A1700B111D6 /* DLSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLSAppDelegate.h; sourceTree = "<group>"; };
+		44D357F81B9F6A1700B111D6 /* DLSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLSAppDelegate.m; sourceTree = "<group>"; };
+		44D358031B9F6A1700B111D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		44D358091B9F6A1700B111D6 /* DLSiOSProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLSiOSProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D3580E1B9F6A1700B111D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D3580F1B9F6A1700B111D6 /* DLSiOSProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLSiOSProjectTests.m; sourceTree = "<group>"; };
+		44D358211B9F758800B111D6 /* UIKitStudyPlan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UIKitStudyPlan; sourceTree = "<group>"; };
+		44D358311B9F8E0100B111D6 /* DLSSquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSSquareViewController.h; sourceTree = "<group>"; };
+		44D358321B9F8E0100B111D6 /* DLSSquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSSquareViewController.m; sourceTree = "<group>"; };
+		44D358331B9F8E0100B111D6 /* DLSSquareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLSSquareViewController.xib; sourceTree = "<group>"; };
+		44D358391B9F927300B111D6 /* DLSSquareHolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSSquareHolderView.h; sourceTree = "<group>"; };
+		44D3583A1B9F927300B111D6 /* DLSSquareHolderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSSquareHolderView.m; sourceTree = "<group>"; };
+		44D3583D1B9F935F00B111D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		6C1CD52294499A49585D4348 /* libPods-DLSiOSProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLSiOSProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE77F5E4D0285693357AC05E /* Pods-DLSiOSProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLSiOSProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLSiOSProjectTests/Pods-DLSiOSProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44D357ED1B9F6A1700B111D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D358061B9F6A1700B111D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5510FD2DC8DCFA6A9C521A9F /* libPods-DLSiOSProjectTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		446811AB1BAAA4BB00A2BDA7 /* UIViewController+DLSExtentions */ = {
+			isa = PBXGroup;
+			children = (
+				446811AC1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.h */,
+				446811AD1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m */,
+			);
+			path = "UIViewController+DLSExtentions";
+			sourceTree = "<group>";
+		};
+		44CE6DA41BA8B1950098FCE8 /* DLSCategories */ = {
+			isa = PBXGroup;
+			children = (
+				446811AB1BAAA4BB00A2BDA7 /* UIViewController+DLSExtentions */,
+				44CE6DB71BA8BA8B0098FCE8 /* NSObject+DLSExtensions */,
+				44CE6DB31BA8B6A60098FCE8 /* UIWindow+DLSExtensions */,
+			);
+			path = DLSCategories;
+			sourceTree = "<group>";
+		};
+		44CE6DA51BA8B1D20098FCE8 /* DLSMacros */ = {
+			isa = PBXGroup;
+			children = (
+				44CE6DA71BA8B25B0098FCE8 /* DLSMacros.h */,
+			);
+			path = DLSMacros;
+			sourceTree = "<group>";
+		};
+		44CE6DA61BA8B1EB0098FCE8 /* DLSConstants */ = {
+			isa = PBXGroup;
+			children = (
+				44CE6DA81BA8B2750098FCE8 /* DLSConstants.h */,
+			);
+			path = DLSConstants;
+			sourceTree = "<group>";
+		};
+		44CE6DB31BA8B6A60098FCE8 /* UIWindow+DLSExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				44CE6DB41BA8B6D80098FCE8 /* UIWindow+DLSExtensions.h */,
+				44CE6DB51BA8B6D80098FCE8 /* UIWindow+DLSExtensions.m */,
+			);
+			path = "UIWindow+DLSExtensions";
+			sourceTree = "<group>";
+		};
+		44CE6DB71BA8BA8B0098FCE8 /* NSObject+DLSExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				44CE6DB81BA8BAD50098FCE8 /* NSObject+DLSExtensions.h */,
+				44CE6DB91BA8BAD50098FCE8 /* NSObject+DLSExtensions.m */,
+			);
+			path = "NSObject+DLSExtensions";
+			sourceTree = "<group>";
+		};
+		44D357E71B9F6A1700B111D6 = {
+			isa = PBXGroup;
+			children = (
+				44D358211B9F758800B111D6 /* UIKitStudyPlan */,
+				44D358191B9F6D2E00B111D6 /* Source */,
+				44D3581D1B9F6ED700B111D6 /* Resources */,
+				44D357F21B9F6A1700B111D6 /* DLSiOSProject */,
+				44D3580C1B9F6A1700B111D6 /* DLSiOSProjectTests */,
+				44D357F11B9F6A1700B111D6 /* Products */,
+				D9BC48CF6225FFB3DF04AB21 /* Pods */,
+				6B46A52A3C17485BCBF9744B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44D357F11B9F6A1700B111D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44D357F01B9F6A1700B111D6 /* DLSiOSProject.app */,
+				44D358091B9F6A1700B111D6 /* DLSiOSProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44D357F21B9F6A1700B111D6 /* DLSiOSProject */ = {
+			isa = PBXGroup;
+			children = (
+				44D357F71B9F6A1700B111D6 /* DLSAppDelegate.h */,
+				44D357F81B9F6A1700B111D6 /* DLSAppDelegate.m */,
+				44D357F41B9F6A1700B111D6 /* Info.plist */,
+				44D357F51B9F6A1700B111D6 /* main.m */,
+			);
+			path = DLSiOSProject;
+			sourceTree = "<group>";
+		};
+		44D3580C1B9F6A1700B111D6 /* DLSiOSProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				44D3580F1B9F6A1700B111D6 /* DLSiOSProjectTests.m */,
+				44D3580D1B9F6A1700B111D6 /* Supporting Files */,
+			);
+			path = DLSiOSProjectTests;
+			sourceTree = "<group>";
+		};
+		44D3580D1B9F6A1700B111D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44D3580E1B9F6A1700B111D6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44D358191B9F6D2E00B111D6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				44D3581A1B9F6DDF00B111D6 /* Library */,
+				44D3581B1B9F6E2000B111D6 /* Models */,
+				44D3581C1B9F6E3600B111D6 /* UI */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		44D3581A1B9F6DDF00B111D6 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				44CE6DA61BA8B1EB0098FCE8 /* DLSConstants */,
+				44CE6DA51BA8B1D20098FCE8 /* DLSMacros */,
+				44CE6DA41BA8B1950098FCE8 /* DLSCategories */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		44D3581B1B9F6E2000B111D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44D3581C1B9F6E3600B111D6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				44D3581F1B9F729800B111D6 /* DLSSquareViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		44D3581D1B9F6ED700B111D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44D3581E1B9F6F5200B111D6 /* Images */,
+				44D358021B9F6A1700B111D6 /* LaunchScreen.xib */,
+				44D3583D1B9F935F00B111D6 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		44D3581E1B9F6F5200B111D6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		44D3581F1B9F729800B111D6 /* DLSSquareViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44D3582D1B9F8D2400B111D6 /* DLSSquareHolderView */,
+				44D358311B9F8E0100B111D6 /* DLSSquareViewController.h */,
+				44D358321B9F8E0100B111D6 /* DLSSquareViewController.m */,
+				44D358331B9F8E0100B111D6 /* DLSSquareViewController.xib */,
+			);
+			name = DLSSquareViewController;
+			path = DLSUserViewController;
+			sourceTree = "<group>";
+		};
+		44D3582D1B9F8D2400B111D6 /* DLSSquareHolderView */ = {
+			isa = PBXGroup;
+			children = (
+				44D358391B9F927300B111D6 /* DLSSquareHolderView.h */,
+				44D3583A1B9F927300B111D6 /* DLSSquareHolderView.m */,
+			);
+			name = DLSSquareHolderView;
+			path = ../Views/DLSViewSquare;
+			sourceTree = "<group>";
+		};
+		6B46A52A3C17485BCBF9744B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C1CD52294499A49585D4348 /* libPods-DLSiOSProjectTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9BC48CF6225FFB3DF04AB21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EA679365432FA879AEBC945 /* Pods-DLSiOSProjectTests.debug.xcconfig */,
+				BE77F5E4D0285693357AC05E /* Pods-DLSiOSProjectTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44D357EF1B9F6A1700B111D6 /* DLSiOSProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D358131B9F6A1700B111D6 /* Build configuration list for PBXNativeTarget "DLSiOSProject" */;
+			buildPhases = (
+				44D357EC1B9F6A1700B111D6 /* Sources */,
+				44D357ED1B9F6A1700B111D6 /* Frameworks */,
+				44D357EE1B9F6A1700B111D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLSiOSProject;
+			productName = DLSiOSProject;
+			productReference = 44D357F01B9F6A1700B111D6 /* DLSiOSProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44D358081B9F6A1700B111D6 /* DLSiOSProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D358161B9F6A1700B111D6 /* Build configuration list for PBXNativeTarget "DLSiOSProjectTests" */;
+			buildPhases = (
+				74331EA39775A6026ECC7710 /* Check Pods Manifest.lock */,
+				44D358051B9F6A1700B111D6 /* Sources */,
+				44D358061B9F6A1700B111D6 /* Frameworks */,
+				44D358071B9F6A1700B111D6 /* Resources */,
+				AFE3F106F2842C9260E6F87E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44D3580B1B9F6A1700B111D6 /* PBXTargetDependency */,
+			);
+			name = DLSiOSProjectTests;
+			productName = DLSiOSProjectTests;
+			productReference = 44D358091B9F6A1700B111D6 /* DLSiOSProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44D357E81B9F6A1700B111D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = IDAPGroupCollege;
+				TargetAttributes = {
+					44D357EF1B9F6A1700B111D6 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					44D358081B9F6A1700B111D6 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 44D357EF1B9F6A1700B111D6;
+					};
+				};
+			};
+			buildConfigurationList = 44D357EB1B9F6A1700B111D6 /* Build configuration list for PBXProject "DLSiOSProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44D357E71B9F6A1700B111D6;
+			productRefGroup = 44D357F11B9F6A1700B111D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44D357EF1B9F6A1700B111D6 /* DLSiOSProject */,
+				44D358081B9F6A1700B111D6 /* DLSiOSProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44D357EE1B9F6A1700B111D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D358221B9F758800B111D6 /* UIKitStudyPlan in Resources */,
+				44D3583F1B9F935F00B111D6 /* Images.xcassets in Resources */,
+				44D358041B9F6A1700B111D6 /* LaunchScreen.xib in Resources */,
+				44D358351B9F8E0100B111D6 /* DLSSquareViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D358071B9F6A1700B111D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74331EA39775A6026ECC7710 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFE3F106F2842C9260E6F87E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DLSiOSProjectTests/Pods-DLSiOSProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44D357EC1B9F6A1700B111D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CE6DB61BA8B6D80098FCE8 /* UIWindow+DLSExtensions.m in Sources */,
+				44CE6DBA1BA8BAD50098FCE8 /* NSObject+DLSExtensions.m in Sources */,
+				446811AE1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m in Sources */,
+				44D357F91B9F6A1700B111D6 /* DLSAppDelegate.m in Sources */,
+				44D3583B1B9F927300B111D6 /* DLSSquareHolderView.m in Sources */,
+				44D357F61B9F6A1700B111D6 /* main.m in Sources */,
+				44D358341B9F8E0100B111D6 /* DLSSquareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D358051B9F6A1700B111D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D358101B9F6A1700B111D6 /* DLSiOSProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44D3580B1B9F6A1700B111D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44D357EF1B9F6A1700B111D6 /* DLSiOSProject */;
+			targetProxy = 44D3580A1B9F6A1700B111D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44D358021B9F6A1700B111D6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44D358031B9F6A1700B111D6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44D358111B9F6A1700B111D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		44D358121B9F6A1700B111D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44D358141B9F6A1700B111D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DLSiOSProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.idapgroup.college.c.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		44D358151B9F6A1700B111D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DLSiOSProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.idapgroup.college.c.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		44D358171B9F6A1700B111D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA679365432FA879AEBC945 /* Pods-DLSiOSProjectTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DLSiOSProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.idapgroup.college.c.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DLSiOSProject.app/DLSiOSProject";
+			};
+			name = Debug;
+		};
+		44D358181B9F6A1700B111D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE77F5E4D0285693357AC05E /* Pods-DLSiOSProjectTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DLSiOSProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.idapgroup.college.c.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DLSiOSProject.app/DLSiOSProject";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44D357EB1B9F6A1700B111D6 /* Build configuration list for PBXProject "DLSiOSProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D358111B9F6A1700B111D6 /* Debug */,
+				44D358121B9F6A1700B111D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D358131B9F6A1700B111D6 /* Build configuration list for PBXNativeTarget "DLSiOSProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D358141B9F6A1700B111D6 /* Debug */,
+				44D358151B9F6A1700B111D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D358161B9F6A1700B111D6 /* Build configuration list for PBXNativeTarget "DLSiOSProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D358171B9F6A1700B111D6 /* Debug */,
+				44D358181B9F6A1700B111D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44D357E81B9F6A1700B111D6 /* Project object */;
+}
