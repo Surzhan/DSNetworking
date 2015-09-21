@@ -9,6 +9,9 @@
 #import "DLSSquareHolderView.h"
 #import "DLSConstants.h"
 
+static const NSTimeInterval kDLSAnimationDuration   = 1;
+static const NSTimeInterval kDLSAnimationDelay      = 0;
+
 static NSString * kDLSAnimateButtonTitleStart   = @"START";
 static NSString * kDLSAnimateButtonTitleStop    = @"STOP";
 

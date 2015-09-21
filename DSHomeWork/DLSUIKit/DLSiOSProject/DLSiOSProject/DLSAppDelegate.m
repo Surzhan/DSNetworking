@@ -8,8 +8,10 @@
 
 #import "DLSAppDelegate.h"
 #import "DLSSquareViewController.h"
+
 #import "UIWindow+DLSExtensions.h"
 #import "NSObject+DLSExtensions.h"
+#import "UIViewController+DLSExtentions.h"
 
 @interface DLSAppDelegate ()
 
@@ -21,7 +23,7 @@
     UIWindow *window = [UIWindow window];
     self.window = window;
     
-    window.rootViewController = [DLSSquareViewController object];
+    window.rootViewController = [DLSSquareViewController  controller];
     window.backgroundColor = [UIColor whiteColor];
     
     [window makeKeyAndVisible];

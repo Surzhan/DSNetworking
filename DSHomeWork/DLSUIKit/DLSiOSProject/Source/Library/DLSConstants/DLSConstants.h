@@ -9,7 +9,4 @@
 #ifndef DLSiOSProject_DLSConstants_h
 #define DLSiOSProject_DLSConstants_h
 
-static const NSTimeInterval kDLSAnimationDuration   = 1;
-static const NSTimeInterval kDLSAnimationDelay      = 0;
-
 #endif
