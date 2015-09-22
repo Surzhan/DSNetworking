@@ -8,6 +8,12 @@
 
 #import "DLSAppDelegate.h"
 
+#import "DLSArrayModel.h"
+#import "DLSTableViewController.h"
+
+#import "UIWindow+DLSExtensions.h"
+#import "UIViewController+DLSExtentions.h"
+
 @interface DLSAppDelegate ()
 
 @end
@@ -16,7 +22,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-       return YES;
+    UIWindow *window = [UIWindow window];
+    self.window = window;
+    
+    DLSTableViewController *controller = [DLSTableViewController controller];
+    
+    DLSArrayModel *users = [DLSArrayModel new];
+    controller.arrayModel = arrayModel;
+    
+    window.rootViewController = controller;
+    [window makeKeyAndVisible];
+    
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

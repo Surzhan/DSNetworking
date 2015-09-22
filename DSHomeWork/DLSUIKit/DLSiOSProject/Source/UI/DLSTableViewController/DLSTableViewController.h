@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DLSTableViewController : UIViewController
+@ class DLSArrayModel;
+
+@interface DLSTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong)   DLSArrayModel   *arrayModel;
 
 @end

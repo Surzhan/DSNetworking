@@ -12,8 +12,8 @@
 static const NSTimeInterval kDLSAnimationDuration   = 1;
 static const NSTimeInterval kDLSAnimationDelay      = 0;
 
-static NSString * kDLSAnimateButtonTitleStart   = @"START";
-static NSString * kDLSAnimateButtonTitleStop    = @"STOP";
+static NSString * const kDLSAnimateButtonTitleStart   = @"START";
+static NSString * const kDLSAnimateButtonTitleStop    = @"STOP";
 
 @interface DLSSquareHolderView ()
 @property (nonatomic, assign, getter=isMoving)  BOOL  animate;
@@ -25,6 +25,17 @@ static NSString * kDLSAnimateButtonTitleStop    = @"STOP";
 @end
 
 @implementation DLSSquareHolderView
+
+#pragma mark -
+#pragma mark Accessors
+
+- (void)setAnimating:(BOOL)animating {
+    if (_animating != animating) {
+        _animating = animating;
+        
+        [self animate];
+    }
+}
 
 #pragma mark -
 #pragma mark Public
