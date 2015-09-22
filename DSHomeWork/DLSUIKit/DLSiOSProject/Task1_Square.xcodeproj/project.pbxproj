@@ -30,6 +30,7 @@
 		44D358351B9F8E0100B111D6 /* DLSSquareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D358331B9F8E0100B111D6 /* DLSSquareViewController.xib */; };
 		44D3583B1B9F927300B111D6 /* DLSSquareHolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D3583A1B9F927300B111D6 /* DLSSquareHolderView.m */; };
 		44D3583F1B9F935F00B111D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D3583D1B9F935F00B111D6 /* Images.xcassets */; };
+		44D452921BB1338400E1CE27 /* DLSUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D452911BB1338400E1CE27 /* DLSUserModel.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		44D358391B9F927300B111D6 /* DLSSquareHolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSSquareHolderView.h; sourceTree = "<group>"; };
 		44D3583A1B9F927300B111D6 /* DLSSquareHolderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSSquareHolderView.m; sourceTree = "<group>"; };
 		44D3583D1B9F935F00B111D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		44D452901BB1338400E1CE27 /* DLSUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSUserModel.h; sourceTree = "<group>"; };
+		44D452911BB1338400E1CE27 /* DLSUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSUserModel.m; sourceTree = "<group>"; };
 		6C1CD52294499A49585D4348 /* libPods-DLSiOSProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLSiOSProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE77F5E4D0285693357AC05E /* Pods-DLSiOSProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLSiOSProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLSiOSProjectTests/Pods-DLSiOSProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -307,6 +310,7 @@
 		44D3581B1B9F6E2000B111D6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				44D4528F1BB1335000E1CE27 /* DLSUserModel */,
 				4410BDF41BAFE12E00912BD7 /* DLSArrayModel */,
 			);
 			path = Models;
@@ -358,6 +362,15 @@
 			);
 			name = DLSSquareHolderView;
 			path = ../Views/DLSViewSquare;
+			sourceTree = "<group>";
+		};
+		44D4528F1BB1335000E1CE27 /* DLSUserModel */ = {
+			isa = PBXGroup;
+			children = (
+				44D452901BB1338400E1CE27 /* DLSUserModel.h */,
+				44D452911BB1338400E1CE27 /* DLSUserModel.m */,
+			);
+			path = DLSUserModel;
 			sourceTree = "<group>";
 		};
 		6B46A52A3C17485BCBF9744B /* Frameworks */ = {
@@ -542,6 +555,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4410BDF71BAFE1A500912BD7 /* DLSArrayModel.m in Sources */,
+				44D452921BB1338400E1CE27 /* DLSUserModel.m in Sources */,
 				443B53E41BAFEBF000922534 /* NSObject+DLSExtensions.m in Sources */,
 				443B53E21BAFEBD500922534 /* DLSObservableObject.m in Sources */,
 				443B53DB1BAFE89E00922534 /* DLSTableViewController.m in Sources */,
@@ -813,6 +827,7 @@
 				44D0F45E1BB0416B00895175 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44D0F46A1BB0418100895175 /* Build configuration list for PBXNativeTarget "Task2_UITableViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -821,6 +836,7 @@
 				44D0F46C1BB0418100895175 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44D357EB1B9F6A1700B111D6 /* Build configuration list for PBXProject "Task1_Square" */ = {
 			isa = XCConfigurationList;
