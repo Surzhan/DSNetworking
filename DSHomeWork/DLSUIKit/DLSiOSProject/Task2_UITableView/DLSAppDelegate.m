@@ -26,7 +26,7 @@
     
     DLSTableViewController *controller = [DLSTableViewController controller];
     
-    DLSArrayModel *users = [DLSArrayModel new];
+    DLSArrayModel *arrayModel = [DLSArrayModel new];
     controller.arrayModel = arrayModel;
     
     window.rootViewController = controller;
