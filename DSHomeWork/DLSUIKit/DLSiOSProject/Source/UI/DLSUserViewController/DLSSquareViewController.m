@@ -19,7 +19,8 @@ DLSViewControllerBaseViewProperty(DLSSquareViewController, squareView, DLSSquare
 #pragma mark Public
 
 - (IBAction)onAnimateButton:(id)sender {
-    [self.squareView squareAnimate];
+    DLSSquareHolderView *squareView = self.squareView;
+    squareView.squareAnimating = !squareView.squareAnimating;
 }
 
 #pragma mark -

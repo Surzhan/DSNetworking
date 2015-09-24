@@ -7,7 +7,8 @@
 //
 
 #import "DLSSquareHolderView.h"
-#import "DLSConstants.h"
+
+#import "DLSMacros.h"
 
 static const NSTimeInterval kDLSAnimationDuration   = 1;
 static const NSTimeInterval kDLSAnimationDelay      = 0;
@@ -16,11 +17,12 @@ static NSString * const kDLSAnimateButtonTitleStart   = @"START";
 static NSString * const kDLSAnimateButtonTitleStop    = @"STOP";
 
 @interface DLSSquareHolderView ()
-@property (nonatomic, assign, getter=isMoving)  BOOL  animate;
+@property (nonatomic, assign, getter=isAnimationProgress)  BOOL  animationProgress;
 
 - (CGRect)pointForSquarePosition:(DLSSquarePosition)squarePosition;
-- (NSString *)changeTitleAnimateButton;
-- (void)animate;
+- (void)changeButtonTitle;
+- (DLSSquarePosition)nextPosition;
+- (void)animateSquare;
 
 @end
 
@@ -29,11 +31,19 @@ static NSString * const kDLSAnimateButtonTitleStop    = @"STOP";
 #pragma mark -
 #pragma mark Accessors
 
-- (void)setAnimating:(BOOL)animating {
-    if (_animating != animating) {
-        _animating = animating;
+- (void)setSquareAnimating:(BOOL)squareAnimating {
+    if (_squareAnimating != squareAnimating) {
+        _squareAnimating = squareAnimating;
         
-        [self animate];
+        [self animateSquare];
+    }
+}
+
+- (void)setAnimationProgress:(BOOL)animationProgress {
+    if (_animationProgress != animationProgress) {
+        _animationProgress = animationProgress;
+        
+        [self changeButtonTitle];
     }
 }
 
@@ -43,12 +53,12 @@ static NSString * const kDLSAnimateButtonTitleStop    = @"STOP";
 - (void)setSquarePosition:(DLSSquarePosition)squarePosition
                  animated:(BOOL)animation
 {
-  [self setSquarePosition:squarePosition animated:NO completionHandler:nil];
+  [self setSquarePosition:squarePosition animated:animation completionHandler:nil];
 }
 
 - (void)setSquarePosition:(DLSSquarePosition)squarePosition
                  animated:(BOOL)animation
-        completionHandler:(void(^)(void))animationCompletion
+        completionHandler:(void(^)(BOOL finished))handler
 {
     UIView *squareView = self.squareView;
     NSTimeInterval interval = animation ? kDLSAnimationDuration : 0;
@@ -62,17 +72,10 @@ static NSString * const kDLSAnimateButtonTitleStop    = @"STOP";
                      completion:^(BOOL finished) {
                          _squarePosition = squarePosition;
                          
-                         if (animationCompletion) {
-                             animationCompletion();
+                         if (handler) {
+                             handler(finished);
                          }
                      }];
-}
-
-- (void)squareAnimate {
-    self.animate = !self.animate;
-    [self.animatingSquareButton setTitle:[self changeTitleAnimateButton] forState:UIControlStateNormal];
-    [self animate];
-    
 }
 
 #pragma mark -
@@ -109,18 +112,31 @@ static NSString * const kDLSAnimateButtonTitleStop    = @"STOP";
     return result;
 }
 
-- (NSString *)changeTitleAnimateButton {
-    return self.animate ? kDLSAnimateButtonTitleStop : kDLSAnimateButtonTitleStart;
+- (void)changeButtonTitle {
+    NSString *buttonTitle = self.animationProgress ? kDLSAnimateButtonTitleStop : kDLSAnimateButtonTitleStart;
+    
+    [self.animatingSquareButton setTitle:buttonTitle
+                        forState:UIControlStateNormal];
 }
 
-- (void)animate {
-    if (self.animate) {
-        __weak typeof(self) weakSelf = self;
-        DLSSquarePosition position = (self.squarePosition + 1) % DLSSquarePositionCount;
-        
-        [weakSelf setSquarePosition:position
-                           animated:YES
-                  completionHandler:^{[self animate];}];
+- (DLSSquarePosition)nextPosition {
+    return (self.squarePosition + 1) % DLSSquarePositionCount;
+}
+
+- (void)animateSquare {
+    if (self.squareAnimating && !self.animationProgress) {
+        DLSSquarePosition position = [self nextPosition];
+        self.animationProgress = YES;
+        DLSWeakify(self);
+        [self setSquarePosition:position
+                       animated:YES
+              completionHandler:^(BOOL finished) {
+                  DLSStrongifyAndReturnIfNil(self);
+                  if (finished) {
+                      self.animationProgress = NO;
+                      [self animateSquare];
+                  }
+              }];
     }
 }
 

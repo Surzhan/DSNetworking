@@ -31,3 +31,15 @@
     DLSViewGetterSynthesize(propertyName, viewClass) \
     \
     @end
+
+#define DLSWeakify(var) \
+    __weak __typeof(var) __DLSWeak_##var = var
+
+#define DLSStrongify(var) \
+    __strong __typeof(var) var = __DLSWeak_##var
+
+#define DLSStrongifyAndReturnIfNil(var) \
+    DLSStrongify(var); \
+    if (!var) { \
+        return; \
+    }

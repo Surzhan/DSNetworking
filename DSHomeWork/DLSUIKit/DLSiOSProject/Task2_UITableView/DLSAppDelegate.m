@@ -8,8 +8,8 @@
 
 #import "DLSAppDelegate.h"
 
-#import "DLSArrayModel.h"
 #import "DLSTableViewController.h"
+#import "DLSArrayModel.h"
 
 #import "UIWindow+DLSExtensions.h"
 #import "UIViewController+DLSExtentions.h"

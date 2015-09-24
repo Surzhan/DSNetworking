@@ -489,10 +489,11 @@
 					};
 					44D357EF1B9F6A1700B111D6 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = HW7VN657K2;
 					};
 				};
 			};
-			buildConfigurationList = 44D357EB1B9F6A1700B111D6 /* Build configuration list for PBXProject "Task1_Square" */;
+			buildConfigurationList = 44D357EB1B9F6A1700B111D6 /* Build configuration list for PBXProject "DLSiOSProject" */;
 			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -788,11 +789,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DLSiOSProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.idapgroup.college.c.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -800,11 +804,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DLSiOSProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.idapgroup.college.c.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -838,7 +845,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44D357EB1B9F6A1700B111D6 /* Build configuration list for PBXProject "Task1_Square" */ = {
+		44D357EB1B9F6A1700B111D6 /* Build configuration list for PBXProject "DLSiOSProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44D358111B9F6A1700B111D6 /* Debug */,

@@ -17,9 +17,9 @@ typedef NS_ENUM (NSUInteger, DLSSquarePosition) {
 };
 
 @interface DLSSquareHolderView : UIView
-@property (nonatomic, strong)   IBOutlet            UIView      *squareView;
-@property (nonatomic, strong)   IBOutlet            UIButton    *animatingSquareButton;
-@property (nonatomic, assign, getter=isAnimating)   BOOL        animating;
+@property (nonatomic, strong)   IBOutlet                UIView      *squareView;
+@property (nonatomic, strong)   IBOutlet                UIButton    *animatingSquareButton;
+@property (nonatomic, assign, getter=isSquareAnimating) BOOL        squareAnimating;
 
 @property (nonatomic, assign)   DLSSquarePosition               squarePosition;
 
@@ -27,8 +27,6 @@ typedef NS_ENUM (NSUInteger, DLSSquarePosition) {
                  animated:(BOOL)animation;
 - (void)setSquarePosition:(DLSSquarePosition)squarePosition
                  animated:(BOOL)animation
-        completionHandler:(void(^)(void))animationCompletion;
-
-- (void)squareAnimate;
+        completionHandler:(void(^)(BOOL finished))handler;
 
 @end
