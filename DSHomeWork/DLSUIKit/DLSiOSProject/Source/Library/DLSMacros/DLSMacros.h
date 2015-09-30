@@ -32,14 +32,22 @@
     \
     @end
 
-#define DLSWeakify(var) \
-    __weak __typeof(var) __DLSWeak_##var = var
+#define DLSEmptyMacro
 
-#define DLSStrongify(var) \
-    __strong __typeof(var) var = __DLSWeak_##var
-
-#define DLSStrongifyAndReturnIfNil(var) \
-    DLSStrongify(var); \
-    if (!var) { \
-        return; \
+#define DLSStrongifyAndReturnResultIfNil(object, result) \
+    DLSStrongify(object); \
+    if (!object) { \
+        return result; \
     }
+
+#define DLSStrongifyAndReturnIfNil(object) \
+    DLSStrongifyAndReturnResultIfNil(object, DLSEmptyMacro)
+
+#define DLSStrongifyAndReturnNilIfNil(object) \
+    DLSStrongifyAndReturnResultIfNil(object, nil)
+
+#define DLSWeakify(object) \
+    __weak __typeof(object) __DLSWeak_##object = object
+
+#define DLSStrongify(object) \
+    __strong __typeof(object) object = __DLSWeak_##object

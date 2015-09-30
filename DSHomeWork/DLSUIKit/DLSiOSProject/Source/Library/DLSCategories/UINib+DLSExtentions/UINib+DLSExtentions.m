@@ -32,11 +32,11 @@
 }
 
 + (UINib *)nibWithClass:(Class)cls {
-    return [UINib nibWithClass:cls bundle:nil];
+    return [self nibWithClass:cls bundle:nil];
 }
 
 + (UINib *)nibWithClass:(Class)cls bundle:(NSBundle *)bundle {
-    return [UINib nibWithNibName:NSStringFromClass(cls)
+    return [self nibWithNibName:NSStringFromClass(cls)
                           bundle:bundle];
 }
 
