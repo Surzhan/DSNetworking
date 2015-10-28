@@ -40,6 +40,8 @@
 		44E3A50F1BE17F6D00115880 /* DLSLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E3A50E1BE17F6D00115880 /* DLSLoadingView.xib */; };
 		44E3A5121BE17F8100115880 /* DLSLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5111BE17F8100115880 /* DLSLoadingView.m */; };
 		44E3A5171BE189D200115880 /* DLSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5161BE189D200115880 /* DLSTableViewCell.m */; };
+		44E3A51A1BE18ACB00115880 /* DLSUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5191BE18ACB00115880 /* DLSUserCell.m */; };
+		44E3A51E1BE18CC200115880 /* DLSUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E3A51D1BE18CC200115880 /* DLSUserCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,9 @@
 		44E3A5111BE17F8100115880 /* DLSLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSLoadingView.m; sourceTree = "<group>"; };
 		44E3A5151BE189D200115880 /* DLSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSTableViewCell.h; sourceTree = "<group>"; };
 		44E3A5161BE189D200115880 /* DLSTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSTableViewCell.m; sourceTree = "<group>"; };
+		44E3A5181BE18ACB00115880 /* DLSUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSUserCell.h; sourceTree = "<group>"; };
+		44E3A5191BE18ACB00115880 /* DLSUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSUserCell.m; sourceTree = "<group>"; };
+		44E3A51D1BE18CC200115880 /* DLSUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLSUserCell.xib; sourceTree = "<group>"; };
 		6C1CD52294499A49585D4348 /* libPods-DLSiOSProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLSiOSProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE77F5E4D0285693357AC05E /* Pods-DLSiOSProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLSiOSProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLSiOSProjectTests/Pods-DLSiOSProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -480,6 +485,9 @@
 		44E3A5131BE188E800115880 /* DLSUserCell */ = {
 			isa = PBXGroup;
 			children = (
+				44E3A5181BE18ACB00115880 /* DLSUserCell.h */,
+				44E3A5191BE18ACB00115880 /* DLSUserCell.m */,
+				44E3A51D1BE18CC200115880 /* DLSUserCell.xib */,
 			);
 			path = DLSUserCell;
 			sourceTree = "<group>";
@@ -641,6 +649,7 @@
 			files = (
 				443B53DC1BAFE89E00922534 /* DLSTableViewController.xib in Resources */,
 				44E3A50F1BE17F6D00115880 /* DLSLoadingView.xib in Resources */,
+				44E3A51E1BE18CC200115880 /* DLSUserCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,6 +699,7 @@
 				443B53E31BAFEBEC00922534 /* UIViewController+DLSExtentions.m in Sources */,
 				44E3A5021BE17A3900115880 /* DLSAlphabetWithAlphabets.m in Sources */,
 				44E3A5081BE17A6600115880 /* DLSAlphabetWithStrings.m in Sources */,
+				44E3A51A1BE18ACB00115880 /* DLSUserCell.m in Sources */,
 				4410BDC41BAFDB7300912BD7 /* main.m in Sources */,
 				443B53E51BAFEBF500922534 /* UIWindow+DLSExtensions.m in Sources */,
 			);
