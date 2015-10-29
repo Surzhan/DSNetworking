@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="84.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" id="CoQ-WQ-rmB" userLabel="User Image View">
+                    <view contentMode="scaleToFill" id="CoQ-WQ-rmB" userLabel="User Image View" customClass="DLSImageView">
                         <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -46,6 +46,9 @@
                 <animations/>
             </tableViewCellContentView>
             <animations/>
+            <connections>
+                <outlet property="nameLabel" destination="T9g-AG-Y0d" id="nAT-T2-fYa"/>
+            </connections>
             <point key="canvasLocation" x="289" y="250.5"/>
         </tableViewCell>
     </objects>

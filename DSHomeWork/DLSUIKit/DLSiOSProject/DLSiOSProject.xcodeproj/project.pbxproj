@@ -48,6 +48,8 @@
 		44E3A5361BE1A47100115880 /* DLSImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5351BE1A47100115880 /* DLSImageModel.m */; };
 		44E3A53B1BE1A66000115880 /* DLSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A53A1BE1A66000115880 /* DLSView.m */; };
 		44E3A53E1BE1A67B00115880 /* DLSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A53D1BE1A67B00115880 /* DLSImageView.m */; };
+		44E54F071BE209E700CC939A /* NSString+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E54F061BE209E700CC939A /* NSString+DLSExtensions.m */; };
+		44E54F081BE209E700CC939A /* NSString+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E54F061BE209E700CC939A /* NSString+DLSExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +142,8 @@
 		44E3A53A1BE1A66000115880 /* DLSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSView.m; sourceTree = "<group>"; };
 		44E3A53C1BE1A67B00115880 /* DLSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSImageView.h; sourceTree = "<group>"; };
 		44E3A53D1BE1A67B00115880 /* DLSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSImageView.m; sourceTree = "<group>"; };
+		44E54F051BE209E700CC939A /* NSString+DLSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DLSExtensions.h"; sourceTree = "<group>"; };
+		44E54F061BE209E700CC939A /* NSString+DLSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DLSExtensions.m"; sourceTree = "<group>"; };
 		6C1CD52294499A49585D4348 /* libPods-DLSiOSProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLSiOSProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE77F5E4D0285693357AC05E /* Pods-DLSiOSProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLSiOSProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLSiOSProjectTests/Pods-DLSiOSProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,6 +232,7 @@
 		44CE6DA41BA8B1950098FCE8 /* DLSCategories */ = {
 			isa = PBXGroup;
 			children = (
+				44E54F041BE2094E00CC939A /* NSString+DLSExtensions */,
 				44D1AC751BB3DC00003144D7 /* UINib+DLSExtentions */,
 				446811AB1BAAA4BB00A2BDA7 /* UIViewController+DLSExtentions */,
 				44CE6DB71BA8BA8B0098FCE8 /* NSObject+DLSExtensions */,
@@ -579,6 +584,15 @@
 			path = DLSImageView;
 			sourceTree = "<group>";
 		};
+		44E54F041BE2094E00CC939A /* NSString+DLSExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				44E54F051BE209E700CC939A /* NSString+DLSExtensions.h */,
+				44E54F061BE209E700CC939A /* NSString+DLSExtensions.m */,
+			);
+			path = "NSString+DLSExtensions";
+			sourceTree = "<group>";
+		};
 		6B46A52A3C17485BCBF9744B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -772,6 +786,7 @@
 				44E3A53B1BE1A66000115880 /* DLSView.m in Sources */,
 				443B53E21BAFEBD500922534 /* DLSObservableObject.m in Sources */,
 				443B53DB1BAFE89E00922534 /* DLSTableViewController.m in Sources */,
+				44E54F081BE209E700CC939A /* NSString+DLSExtensions.m in Sources */,
 				44E3A52A1BE19C2B00115880 /* DLSArrayModel.m in Sources */,
 				4410BDC71BAFDB7300912BD7 /* DLSAppDelegate.m in Sources */,
 				44E3A5051BE17A5000115880 /* DLSAlphabetWithRange.m in Sources */,
@@ -814,6 +829,7 @@
 				446811AE1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m in Sources */,
 				44D357F91B9F6A1700B111D6 /* DLSAppDelegate.m in Sources */,
 				44D3583B1B9F927300B111D6 /* DLSSquareHolderView.m in Sources */,
+				44E54F071BE209E700CC939A /* NSString+DLSExtensions.m in Sources */,
 				44D357F61B9F6A1700B111D6 /* main.m in Sources */,
 				44D358341B9F8E0100B111D6 /* DLSSquareViewController.m in Sources */,
 				44D1AC781BB3DCAE003144D7 /* UINib+DLSExtentions.m in Sources */,

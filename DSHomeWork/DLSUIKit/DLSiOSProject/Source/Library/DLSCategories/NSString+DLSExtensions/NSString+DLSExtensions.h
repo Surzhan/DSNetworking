@@ -1,15 +1,15 @@
 //
-//  DLSImageModel.h
+//  NSString+DLSExtensions.h
 //  DLSiOSProject
 //
 //  Created by Denis Surzhan on 29.10.15.
 //  Copyright © 2015 IDAPGroupCollege. All rights reserved.
 //
 
-#import "DLSModel.h"
+#import <Foundation/Foundation.h>
 
-@interface DLSImageModel : DLSModel
+@interface NSString (DLSExtensions)
 
-+ (instancetype)imageWithURL:(NSURL *)url;
++ (instancetype)randomName;
 
 @end
