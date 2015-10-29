@@ -1,13 +1,13 @@
 //
-//  DLSArrayModel.h
+//  DLSImageModel.m
 //  DLSiOSProject
 //
 //  Created by Denis Surzhan on 29.10.15.
 //  Copyright © 2015 IDAPGroupCollege. All rights reserved.
 //
 
-#import "DLSModel.h"
+#import "DLSImageModel.h"
 
-@interface DLSArrayModel : DLSModel
+@implementation DLSImageModel
 
 @end

@@ -1,5 +1,5 @@
 //
-//  DLSArrayModel.h
+//  DLSModel.m
 //  DLSiOSProject
 //
 //  Created by Denis Surzhan on 29.10.15.
@@ -8,6 +8,6 @@
 
 #import "DLSModel.h"
 
-@interface DLSArrayModel : DLSModel
+@implementation DLSModel
 
 @end

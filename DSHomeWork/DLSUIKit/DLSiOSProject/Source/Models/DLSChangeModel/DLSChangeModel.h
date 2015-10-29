@@ -1,13 +1,13 @@
 //
-//  DLSArrayModel.h
+//  DLSChangeModel.h
 //  DLSiOSProject
 //
 //  Created by Denis Surzhan on 29.10.15.
 //  Copyright © 2015 IDAPGroupCollege. All rights reserved.
 //
 
-#import "DLSModel.h"
+#import <Foundation/Foundation.h>
 
-@interface DLSArrayModel : DLSModel
+@interface DLSChangeModel : NSObject
 
 @end

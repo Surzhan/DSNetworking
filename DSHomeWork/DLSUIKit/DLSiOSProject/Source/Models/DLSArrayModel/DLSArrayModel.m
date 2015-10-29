@@ -2,7 +2,7 @@
 //  DLSArrayModel.m
 //  DLSiOSProject
 //
-//  Created by Denis Surzhan on 21.09.15.
+//  Created by Denis Surzhan on 29.10.15.
 //  Copyright © 2015 IDAPGroupCollege. All rights reserved.
 //
 

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4410BDC41BAFDB7300912BD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4410BDC31BAFDB7300912BD7 /* main.m */; };
 		4410BDC71BAFDB7300912BD7 /* DLSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4410BDC61BAFDB7300912BD7 /* DLSAppDelegate.m */; };
-		4410BDF71BAFE1A500912BD7 /* DLSArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4410BDF61BAFE1A500912BD7 /* DLSArrayModel.m */; };
 		443B53DB1BAFE89E00922534 /* DLSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443B53D91BAFE89E00922534 /* DLSTableViewController.m */; };
 		443B53DC1BAFE89E00922534 /* DLSTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443B53DA1BAFE89E00922534 /* DLSTableViewController.xib */; };
 		443B53E11BAFEBD500922534 /* DLSObservableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 443B53E01BAFEBD500922534 /* DLSObservableObject.m */; };
@@ -32,7 +31,6 @@
 		44D358351B9F8E0100B111D6 /* DLSSquareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D358331B9F8E0100B111D6 /* DLSSquareViewController.xib */; };
 		44D3583B1B9F927300B111D6 /* DLSSquareHolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D3583A1B9F927300B111D6 /* DLSSquareHolderView.m */; };
 		44D3583F1B9F935F00B111D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D3583D1B9F935F00B111D6 /* Images.xcassets */; };
-		44D452921BB1338400E1CE27 /* DLSUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D452911BB1338400E1CE27 /* DLSUserModel.m */; };
 		44E3A4FC1BE177DF00115880 /* DLSAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A4FB1BE177DF00115880 /* DLSAlphabet.m */; };
 		44E3A5021BE17A3900115880 /* DLSAlphabetWithAlphabets.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5011BE17A3900115880 /* DLSAlphabetWithAlphabets.m */; };
 		44E3A5051BE17A5000115880 /* DLSAlphabetWithRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5041BE17A5000115880 /* DLSAlphabetWithRange.m */; };
@@ -42,6 +40,14 @@
 		44E3A5171BE189D200115880 /* DLSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5161BE189D200115880 /* DLSTableViewCell.m */; };
 		44E3A51A1BE18ACB00115880 /* DLSUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5191BE18ACB00115880 /* DLSUserCell.m */; };
 		44E3A51E1BE18CC200115880 /* DLSUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E3A51D1BE18CC200115880 /* DLSUserCell.xib */; };
+		44E3A5271BE19BF800115880 /* DLSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5261BE19BF800115880 /* DLSModel.m */; };
+		44E3A52A1BE19C2B00115880 /* DLSArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5291BE19C2B00115880 /* DLSArrayModel.m */; };
+		44E3A52D1BE19C4E00115880 /* DLSUserArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A52C1BE19C4E00115880 /* DLSUserArrayModel.m */; };
+		44E3A5301BE19C8C00115880 /* DLSChangeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A52F1BE19C8C00115880 /* DLSChangeModel.m */; };
+		44E3A5331BE19EDE00115880 /* DLSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5321BE19EDE00115880 /* DLSUser.m */; };
+		44E3A5361BE1A47100115880 /* DLSImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5351BE1A47100115880 /* DLSImageModel.m */; };
+		44E3A53B1BE1A66000115880 /* DLSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A53A1BE1A66000115880 /* DLSView.m */; };
+		44E3A53E1BE1A67B00115880 /* DLSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A53D1BE1A67B00115880 /* DLSImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +74,6 @@
 		4410BDC51BAFDB7300912BD7 /* DLSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLSAppDelegate.h; sourceTree = "<group>"; };
 		4410BDC61BAFDB7300912BD7 /* DLSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLSAppDelegate.m; sourceTree = "<group>"; };
 		4410BDD31BAFDB7300912BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4410BDF51BAFE1A500912BD7 /* DLSArrayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSArrayModel.h; sourceTree = "<group>"; };
-		4410BDF61BAFE1A500912BD7 /* DLSArrayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSArrayModel.m; sourceTree = "<group>"; };
 		443B53D81BAFE89E00922534 /* DLSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSTableViewController.h; sourceTree = "<group>"; };
 		443B53D91BAFE89E00922534 /* DLSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSTableViewController.m; sourceTree = "<group>"; };
 		443B53DA1BAFE89E00922534 /* DLSTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLSTableViewController.xib; sourceTree = "<group>"; };
@@ -104,8 +108,6 @@
 		44D358391B9F927300B111D6 /* DLSSquareHolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSSquareHolderView.h; sourceTree = "<group>"; };
 		44D3583A1B9F927300B111D6 /* DLSSquareHolderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSSquareHolderView.m; sourceTree = "<group>"; };
 		44D3583D1B9F935F00B111D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		44D452901BB1338400E1CE27 /* DLSUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSUserModel.h; sourceTree = "<group>"; };
-		44D452911BB1338400E1CE27 /* DLSUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSUserModel.m; sourceTree = "<group>"; };
 		44E3A4FA1BE177DF00115880 /* DLSAlphabet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSAlphabet.h; sourceTree = "<group>"; };
 		44E3A4FB1BE177DF00115880 /* DLSAlphabet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSAlphabet.m; sourceTree = "<group>"; };
 		44E3A5001BE17A3900115880 /* DLSAlphabetWithAlphabets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSAlphabetWithAlphabets.h; sourceTree = "<group>"; };
@@ -122,6 +124,22 @@
 		44E3A5181BE18ACB00115880 /* DLSUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSUserCell.h; sourceTree = "<group>"; };
 		44E3A5191BE18ACB00115880 /* DLSUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSUserCell.m; sourceTree = "<group>"; };
 		44E3A51D1BE18CC200115880 /* DLSUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLSUserCell.xib; sourceTree = "<group>"; };
+		44E3A5251BE19BF800115880 /* DLSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSModel.h; sourceTree = "<group>"; };
+		44E3A5261BE19BF800115880 /* DLSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSModel.m; sourceTree = "<group>"; };
+		44E3A5281BE19C2B00115880 /* DLSArrayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSArrayModel.h; sourceTree = "<group>"; };
+		44E3A5291BE19C2B00115880 /* DLSArrayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSArrayModel.m; sourceTree = "<group>"; };
+		44E3A52B1BE19C4E00115880 /* DLSUserArrayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSUserArrayModel.h; sourceTree = "<group>"; };
+		44E3A52C1BE19C4E00115880 /* DLSUserArrayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSUserArrayModel.m; sourceTree = "<group>"; };
+		44E3A52E1BE19C8C00115880 /* DLSChangeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSChangeModel.h; sourceTree = "<group>"; };
+		44E3A52F1BE19C8C00115880 /* DLSChangeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSChangeModel.m; sourceTree = "<group>"; };
+		44E3A5311BE19EDE00115880 /* DLSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSUser.h; sourceTree = "<group>"; };
+		44E3A5321BE19EDE00115880 /* DLSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSUser.m; sourceTree = "<group>"; };
+		44E3A5341BE1A47100115880 /* DLSImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSImageModel.h; sourceTree = "<group>"; };
+		44E3A5351BE1A47100115880 /* DLSImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSImageModel.m; sourceTree = "<group>"; };
+		44E3A5391BE1A66000115880 /* DLSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSView.h; sourceTree = "<group>"; };
+		44E3A53A1BE1A66000115880 /* DLSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSView.m; sourceTree = "<group>"; };
+		44E3A53C1BE1A67B00115880 /* DLSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSImageView.h; sourceTree = "<group>"; };
+		44E3A53D1BE1A67B00115880 /* DLSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSImageView.m; sourceTree = "<group>"; };
 		6C1CD52294499A49585D4348 /* libPods-DLSiOSProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLSiOSProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE77F5E4D0285693357AC05E /* Pods-DLSiOSProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLSiOSProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLSiOSProjectTests/Pods-DLSiOSProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,15 +195,6 @@
 				443B53DA1BAFE89E00922534 /* DLSTableViewController.xib */,
 			);
 			path = DLSTableViewController;
-			sourceTree = "<group>";
-		};
-		4410BDF41BAFE12E00912BD7 /* DLSArrayModel */ = {
-			isa = PBXGroup;
-			children = (
-				4410BDF51BAFE1A500912BD7 /* DLSArrayModel.h */,
-				4410BDF61BAFE1A500912BD7 /* DLSArrayModel.m */,
-			);
-			path = DLSArrayModel;
 			sourceTree = "<group>";
 		};
 		443B53DD1BAFEB5A00922534 /* DLSClasses */ = {
@@ -351,8 +360,12 @@
 		44D3581B1B9F6E2000B111D6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				44D4528F1BB1335000E1CE27 /* DLSUserModel */,
-				4410BDF41BAFE12E00912BD7 /* DLSArrayModel */,
+				44E3A5241BE19B8900115880 /* DLSImageModel */,
+				44E3A5231BE19B6700115880 /* DLSUser */,
+				44E3A51F1BE19A1200115880 /* DLSModel */,
+				44E3A5201BE19A3E00115880 /* DLSArrayModel */,
+				44E3A5211BE19A7500115880 /* DLSUserArrayModel */,
+				44E3A5221BE19B0200115880 /* DLSChangeModel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -403,15 +416,6 @@
 			);
 			name = DLSSquareHolderView;
 			path = DLSViewSquare;
-			sourceTree = "<group>";
-		};
-		44D4528F1BB1335000E1CE27 /* DLSUserModel */ = {
-			isa = PBXGroup;
-			children = (
-				44D452901BB1338400E1CE27 /* DLSUserModel.h */,
-				44D452911BB1338400E1CE27 /* DLSUserModel.m */,
-			);
-			path = DLSUserModel;
 			sourceTree = "<group>";
 		};
 		44E3A4F81BE1764B00115880 /* DLSAlphabet */ = {
@@ -465,6 +469,8 @@
 		44E3A5091BE17DAD00115880 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				44E3A5371BE1A58D00115880 /* DLSView */,
+				44E3A5381BE1A5AA00115880 /* DLSImageView */,
 				44E3A5131BE188E800115880 /* DLSUserCell */,
 				44E3A50A1BE17E3D00115880 /* DLSLoadingView */,
 				44D3582D1B9F8D2400B111D6 /* DLSSquareHolderView */,
@@ -499,6 +505,78 @@
 				44E3A5161BE189D200115880 /* DLSTableViewCell.m */,
 			);
 			path = DLSTableViewCell;
+			sourceTree = "<group>";
+		};
+		44E3A51F1BE19A1200115880 /* DLSModel */ = {
+			isa = PBXGroup;
+			children = (
+				44E3A5251BE19BF800115880 /* DLSModel.h */,
+				44E3A5261BE19BF800115880 /* DLSModel.m */,
+			);
+			path = DLSModel;
+			sourceTree = "<group>";
+		};
+		44E3A5201BE19A3E00115880 /* DLSArrayModel */ = {
+			isa = PBXGroup;
+			children = (
+				44E3A5281BE19C2B00115880 /* DLSArrayModel.h */,
+				44E3A5291BE19C2B00115880 /* DLSArrayModel.m */,
+			);
+			path = DLSArrayModel;
+			sourceTree = "<group>";
+		};
+		44E3A5211BE19A7500115880 /* DLSUserArrayModel */ = {
+			isa = PBXGroup;
+			children = (
+				44E3A52B1BE19C4E00115880 /* DLSUserArrayModel.h */,
+				44E3A52C1BE19C4E00115880 /* DLSUserArrayModel.m */,
+			);
+			path = DLSUserArrayModel;
+			sourceTree = "<group>";
+		};
+		44E3A5221BE19B0200115880 /* DLSChangeModel */ = {
+			isa = PBXGroup;
+			children = (
+				44E3A52E1BE19C8C00115880 /* DLSChangeModel.h */,
+				44E3A52F1BE19C8C00115880 /* DLSChangeModel.m */,
+			);
+			path = DLSChangeModel;
+			sourceTree = "<group>";
+		};
+		44E3A5231BE19B6700115880 /* DLSUser */ = {
+			isa = PBXGroup;
+			children = (
+				44E3A5311BE19EDE00115880 /* DLSUser.h */,
+				44E3A5321BE19EDE00115880 /* DLSUser.m */,
+			);
+			path = DLSUser;
+			sourceTree = "<group>";
+		};
+		44E3A5241BE19B8900115880 /* DLSImageModel */ = {
+			isa = PBXGroup;
+			children = (
+				44E3A5341BE1A47100115880 /* DLSImageModel.h */,
+				44E3A5351BE1A47100115880 /* DLSImageModel.m */,
+			);
+			path = DLSImageModel;
+			sourceTree = "<group>";
+		};
+		44E3A5371BE1A58D00115880 /* DLSView */ = {
+			isa = PBXGroup;
+			children = (
+				44E3A5391BE1A66000115880 /* DLSView.h */,
+				44E3A53A1BE1A66000115880 /* DLSView.m */,
+			);
+			path = DLSView;
+			sourceTree = "<group>";
+		};
+		44E3A5381BE1A5AA00115880 /* DLSImageView */ = {
+			isa = PBXGroup;
+			children = (
+				44E3A53C1BE1A67B00115880 /* DLSImageView.h */,
+				44E3A53D1BE1A67B00115880 /* DLSImageView.m */,
+			);
+			path = DLSImageView;
 			sourceTree = "<group>";
 		};
 		6B46A52A3C17485BCBF9744B /* Frameworks */ = {
@@ -685,22 +763,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4410BDF71BAFE1A500912BD7 /* DLSArrayModel.m in Sources */,
-				44D452921BB1338400E1CE27 /* DLSUserModel.m in Sources */,
 				44D1AC791BB3DCAE003144D7 /* UINib+DLSExtentions.m in Sources */,
 				44E3A5171BE189D200115880 /* DLSTableViewCell.m in Sources */,
+				44E3A5301BE19C8C00115880 /* DLSChangeModel.m in Sources */,
 				443B53E41BAFEBF000922534 /* NSObject+DLSExtensions.m in Sources */,
 				44E3A5121BE17F8100115880 /* DLSLoadingView.m in Sources */,
 				44E3A4FC1BE177DF00115880 /* DLSAlphabet.m in Sources */,
+				44E3A53B1BE1A66000115880 /* DLSView.m in Sources */,
 				443B53E21BAFEBD500922534 /* DLSObservableObject.m in Sources */,
 				443B53DB1BAFE89E00922534 /* DLSTableViewController.m in Sources */,
+				44E3A52A1BE19C2B00115880 /* DLSArrayModel.m in Sources */,
 				4410BDC71BAFDB7300912BD7 /* DLSAppDelegate.m in Sources */,
 				44E3A5051BE17A5000115880 /* DLSAlphabetWithRange.m in Sources */,
+				44E3A5271BE19BF800115880 /* DLSModel.m in Sources */,
 				443B53E31BAFEBEC00922534 /* UIViewController+DLSExtentions.m in Sources */,
+				44E3A5361BE1A47100115880 /* DLSImageModel.m in Sources */,
+				44E3A52D1BE19C4E00115880 /* DLSUserArrayModel.m in Sources */,
 				44E3A5021BE17A3900115880 /* DLSAlphabetWithAlphabets.m in Sources */,
 				44E3A5081BE17A6600115880 /* DLSAlphabetWithStrings.m in Sources */,
 				44E3A51A1BE18ACB00115880 /* DLSUserCell.m in Sources */,
+				44E3A53E1BE1A67B00115880 /* DLSImageView.m in Sources */,
 				4410BDC41BAFDB7300912BD7 /* main.m in Sources */,
+				44E3A5331BE19EDE00115880 /* DLSUser.m in Sources */,
 				443B53E51BAFEBF500922534 /* UIWindow+DLSExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
