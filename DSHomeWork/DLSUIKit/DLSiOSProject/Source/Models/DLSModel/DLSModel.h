@@ -8,6 +8,18 @@
 
 #import "DLSObservableObject.h"
 
+typedef NS_ENUM(NSUInteger, DLSModelState) {
+    DLSModelNotLoaded,
+    DLSModelDidFailLoading,
+    DLSModelWillLoad,
+    DLSModelDidLoad,
+    DLSModelDidChange
+};
+
 @interface DLSModel : DLSObservableObject
+
+- (void)load;
+- (void)setupLoading;
+- (void)performLoading;
 
 @end
