@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (DLSExtentions)
+@interface UIViewController (DLSExtensions)
 
 + (instancetype)controller;
 + (NSString *)nibName;

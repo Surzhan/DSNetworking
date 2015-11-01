@@ -8,7 +8,7 @@
 
 #import "UIViewController+DLSExtentions.h"
 
-@implementation UIViewController (DLSExtentions)
+@implementation UIViewController (DLSExtensions)
 
 #pragma mark -
 #pragma mark Class Methods

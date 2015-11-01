@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="wm5-tO-yeR" userLabel="Spinner View">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="wm5-tO-yeR" userLabel="Activity Indicator View">
                                 <rect key="frame" x="24" y="24" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>

@@ -13,10 +13,10 @@
 		443B53DC1BAFE89E00922534 /* DLSTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443B53DA1BAFE89E00922534 /* DLSTableViewController.xib */; };
 		443B53E11BAFEBD500922534 /* DLSObservableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 443B53E01BAFEBD500922534 /* DLSObservableObject.m */; };
 		443B53E21BAFEBD500922534 /* DLSObservableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 443B53E01BAFEBD500922534 /* DLSObservableObject.m */; };
-		443B53E31BAFEBEC00922534 /* UIViewController+DLSExtentions.m in Sources */ = {isa = PBXBuildFile; fileRef = 446811AD1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m */; };
+		443B53E31BAFEBEC00922534 /* UIViewController+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 446811AD1BAAA4FF00A2BDA7 /* UIViewController+DLSExtensions.m */; };
 		443B53E41BAFEBF000922534 /* NSObject+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CE6DB91BA8BAD50098FCE8 /* NSObject+DLSExtensions.m */; };
 		443B53E51BAFEBF500922534 /* UIWindow+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CE6DB51BA8B6D80098FCE8 /* UIWindow+DLSExtensions.m */; };
-		446811AE1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m in Sources */ = {isa = PBXBuildFile; fileRef = 446811AD1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m */; };
+		446811AE1BAAA4FF00A2BDA7 /* UIViewController+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 446811AD1BAAA4FF00A2BDA7 /* UIViewController+DLSExtensions.m */; };
 		44CE6DB61BA8B6D80098FCE8 /* UIWindow+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CE6DB51BA8B6D80098FCE8 /* UIWindow+DLSExtensions.m */; };
 		44CE6DBA1BA8BAD50098FCE8 /* NSObject+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CE6DB91BA8BAD50098FCE8 /* NSObject+DLSExtensions.m */; };
 		44D0F4581BB0416B00895175 /* Task1_SquareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D0F4571BB0416B00895175 /* Task1_SquareUITests.m */; };
@@ -58,6 +58,14 @@
 		44EE74EC1BE6B597008B7498 /* NSMutableArray+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE74EA1BE6B597008B7498 /* NSMutableArray+DLSExtensions.m */; };
 		44EE74F01BE6BD6E008B7498 /* NSFileManager+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE74EF1BE6BD6E008B7498 /* NSFileManager+DLSExtensions.m */; };
 		44EE74F11BE6BD6E008B7498 /* NSFileManager+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE74EF1BE6BD6E008B7498 /* NSFileManager+DLSExtensions.m */; };
+		44EE74F61BE6C555008B7498 /* DLSChangesModelOneIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE74F51BE6C555008B7498 /* DLSChangesModelOneIndex.m */; };
+		44EE74F71BE6C555008B7498 /* DLSChangesModelOneIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE74F51BE6C555008B7498 /* DLSChangesModelOneIndex.m */; };
+		44EE74FA1BE6C570008B7498 /* DLSChangesModelTwoIndexes.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE74F91BE6C570008B7498 /* DLSChangesModelTwoIndexes.m */; };
+		44EE74FB1BE6C570008B7498 /* DLSChangesModelTwoIndexes.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE74F91BE6C570008B7498 /* DLSChangesModelTwoIndexes.m */; };
+		44EE75091BE6CB5A008B7498 /* DLSChangeModel+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE75081BE6CB5A008B7498 /* DLSChangeModel+UITableView.m */; };
+		44EE750A1BE6CB5A008B7498 /* DLSChangeModel+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE75081BE6CB5A008B7498 /* DLSChangeModel+UITableView.m */; };
+		44EE750E1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE750D1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.m */; };
+		44EE750F1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE750D1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,8 +97,8 @@
 		443B53DA1BAFE89E00922534 /* DLSTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLSTableViewController.xib; sourceTree = "<group>"; };
 		443B53DF1BAFEBD500922534 /* DLSObservableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSObservableObject.h; sourceTree = "<group>"; };
 		443B53E01BAFEBD500922534 /* DLSObservableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSObservableObject.m; sourceTree = "<group>"; };
-		446811AC1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DLSExtentions.h"; sourceTree = "<group>"; };
-		446811AD1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DLSExtentions.m"; sourceTree = "<group>"; };
+		446811AC1BAAA4FF00A2BDA7 /* UIViewController+DLSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DLSExtensions.h"; sourceTree = "<group>"; };
+		446811AD1BAAA4FF00A2BDA7 /* UIViewController+DLSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DLSExtensions.m"; sourceTree = "<group>"; };
 		44CE6DA71BA8B25B0098FCE8 /* DLSMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSMacros.h; sourceTree = "<group>"; };
 		44CE6DA81BA8B2750098FCE8 /* DLSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSConstants.h; sourceTree = "<group>"; };
 		44CE6DB41BA8B6D80098FCE8 /* UIWindow+DLSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+DLSExtensions.h"; sourceTree = "<group>"; };
@@ -163,6 +171,14 @@
 		44EE74EA1BE6B597008B7498 /* NSMutableArray+DLSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+DLSExtensions.m"; sourceTree = "<group>"; };
 		44EE74EE1BE6BD6E008B7498 /* NSFileManager+DLSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DLSExtensions.h"; sourceTree = "<group>"; };
 		44EE74EF1BE6BD6E008B7498 /* NSFileManager+DLSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DLSExtensions.m"; sourceTree = "<group>"; };
+		44EE74F41BE6C555008B7498 /* DLSChangesModelOneIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSChangesModelOneIndex.h; sourceTree = "<group>"; };
+		44EE74F51BE6C555008B7498 /* DLSChangesModelOneIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSChangesModelOneIndex.m; sourceTree = "<group>"; };
+		44EE74F81BE6C570008B7498 /* DLSChangesModelTwoIndexes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSChangesModelTwoIndexes.h; sourceTree = "<group>"; };
+		44EE74F91BE6C570008B7498 /* DLSChangesModelTwoIndexes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSChangesModelTwoIndexes.m; sourceTree = "<group>"; };
+		44EE75071BE6CB5A008B7498 /* DLSChangeModel+UITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DLSChangeModel+UITableView.h"; sourceTree = "<group>"; };
+		44EE75081BE6CB5A008B7498 /* DLSChangeModel+UITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DLSChangeModel+UITableView.m"; sourceTree = "<group>"; };
+		44EE750C1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+DLSExtensions.h"; sourceTree = "<group>"; };
+		44EE750D1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+DLSExtensions.m"; sourceTree = "<group>"; };
 		6C1CD52294499A49585D4348 /* libPods-DLSiOSProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLSiOSProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE77F5E4D0285693357AC05E /* Pods-DLSiOSProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLSiOSProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLSiOSProjectTests/Pods-DLSiOSProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,23 +256,25 @@
 			path = DLSObservableObject;
 			sourceTree = "<group>";
 		};
-		446811AB1BAAA4BB00A2BDA7 /* UIViewController+DLSExtentions */ = {
+		446811AB1BAAA4BB00A2BDA7 /* UIViewController+DLSExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				446811AC1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.h */,
-				446811AD1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m */,
+				446811AC1BAAA4FF00A2BDA7 /* UIViewController+DLSExtensions.h */,
+				446811AD1BAAA4FF00A2BDA7 /* UIViewController+DLSExtensions.m */,
 			);
+			name = "UIViewController+DLSExtensions";
 			path = "UIViewController+DLSExtentions";
 			sourceTree = "<group>";
 		};
 		44CE6DA41BA8B1950098FCE8 /* DLSCategories */ = {
 			isa = PBXGroup;
 			children = (
+				44EE750B1BE6D4A4008B7498 /* NSIndexPath+DLSExtensions */,
 				44EE74ED1BE6BD37008B7498 /* NSFileManager+DLSExtensions */,
 				44EE74E81BE6B557008B7498 /* NSMutableArray+DLSExtensions */,
 				44E54F041BE2094E00CC939A /* NSString+DLSExtensions */,
 				44D1AC751BB3DC00003144D7 /* UINib+DLSExtentions */,
-				446811AB1BAAA4BB00A2BDA7 /* UIViewController+DLSExtentions */,
+				446811AB1BAAA4BB00A2BDA7 /* UIViewController+DLSExtensions */,
 				44CE6DB71BA8BA8B0098FCE8 /* NSObject+DLSExtensions */,
 				44CE6DB31BA8B6A60098FCE8 /* UIWindow+DLSExtensions */,
 			);
@@ -565,6 +583,9 @@
 		44E3A5221BE19B0200115880 /* DLSChangeModel */ = {
 			isa = PBXGroup;
 			children = (
+				44EE75061BE6CB37008B7498 /* DLSChangeModel+UITableView */,
+				44EE74F21BE6C4BE008B7498 /* DLSChangesModelOneIndex */,
+				44EE74F31BE6C501008B7498 /* DLSChangesModelTwoIndexes */,
 				44E3A52E1BE19C8C00115880 /* DLSChangeModel.h */,
 				44E3A52F1BE19C8C00115880 /* DLSChangeModel.m */,
 			);
@@ -661,6 +682,42 @@
 				44EE74EF1BE6BD6E008B7498 /* NSFileManager+DLSExtensions.m */,
 			);
 			path = "NSFileManager+DLSExtensions";
+			sourceTree = "<group>";
+		};
+		44EE74F21BE6C4BE008B7498 /* DLSChangesModelOneIndex */ = {
+			isa = PBXGroup;
+			children = (
+				44EE74F41BE6C555008B7498 /* DLSChangesModelOneIndex.h */,
+				44EE74F51BE6C555008B7498 /* DLSChangesModelOneIndex.m */,
+			);
+			path = DLSChangesModelOneIndex;
+			sourceTree = "<group>";
+		};
+		44EE74F31BE6C501008B7498 /* DLSChangesModelTwoIndexes */ = {
+			isa = PBXGroup;
+			children = (
+				44EE74F81BE6C570008B7498 /* DLSChangesModelTwoIndexes.h */,
+				44EE74F91BE6C570008B7498 /* DLSChangesModelTwoIndexes.m */,
+			);
+			path = DLSChangesModelTwoIndexes;
+			sourceTree = "<group>";
+		};
+		44EE75061BE6CB37008B7498 /* DLSChangeModel+UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				44EE75071BE6CB5A008B7498 /* DLSChangeModel+UITableView.h */,
+				44EE75081BE6CB5A008B7498 /* DLSChangeModel+UITableView.m */,
+			);
+			path = "DLSChangeModel+UITableView";
+			sourceTree = "<group>";
+		};
+		44EE750B1BE6D4A4008B7498 /* NSIndexPath+DLSExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				44EE750C1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.h */,
+				44EE750D1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.m */,
+			);
+			path = "NSIndexPath+DLSExtensions";
 			sourceTree = "<group>";
 		};
 		6B46A52A3C17485BCBF9744B /* Frameworks */ = {
@@ -850,6 +907,8 @@
 				44D1AC791BB3DCAE003144D7 /* UINib+DLSExtentions.m in Sources */,
 				44E54F101BE20CB300CC939A /* DLSURLImageModel.m in Sources */,
 				44E3A5171BE189D200115880 /* DLSTableViewCell.m in Sources */,
+				44EE750F1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.m in Sources */,
+				44EE74F71BE6C555008B7498 /* DLSChangesModelOneIndex.m in Sources */,
 				44E3A5301BE19C8C00115880 /* DLSChangeModel.m in Sources */,
 				443B53E41BAFEBF000922534 /* NSObject+DLSExtensions.m in Sources */,
 				44E3A5121BE17F8100115880 /* DLSLoadingView.m in Sources */,
@@ -863,7 +922,7 @@
 				4410BDC71BAFDB7300912BD7 /* DLSAppDelegate.m in Sources */,
 				44E3A5051BE17A5000115880 /* DLSAlphabetWithRange.m in Sources */,
 				44E3A5271BE19BF800115880 /* DLSModel.m in Sources */,
-				443B53E31BAFEBEC00922534 /* UIViewController+DLSExtentions.m in Sources */,
+				443B53E31BAFEBEC00922534 /* UIViewController+DLSExtensions.m in Sources */,
 				44E3A5361BE1A47100115880 /* DLSImageModel.m in Sources */,
 				44E3A52D1BE19C4E00115880 /* DLSUserArrayModel.m in Sources */,
 				44E3A5021BE17A3900115880 /* DLSAlphabetWithAlphabets.m in Sources */,
@@ -871,9 +930,11 @@
 				44EE74E61BE6B0A4008B7498 /* DLSDispatch.m in Sources */,
 				44E3A51A1BE18ACB00115880 /* DLSUserCell.m in Sources */,
 				44EE74F11BE6BD6E008B7498 /* NSFileManager+DLSExtensions.m in Sources */,
+				44EE74FB1BE6C570008B7498 /* DLSChangesModelTwoIndexes.m in Sources */,
 				44E3A53E1BE1A67B00115880 /* DLSImageView.m in Sources */,
 				4410BDC41BAFDB7300912BD7 /* main.m in Sources */,
 				44EE74EC1BE6B597008B7498 /* NSMutableArray+DLSExtensions.m in Sources */,
+				44EE750A1BE6CB5A008B7498 /* DLSChangeModel+UITableView.m in Sources */,
 				44E3A5331BE19EDE00115880 /* DLSUser.m in Sources */,
 				443B53E51BAFEBF500922534 /* UIWindow+DLSExtensions.m in Sources */,
 			);
@@ -900,8 +961,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				44CE6DB61BA8B6D80098FCE8 /* UIWindow+DLSExtensions.m in Sources */,
+				44EE750E1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.m in Sources */,
 				44CE6DBA1BA8BAD50098FCE8 /* NSObject+DLSExtensions.m in Sources */,
-				446811AE1BAAA4FF00A2BDA7 /* UIViewController+DLSExtentions.m in Sources */,
+				446811AE1BAAA4FF00A2BDA7 /* UIViewController+DLSExtensions.m in Sources */,
+				44EE74F61BE6C555008B7498 /* DLSChangesModelOneIndex.m in Sources */,
 				44D357F91B9F6A1700B111D6 /* DLSAppDelegate.m in Sources */,
 				44D3583B1B9F927300B111D6 /* DLSSquareHolderView.m in Sources */,
 				44EE74F01BE6BD6E008B7498 /* NSFileManager+DLSExtensions.m in Sources */,
@@ -909,7 +972,9 @@
 				44D357F61B9F6A1700B111D6 /* main.m in Sources */,
 				44D358341B9F8E0100B111D6 /* DLSSquareViewController.m in Sources */,
 				44EE74E51BE6B0A4008B7498 /* DLSDispatch.m in Sources */,
+				44EE74FA1BE6C570008B7498 /* DLSChangesModelTwoIndexes.m in Sources */,
 				44EE74EB1BE6B597008B7498 /* NSMutableArray+DLSExtensions.m in Sources */,
+				44EE75091BE6CB5A008B7498 /* DLSChangeModel+UITableView.m in Sources */,
 				44D1AC781BB3DCAE003144D7 /* UINib+DLSExtentions.m in Sources */,
 				443B53E11BAFEBD500922534 /* DLSObservableObject.m in Sources */,
 			);

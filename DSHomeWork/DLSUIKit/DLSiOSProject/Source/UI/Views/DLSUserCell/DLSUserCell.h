@@ -14,7 +14,7 @@
 @interface DLSUserCell : DLSTableViewCell
 @property (nonatomic, strong) IBOutlet DLSImageView             *userImageView;
 @property (nonatomic, strong) IBOutlet UILabel                  *nameLabel;
-@property (nonatomic, strong) IBOutlet UIActivityIndicatorView  *spinnerView;
+@property (nonatomic, strong) IBOutlet UIActivityIndicatorView  *activityIndicatorView;
 
 @property (nonatomic, strong) DLSUser *user;
 
