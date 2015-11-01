@@ -51,3 +51,12 @@
 
 #define DLSStrongify(object) \
     __strong __typeof(object) object = __DLSWeak_##object
+
+#define DLSSleepDefine 1
+
+#if DLSSleepDefine
+    #define DLSSleep(time) [NSThread sleepForTimeInterval:time]
+#else
+    #define DLSSleep(time)
+#endif
+
