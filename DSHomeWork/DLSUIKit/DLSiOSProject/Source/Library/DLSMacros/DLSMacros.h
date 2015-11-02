@@ -60,3 +60,20 @@
     #define DLSSleep(time)
 #endif
 
+#define DLSLoad(propertyName) \
+    [_##propertyName load];
+
+#define __DLSSynthesizeObservingSetterWithArgument(propertyName, arg) \
+    if (_##propertyName != propertyName) { \
+        [_##propertyName removeObserver:self]; \
+        _##propertyName = propertyName; \
+        [_##propertyName addObserver:self]; \
+        arg \
+    }
+
+#define DLSSynthesizeObservingSetter(propertyName) \
+    __DLSSynthesizeObservingSetterWithArgument(propertyName, DLSEmptyMacro)
+
+#define DLSSynthesizeObservingSetterAndLoad(propertyName) \
+    __DLSSynthesizeObservingSetterWithArgument(propertyName, DLSLoad(propertyName))
+

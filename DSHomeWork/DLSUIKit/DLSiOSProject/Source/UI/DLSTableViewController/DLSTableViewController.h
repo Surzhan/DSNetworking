@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class DLSArrayModel;
+#import "DLSUserArrayModel.h"
+#import "DLSModelObserver.h"
 
-@interface DLSTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong)   DLSArrayModel   *arrayModel;
+@interface DLSTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, DLSModelObserver>
+@property (nonatomic, strong)   DLSUserArrayModel   *arrayModel;
+
+- (IBAction)onEditButton:(id)sender;
+- (IBAction)onAddButton:(id)sender;
 
 @end
