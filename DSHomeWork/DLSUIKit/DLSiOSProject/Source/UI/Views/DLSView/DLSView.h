@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class DLSLoadingView;
+
 @interface DLSView : UIView
+@property (nonatomic, readonly, getter=isHiddenLoadingView) BOOL hiddenLoadingView;
+
+- (DLSLoadingView *)newLoadingView;
+
+- (void)hideLoadingView;
+- (void)showLoadingView;
 
 @end
+
+

@@ -17,14 +17,14 @@ typedef NS_ENUM(NSUInteger, DLSChangeModelState) {
     DLSChangeModelChangeMoved
 };
 
-@interface DLSChangeModel : NSObject
+@interface DLSChangesModel : NSObject
 @property (nonatomic, readonly) DLSChangeModelState state;
 
 + (instancetype)modelWithState:(DLSChangeModelState)state;
 
 @end
 
-@interface DLSChangeModel (DLSInitializers)
+@interface DLSChangesModel (DLSInitializers)
 
 + (DLSChangesModelOneIndex *)addModelWithIndex:(NSUInteger)index;
 + (DLSChangesModelOneIndex *)deleteModelWithIndex:(NSUInteger)index;

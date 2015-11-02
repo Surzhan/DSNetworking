@@ -8,7 +8,7 @@
 
 #import "DLSLoadingView.h"
 
-#import "UINib+DLSExtentions.h"
+#import "UINib+DLSExtensions.h"
 
 static const NSTimeInterval kDLSAnimationDuration   = 2;
 static const CGFloat        kDLSVisibleAlpha        = 1;

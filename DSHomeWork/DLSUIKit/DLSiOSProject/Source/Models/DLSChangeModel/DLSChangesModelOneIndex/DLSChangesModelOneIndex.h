@@ -6,9 +6,9 @@
 //  Copyright © 2015 IDAPGroupCollege. All rights reserved.
 //
 
-#import "DLSChangeModel.h"
+#import "DLSChangesModel.h"
 
-@interface DLSChangesModelOneIndex : DLSChangeModel
+@interface DLSChangesModelOneIndex : DLSChangesModel
 @property (nonatomic, readonly) NSUInteger  index;
 
 + (instancetype)modelWithIndex:(NSUInteger)index state:(DLSChangeModelState)state;

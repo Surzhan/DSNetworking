@@ -1,5 +1,5 @@
 //
-//  UINib+DLSExtentions.h
+//  UINib+DLSExtensions.h
 //  DLSiOSProject
 //
 //  Created by Denis Surzhan on 24.09.15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UINib (DLSExtentions)
+@interface UINib (DLSExtensions)
 
 + (id)objectWithClass:(Class)cls;
 + (id)objectWithClass:(Class)cls withOwner:(id)owner;

@@ -12,7 +12,7 @@
 
 #import "UIWindow+DLSExtensions.h"
 #import "NSObject+DLSExtensions.h"
-#import "UIViewController+DLSExtentions.h"
+#import "UIViewController+DLSExtensions.h"
 
 @interface DLSAppDelegate ()
 

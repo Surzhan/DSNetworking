@@ -1,12 +1,12 @@
 //
-//  UIViewController+DLSExtentions.m
+//  UIViewController+DLSExtensions.m
 //  DLSiOSProject
 //
 //  Created by Denis Surzhan on 17.09.15.
 //  Copyright (c) 2015 IDAPGroupCollege. All rights reserved.
 //
 
-#import "UIViewController+DLSExtentions.h"
+#import "UIViewController+DLSExtensions.h"
 
 @implementation UIViewController (DLSExtensions)
 

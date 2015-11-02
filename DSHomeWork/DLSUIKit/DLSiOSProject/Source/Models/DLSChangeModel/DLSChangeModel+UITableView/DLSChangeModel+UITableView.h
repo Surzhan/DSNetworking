@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DLSChangeModel.h"
+#import "DLSChangesModel.h"
 
 #import "DLSChangesModelOneIndex.h"
 #import "DLSChangesModelTwoIndexes.h"
 
-@interface DLSChangeModel (UITableView)
+@interface DLSChangesModel (UITableView)
 
 - (void)applyToTableView:(UITableView *)tableView;
 - (void)applyToTableView:(UITableView *)tableView rowAnimation:(UITableViewRowAnimation)rowAnimation;

@@ -6,23 +6,23 @@
 //  Copyright © 2015 IDAPGroupCollege. All rights reserved.
 //
 
-#import "DLSChangeModel.h"
+#import "DLSChangesModel.h"
 
 #import "DLSChangesModelOneIndex.h"
 #import "DLSChangesModelTwoIndexes.h"
 
-@interface DLSChangeModel ()
+@interface DLSChangesModel ()
 @property (nonatomic, assign)   DLSChangeModelState  state;
 
 @end
 
-@implementation DLSChangeModel
+@implementation DLSChangesModel
 
 #pragma mark -
 #pragma mark Class Methods
 
 + (instancetype)modelWithState:(DLSChangeModelState)state {
-    DLSChangeModel *result = [self new];
+    DLSChangesModel *result = [self new];
     result.state = state;
     
     return result;
@@ -30,7 +30,7 @@
 
 @end
 
-@implementation DLSChangeModel (DLSInitializers)
+@implementation DLSChangesModel (DLSInitializers)
 
 #pragma mark -
 #pragma mark Class Methods

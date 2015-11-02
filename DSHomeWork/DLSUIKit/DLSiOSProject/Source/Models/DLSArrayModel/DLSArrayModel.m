@@ -8,7 +8,7 @@
 
 #import "DLSArrayModel.h"
 
-#import "DLSChangeModel.h"
+#import "DLSChangesModel.h"
 
 #import "NSMutableArray+DLSExtensions.h"
 
@@ -65,7 +65,7 @@ static NSString * const kDLSMutableArray = @"mutableArray";
 - (void)removeObjectAtIndex:(NSUInteger)index {
     [self.mutableObjects removeObjectAtIndex:index];
     
-    [self setState:DLSModelStateDidChange withObject:[DLSChangeModel deleteModelWithIndex:index]];
+    [self setState:DLSModelDidChange withObject:[DLSChangesModel deleteModelWithIndex:index]];
 }
 
 - (void)insertObject:(id)anObject atIndex:(NSUInteger)index {
@@ -77,12 +77,12 @@ static NSString * const kDLSMutableArray = @"mutableArray";
         [mutableObject insertObject:anObject atIndex:index];
     }
     
-    [self setState:DLSModelStateDidChange withObject:[DLSChangeModel addModelWithIndex:index]];
+    [self setState:DLSModelDidChange withObject:[DLSChangesModel addModelWithIndex:index]];
 }
 
 - (void)moveObjectFromIndex:(NSUInteger)fromIndex toAtIndex:(NSUInteger)toIndex {
     [self.mutableObjects moveObjectAtIndex:fromIndex toIndex:toIndex];
-    [self setState:DLSModelStateDidChange withObject:[DLSChangeModel moveModelFromIndex:fromIndex
+    [self setState:DLSModelDidChange withObject:[DLSChangesModel moveModelFromIndex:fromIndex
                                                                               toIndex:toIndex]];
 }
 

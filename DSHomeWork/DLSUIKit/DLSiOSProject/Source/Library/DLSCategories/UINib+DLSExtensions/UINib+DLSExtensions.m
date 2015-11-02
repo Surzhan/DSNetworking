@@ -1,14 +1,14 @@
 //
-//  UINib+DLSExtentions.m
+//  UINib+DLSExtensions.m
 //  DLSiOSProject
 //
 //  Created by Denis Surzhan on 24.09.15.
 //  Copyright © 2015 IDAPGroupCollege. All rights reserved.
 //
 
-#import "UINib+DLSExtentions.h"
+#import "UINib+DLSExtensions.h"
 
-@implementation UINib (DLSExtentions)
+@implementation UINib (DLSExtensions)
 
 #pragma mark -
 #pragma mark Class Methods

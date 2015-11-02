@@ -18,7 +18,7 @@
 static NSString * const kDLSFileName = @"temp.plist";
 static const NSUInteger kDLSDefaultSleepTimeInterval = 3;
 
-@interface DLSUsersArrayModel ()
+@interface DLSUserArrayModel ()
 
 - (void)saveWithNotification:(id)notification;
 - (void)fillWithModels:(NSUInteger)count;
@@ -55,7 +55,7 @@ static const NSUInteger kDLSDefaultSleepTimeInterval = 3;
 #pragma mark Accessors
 
 - (NSArray *)notificationNames {
-    return @[UIApplicationWillTerminateNotification, UIApplicationWillResignActiveNotification];
+    return @[UIApplicationWillResignActiveNotification, UIApplicationWillTerminateNotification];
 }
 
 - (NSString *)filePath {
@@ -116,7 +116,7 @@ static const NSUInteger kDLSDefaultSleepTimeInterval = 3;
     id block = nil;
     if (self.cached) {
         id models = [NSKeyedUnarchiver unarchiveObjectWithFile:self.filePath];
-        DLSSleep(kDLSDefaultSleepTimeInterval)
+        DLSSleep(kDLSDefaultSleepTimeInterval);
         
         block = ^{ for (id model in models) { [self addObject:model]; }};
     } else {

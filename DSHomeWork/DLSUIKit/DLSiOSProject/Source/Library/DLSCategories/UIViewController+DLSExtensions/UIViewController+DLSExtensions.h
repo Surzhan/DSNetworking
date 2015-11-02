@@ -1,5 +1,5 @@
 //
-//  UIViewController+DLSExtentions.h
+//  UIViewController+DLSExtensions.h
 //  DLSiOSProject
 //
 //  Created by Denis Surzhan on 17.09.15.

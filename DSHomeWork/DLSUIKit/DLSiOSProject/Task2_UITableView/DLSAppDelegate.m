@@ -12,7 +12,7 @@
 #import "DLSArrayModel.h"
 
 #import "UIWindow+DLSExtensions.h"
-#import "UIViewController+DLSExtentions.h"
+#import "UIViewController+DLSExtensions.h"
 
 @interface DLSAppDelegate ()
 

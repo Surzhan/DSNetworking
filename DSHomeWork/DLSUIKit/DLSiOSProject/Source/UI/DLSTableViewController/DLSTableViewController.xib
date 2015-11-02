@@ -11,7 +11,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="DLSUsersView">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -20,6 +20,10 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Yye-bp-b75"/>
+                        <outlet property="delegate" destination="-1" id="jDT-CU-way"/>
+                    </connections>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fkk-7H-tS9" userLabel="onEditButton" colorLabel="IBBuiltInLabel-Yellow">
                     <rect key="frame" x="16" y="22" width="90" height="30"/>
@@ -29,17 +33,28 @@
                     <state key="normal" title="Edit">
                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="onEditButton:" destination="-1" eventType="touchUpInside" id="GRc-gI-SN3"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EZo-5q-Bib" userLabel="onAddButton">
-                    <rect key="frame" x="222" y="22" width="90" height="30"/>
+                    <rect key="frame" x="217" y="22" width="90" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Add"/>
+                    <connections>
+                        <action selector="onAddButton:" destination="-1" eventType="touchUpInside" id="ozd-Zr-13f"/>
+                    </connections>
                 </button>
             </subviews>
             <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="addButton" destination="EZo-5q-Bib" id="KZN-ho-L6F"/>
+                <outlet property="editButton" destination="fkk-7H-tS9" id="Yl1-vp-64r"/>
+                <outlet property="tableView" destination="fVl-vB-q5R" id="xjX-8F-SBC"/>
+            </connections>
             <point key="canvasLocation" x="292" y="381"/>
         </view>
     </objects>

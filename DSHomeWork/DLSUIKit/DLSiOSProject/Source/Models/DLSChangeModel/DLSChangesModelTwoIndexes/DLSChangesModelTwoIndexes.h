@@ -6,9 +6,9 @@
 //  Copyright © 2015 IDAPGroupCollege. All rights reserved.
 //
 
-#import "DLSChangeModel.h"
+#import "DLSChangesModel.h"
 
-@interface DLSChangesModelTwoIndexes : DLSChangeModel
+@interface DLSChangesModelTwoIndexes : DLSChangesModel
 @property (nonatomic, readonly) NSUInteger  sourceIndex;
 @property (nonatomic, readonly) NSUInteger  destinationIndex;
 

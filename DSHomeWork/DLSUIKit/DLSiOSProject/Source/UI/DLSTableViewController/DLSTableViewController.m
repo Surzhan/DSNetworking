@@ -12,13 +12,14 @@
 #import "DLSUserCell.h"
 #import "DLSUsersView.h"
 #import "DLSTableViewCell.h"
+#import "DLSChangesModel.h"
 
-#import "NSIndexPath+DLSExtension.h"
+#import "NSIndexPath+DLSExtensions.h"
 #import "UITableView+DLSExtensions.h"
 
 #import "DLSMacros.h"
 
-DLSViewControllerBaseViewProperty(DLSTableViewController, userView, DLSUsersView)
+DLSViewControllerBaseViewProperty(DLSTableViewController, usersView, DLSUsersView)
 
 @implementation DLSTableViewController
 
@@ -68,7 +69,7 @@ DLSViewControllerBaseViewProperty(DLSTableViewController, userView, DLSUsersView
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    DLSUserCell *cell = [tableView dequeueCellWithClass:[DLSUserCell class]];
+    DLSUserCell *cell = [tableView dequeueReusableCellWithClass:[DLSUserCell class]];
     cell.user = self.arrayModel[indexPath.row];
     
     return cell;
@@ -97,13 +98,13 @@ DLSViewControllerBaseViewProperty(DLSTableViewController, userView, DLSUsersView
 }
 
 - (void)modelDidLoad:(DLSArrayModel *)model {
-    MTUsersView *usersView = self.usersView;
+    DLSUsersView *usersView = self.usersView;
     [usersView.tableView reloadData];
     [usersView hideLoadingView];
 }
 
-- (void)model:(DLSArrayModel *)object didChangeWithModel:(DLSChangeModel *)model {
-    [self.usersView.tableView updateChangeWithModel:model];
+- (void)model:(DLSArrayModel *)object didChangeWithModel:(DLSChangesModel *)model {
+    [self.usersView.tableView updateWithChanges:model];
 }
 
 @end
