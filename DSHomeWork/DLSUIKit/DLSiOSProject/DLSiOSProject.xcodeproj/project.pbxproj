@@ -58,8 +58,8 @@
 		44EE74F71BE6C555008B7498 /* DLSChangesModelOneIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE74F51BE6C555008B7498 /* DLSChangesModelOneIndex.m */; };
 		44EE74FA1BE6C570008B7498 /* DLSChangesModelTwoIndexes.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE74F91BE6C570008B7498 /* DLSChangesModelTwoIndexes.m */; };
 		44EE74FB1BE6C570008B7498 /* DLSChangesModelTwoIndexes.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE74F91BE6C570008B7498 /* DLSChangesModelTwoIndexes.m */; };
-		44EE75091BE6CB5A008B7498 /* DLSChangeModel+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE75081BE6CB5A008B7498 /* DLSChangeModel+UITableView.m */; };
-		44EE750A1BE6CB5A008B7498 /* DLSChangeModel+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE75081BE6CB5A008B7498 /* DLSChangeModel+UITableView.m */; };
+		44EE75091BE6CB5A008B7498 /* DLSChangesModel+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE75081BE6CB5A008B7498 /* DLSChangesModel+UITableView.m */; };
+		44EE750A1BE6CB5A008B7498 /* DLSChangesModel+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE75081BE6CB5A008B7498 /* DLSChangesModel+UITableView.m */; };
 		44EE750E1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE750D1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.m */; };
 		44EE750F1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE750D1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.m */; };
 		44EE75111BE6D9DD008B7498 /* Muse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44EE75101BE6D9DD008B7498 /* Muse.jpg */; };
@@ -177,8 +177,8 @@
 		44EE74F51BE6C555008B7498 /* DLSChangesModelOneIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSChangesModelOneIndex.m; sourceTree = "<group>"; };
 		44EE74F81BE6C570008B7498 /* DLSChangesModelTwoIndexes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSChangesModelTwoIndexes.h; sourceTree = "<group>"; };
 		44EE74F91BE6C570008B7498 /* DLSChangesModelTwoIndexes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSChangesModelTwoIndexes.m; sourceTree = "<group>"; };
-		44EE75071BE6CB5A008B7498 /* DLSChangeModel+UITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DLSChangeModel+UITableView.h"; sourceTree = "<group>"; };
-		44EE75081BE6CB5A008B7498 /* DLSChangeModel+UITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DLSChangeModel+UITableView.m"; sourceTree = "<group>"; };
+		44EE75071BE6CB5A008B7498 /* DLSChangesModel+UITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DLSChangesModel+UITableView.h"; sourceTree = "<group>"; };
+		44EE75081BE6CB5A008B7498 /* DLSChangesModel+UITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DLSChangesModel+UITableView.m"; sourceTree = "<group>"; };
 		44EE750C1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+DLSExtensions.h"; sourceTree = "<group>"; };
 		44EE750D1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+DLSExtensions.m"; sourceTree = "<group>"; };
 		44EE75101BE6D9DD008B7498 /* Muse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Muse.jpg; sourceTree = "<group>"; };
@@ -599,7 +599,7 @@
 		44E3A5221BE19B0200115880 /* DLSChangeModel */ = {
 			isa = PBXGroup;
 			children = (
-				44EE75061BE6CB37008B7498 /* DLSChangeModel+UITableView */,
+				44EE75061BE6CB37008B7498 /* DLSChangesModel+UITableView */,
 				44EE74F21BE6C4BE008B7498 /* DLSChangesModelOneIndex */,
 				44EE74F31BE6C501008B7498 /* DLSChangesModelTwoIndexes */,
 				44E3A52E1BE19C8C00115880 /* DLSChangesModel.h */,
@@ -718,12 +718,13 @@
 			path = DLSChangesModelTwoIndexes;
 			sourceTree = "<group>";
 		};
-		44EE75061BE6CB37008B7498 /* DLSChangeModel+UITableView */ = {
+		44EE75061BE6CB37008B7498 /* DLSChangesModel+UITableView */ = {
 			isa = PBXGroup;
 			children = (
-				44EE75071BE6CB5A008B7498 /* DLSChangeModel+UITableView.h */,
-				44EE75081BE6CB5A008B7498 /* DLSChangeModel+UITableView.m */,
+				44EE75071BE6CB5A008B7498 /* DLSChangesModel+UITableView.h */,
+				44EE75081BE6CB5A008B7498 /* DLSChangesModel+UITableView.m */,
 			);
+			name = "DLSChangesModel+UITableView";
 			path = "DLSChangeModel+UITableView";
 			sourceTree = "<group>";
 		};
@@ -963,7 +964,7 @@
 				44E3A53E1BE1A67B00115880 /* DLSImageView.m in Sources */,
 				4410BDC41BAFDB7300912BD7 /* main.m in Sources */,
 				44EE74EC1BE6B597008B7498 /* NSMutableArray+DLSExtensions.m in Sources */,
-				44EE750A1BE6CB5A008B7498 /* DLSChangeModel+UITableView.m in Sources */,
+				44EE750A1BE6CB5A008B7498 /* DLSChangesModel+UITableView.m in Sources */,
 				44E3A5331BE19EDE00115880 /* DLSUser.m in Sources */,
 				443B53E51BAFEBF500922534 /* UIWindow+DLSExtensions.m in Sources */,
 			);
@@ -1006,7 +1007,7 @@
 				44EE74FA1BE6C570008B7498 /* DLSChangesModelTwoIndexes.m in Sources */,
 				44EE75191BE6F383008B7498 /* UIViewController+DLSExtensions.m in Sources */,
 				44EE74EB1BE6B597008B7498 /* NSMutableArray+DLSExtensions.m in Sources */,
-				44EE75091BE6CB5A008B7498 /* DLSChangeModel+UITableView.m in Sources */,
+				44EE75091BE6CB5A008B7498 /* DLSChangesModel+UITableView.m in Sources */,
 				443B53E11BAFEBD500922534 /* DLSObservableObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

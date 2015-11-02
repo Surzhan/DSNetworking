@@ -6,6 +6,8 @@
 //  Copyright © 2015 IDAPGroupCollege. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 #import "DLSUserArrayModel.h"
 
 #import "DLSUser.h"

@@ -13,7 +13,7 @@
 #import "DLSChangesModelTwoIndexes.h"
 
 #import "UINib+DLSExtensions.h"
-#import "DLSChangeModel+UITableView.h"
+#import "DLSChangesModel+UITableView.h"
 
 @implementation UITableView (DLSExtensions)
 

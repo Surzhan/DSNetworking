@@ -6,9 +6,9 @@
 //  Copyright © 2015 IDAPGroupCollege. All rights reserved.
 //
 
-#import "DLSChangeModel+UITableView.h"
+#import "DLSChangesModel+UITableView.h"
 
-@implementation DLSChangeModel (UITableView)
+@implementation DLSChangesModel (UITableView)
 
 - (void)applyToTableView:(UITableView *)tableView {
     [self applyToTableView:tableView rowAnimation:UITableViewRowAnimationAutomatic];
@@ -24,11 +24,11 @@
 
 - (void)applyToTableView:(UITableView *)tableView rowAnimation:(UITableViewRowAnimation)rowAnimation {
     switch (self.state) {
-        case DLSModelChangeAdded:
+        case DLSChangeModelChangeAdded:
             [tableView insertRowsAtIndexPaths:@[self.indexPath] withRowAnimation:rowAnimation];
             break;
             
-        case DLSModelChangeRemoved:
+        case DLSChangeModelChangeRemoved:
             [tableView deleteRowsAtIndexPaths:@[self.indexPath] withRowAnimation:rowAnimation];
             break;
             
@@ -42,7 +42,7 @@
 @implementation DLSChangesModelTwoIndexes (UITableView)
 
 - (void)applyToTableView:(UITableView *)tableView rowAnimation:(UITableViewRowAnimation)rowAnimation {
-    [tableView moveRowAtIndexPath:self.fromIndexPath toIndexPath:self.toIndexPath];
+    [tableView moveRowAtIndexPath:self.sourceIndexPath toIndexPath:self.destinationIndexPath];
 }
 
 @end

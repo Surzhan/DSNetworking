@@ -76,4 +76,3 @@
 
 #define DLSSynthesizeObservingSetterAndLoad(propertyName) \
     __DLSSynthesizeObservingSetterWithArgument(propertyName, DLSLoad(propertyName))
-

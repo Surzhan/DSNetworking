@@ -8,6 +8,8 @@
 
 #import "DLSChangesModelTwoIndexes.h"
 
+#import "NSIndexPath+DLSExtensions.h"
+
 @interface DLSChangesModelTwoIndexes ()
 @property (nonatomic, assign) NSUInteger    sourceIndex;
 @property (nonatomic, assign) NSUInteger    destinationIndex;
