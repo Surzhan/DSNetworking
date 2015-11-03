@@ -12,7 +12,7 @@
 
 #import "NSMutableArray+DLSExtensions.h"
 
-static NSString * const kDLSMutableArray = @"mutableArray";
+static NSString * const kDLSMutableArray = @"kDLSMutableArray";
 
 @interface DLSArrayModel ()
 @property (nonatomic, retain)   NSMutableArray  *mutableObjects;

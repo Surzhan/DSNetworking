@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4410BDC41BAFDB7300912BD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4410BDC31BAFDB7300912BD7 /* main.m */; };
 		4410BDC71BAFDB7300912BD7 /* DLSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4410BDC61BAFDB7300912BD7 /* DLSAppDelegate.m */; };
+		441E900F1BE893F400342F23 /* DLSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 441E900E1BE893F400342F23 /* DLSCache.m */; };
+		441E90101BE893F400342F23 /* DLSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 441E900E1BE893F400342F23 /* DLSCache.m */; };
 		443B53DB1BAFE89E00922534 /* DLSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443B53D91BAFE89E00922534 /* DLSTableViewController.m */; };
 		443B53DC1BAFE89E00922534 /* DLSTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443B53DA1BAFE89E00922534 /* DLSTableViewController.xib */; };
 		443B53E11BAFEBD500922534 /* DLSObservableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 443B53E01BAFEBD500922534 /* DLSObservableObject.m */; };
@@ -98,6 +100,8 @@
 		4410BDC51BAFDB7300912BD7 /* DLSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLSAppDelegate.h; sourceTree = "<group>"; };
 		4410BDC61BAFDB7300912BD7 /* DLSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLSAppDelegate.m; sourceTree = "<group>"; };
 		4410BDD31BAFDB7300912BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		441E900D1BE893F400342F23 /* DLSCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSCache.h; sourceTree = "<group>"; };
+		441E900E1BE893F400342F23 /* DLSCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSCache.m; sourceTree = "<group>"; };
 		443B53D81BAFE89E00922534 /* DLSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSTableViewController.h; sourceTree = "<group>"; };
 		443B53D91BAFE89E00922534 /* DLSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSTableViewController.m; sourceTree = "<group>"; };
 		443B53DA1BAFE89E00922534 /* DLSTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLSTableViewController.xib; sourceTree = "<group>"; };
@@ -249,9 +253,19 @@
 			path = DLSTableViewController;
 			sourceTree = "<group>";
 		};
+		441E900C1BE893C300342F23 /* DLSCache */ = {
+			isa = PBXGroup;
+			children = (
+				441E900D1BE893F400342F23 /* DLSCache.h */,
+				441E900E1BE893F400342F23 /* DLSCache.m */,
+			);
+			path = DLSCache;
+			sourceTree = "<group>";
+		};
 		443B53DD1BAFEB5A00922534 /* DLSClasses */ = {
 			isa = PBXGroup;
 			children = (
+				441E900C1BE893C300342F23 /* DLSCache */,
 				44EE74E21BE6AFFE008B7498 /* DLSDispatch */,
 				44E3A5141BE1898600115880 /* DLSTableViewCell */,
 				44E3A4F81BE1764B00115880 /* DLSAlphabet */,
@@ -932,6 +946,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441E90101BE893F400342F23 /* DLSCache.m in Sources */,
 				44E54F101BE20CB300CC939A /* DLSURLImageModel.m in Sources */,
 				44E3A5171BE189D200115880 /* DLSTableViewCell.m in Sources */,
 				44EE751E1BE6F49A008B7498 /* UINib+DLSExtensions.m in Sources */,
@@ -1002,6 +1017,7 @@
 				44D357F61B9F6A1700B111D6 /* main.m in Sources */,
 				44D358341B9F8E0100B111D6 /* DLSSquareViewController.m in Sources */,
 				44EE75151BE6E08C008B7498 /* DLSUsersView.m in Sources */,
+				441E900F1BE893F400342F23 /* DLSCache.m in Sources */,
 				44EE751D1BE6F49A008B7498 /* UINib+DLSExtensions.m in Sources */,
 				44EE74E51BE6B0A4008B7498 /* DLSDispatch.m in Sources */,
 				44EE74FA1BE6C570008B7498 /* DLSChangesModelTwoIndexes.m in Sources */,

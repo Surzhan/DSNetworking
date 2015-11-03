@@ -19,7 +19,6 @@
 
 - (id)dequeueReusableCellWithClass:(Class)class {
     id cell = [self dequeueReusableCellWithIdentifier:NSStringFromClass(class)];
-    
     if (!cell) {
         cell = [UINib objectWithClass:class];
     }

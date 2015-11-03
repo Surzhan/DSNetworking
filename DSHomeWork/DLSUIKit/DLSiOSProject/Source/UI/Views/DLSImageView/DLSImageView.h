@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DLSImageView : UIView
+#import "DLSView.h"
+#import "DLSImageModel.h"
+#import "DLSModelObserver.h"
+
+@interface DLSImageView : UIView <DLSModelObserver>
+@property (nonatomic, strong) DLSImageModel                     *userImageModel;
+@property (nonatomic, strong) IBOutlet UIImageView              *imageView;
+@property (nonatomic, strong) IBOutlet UIActivityIndicatorView  *activityIndicatorImageView;
+
+- (void)fillWithModel:(DLSImageModel *)model;
 
 @end

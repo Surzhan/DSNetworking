@@ -36,7 +36,7 @@
 
 - (void)fillWithUser:(DLSUser *)user {
     self.nameLabel.text = user.name;
-//    self.userImageView.imageModel = user.imageModel;
+    self.userImageView.imageModel = user.imageModel;
 }
 
 @end
