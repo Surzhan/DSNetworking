@@ -14,10 +14,6 @@
 #import "UIWindow+DLSExtensions.h"
 #import "UIViewController+DLSExtensions.h"
 
-@interface DLSAppDelegate ()
-
-@end
-
 @implementation DLSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

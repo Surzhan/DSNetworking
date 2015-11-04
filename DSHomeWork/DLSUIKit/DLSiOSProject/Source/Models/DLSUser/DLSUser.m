@@ -12,7 +12,7 @@
 
 #import "NSString+DLSExtensions.h"
 
-static NSString * const kDLSNameOfKey   = @"name";
+static NSString * const kDLSNameOfKey   = @"kDLSNameOfKey";
 static NSString * const kDLSImageURL    = @"http://img4.wikia.nocookie.net/__cb20130920142351/simpsons/images/e/e9/Pic_1187696292_8.jpg";
 
 @interface DLSUser ()

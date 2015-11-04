@@ -42,6 +42,7 @@ DLSViewControllerBaseViewProperty(DLSTableViewController, usersView, DLSUsersVie
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self.arrayModel load];
 }
 

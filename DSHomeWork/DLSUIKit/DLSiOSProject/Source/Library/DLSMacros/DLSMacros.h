@@ -34,6 +34,12 @@
 
 #define DLSEmptyMacro
 
+#define DLSWeakify(object) \
+    __weak __typeof(object) __DLSWeak_##object = object
+
+#define DLSStrongify(object) \
+    __strong __typeof(object) object = __DLSWeak_##object
+
 #define DLSStrongifyAndReturnResultIfNil(object, result) \
     DLSStrongify(object); \
     if (!object) { \
@@ -45,12 +51,6 @@
 
 #define DLSStrongifyAndReturnNilIfNil(object) \
     DLSStrongifyAndReturnResultIfNil(object, nil)
-
-#define DLSWeakify(object) \
-    __weak __typeof(object) __DLSWeak_##object = object
-
-#define DLSStrongify(object) \
-    __strong __typeof(object) object = __DLSWeak_##object
 
 #define DLSSleepDefine 1
 

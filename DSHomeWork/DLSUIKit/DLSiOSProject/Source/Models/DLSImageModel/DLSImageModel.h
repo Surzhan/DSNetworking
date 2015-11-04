@@ -13,7 +13,6 @@
 @property (nonatomic, readonly) UIImage *image;
 @property (nonatomic, readonly) NSURL   *url;
 
-+ (instancetype)imageModelWithURL:(NSURL *)url;
 + (instancetype)imageWithURL:(NSURL *)url;
 
 - (void)save;

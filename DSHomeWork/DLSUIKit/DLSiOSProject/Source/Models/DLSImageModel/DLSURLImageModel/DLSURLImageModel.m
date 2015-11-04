@@ -79,6 +79,8 @@
 #pragma mark DLSImageModel
 
 - (void)cancel {
+    [super cansel];
+    
     self.downloadTask = nil;
 }
 

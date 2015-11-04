@@ -12,7 +12,7 @@
 #import "DLSModelObserver.h"
 
 @interface DLSTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, DLSModelObserver>
-@property (nonatomic, strong)   DLSUserArrayModel   *arrayModel;
+@property (nonatomic, strong)   DLSArrayModel   *arrayModel;
 
 - (IBAction)onEditButton:(id)sender;
 - (IBAction)onAddButton:(id)sender;

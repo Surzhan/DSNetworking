@@ -32,6 +32,10 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="activityIndicatorImageView" destination="wm5-tO-yeR" id="qWw-V7-dg4"/>
+                            <outlet property="imageView" destination="Zxn-an-nqg" id="PNs-XX-HJc"/>
+                        </connections>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T9g-AG-Y0d" userLabel="Name Lable">
                         <rect key="frame" x="85" y="0.0" width="235" height="85"/>
@@ -48,6 +52,7 @@
             <animations/>
             <connections>
                 <outlet property="nameLabel" destination="T9g-AG-Y0d" id="nAT-T2-fYa"/>
+                <outlet property="userImageView" destination="CoQ-WQ-rmB" id="Rlf-8U-mLy"/>
             </connections>
             <point key="canvasLocation" x="289" y="250.5"/>
         </tableViewCell>

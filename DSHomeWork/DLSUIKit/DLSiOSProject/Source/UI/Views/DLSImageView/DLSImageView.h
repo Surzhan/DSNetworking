@@ -13,9 +13,9 @@
 #import "DLSModelObserver.h"
 
 @interface DLSImageView : UIView <DLSModelObserver>
-@property (nonatomic, strong) DLSImageModel                     *userImageModel;
 @property (nonatomic, strong) IBOutlet UIImageView              *imageView;
 @property (nonatomic, strong) IBOutlet UIActivityIndicatorView  *activityIndicatorImageView;
+@property (nonatomic, strong) DLSImageModel                     *userImageModel;
 
 - (void)fillWithModel:(DLSImageModel *)model;
 

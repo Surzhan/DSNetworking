@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface DLSLoadingView : UIView
-@property (nonatomic, strong) IBOutlet UIActivityIndicatorView *activityIndicatorLoadingView;
-@property (nonatomic, getter=isVisible) BOOL  visible;
+@property (nonatomic, strong) IBOutlet UIActivityIndicatorView  *activityIndicatorLoadingView;
+@property (nonatomic, assign, getter=isVisible) BOOL            visible;
 
 + (instancetype)loadingViewWithSuperview:(UIView *)superview;
 
