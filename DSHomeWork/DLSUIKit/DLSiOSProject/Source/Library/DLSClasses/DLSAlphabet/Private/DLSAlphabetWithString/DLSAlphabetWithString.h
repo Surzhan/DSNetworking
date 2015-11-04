@@ -1,5 +1,5 @@
 //
-//  DLSAlphabetWithStrings.h
+//  DLSAlphabetWithString.h
 //  DLSiOSProject
 //
 //  Created by Denis Surzhan on 28.10.15.
@@ -8,6 +8,8 @@
 
 #import "DLSAlphabet.h"
 
-@interface DLSAlphabetWithStrings : DLSAlphabet
+@interface DLSAlphabetWithString : DLSAlphabet
+
+- (id)initWithString:(NSString *)string;
 
 @end

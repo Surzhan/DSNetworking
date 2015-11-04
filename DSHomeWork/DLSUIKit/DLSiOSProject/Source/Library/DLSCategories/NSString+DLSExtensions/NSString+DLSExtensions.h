@@ -8,8 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+#import "DLSAlphabet.h"
+
 @interface NSString (DLSExtensions)
 
-+ (instancetype)randomName;
++ (id)randomString;
+
++ (id)randomStringWithLength:(NSUInteger)length;
+
++ (id)randomStringWithLength:(NSUInteger)length alphabet:(DLSAlphabet *)alphabet;
+
+- (NSArray *)symbols;
 
 @end

@@ -10,4 +10,6 @@
 
 @interface DLSAlphabetWithRange : DLSAlphabet
 
+- (id)initWithUnicodeRange:(NSRange)range;
+
 @end

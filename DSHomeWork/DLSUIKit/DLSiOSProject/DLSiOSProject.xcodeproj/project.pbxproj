@@ -32,7 +32,7 @@
 		44E3A4FC1BE177DF00115880 /* DLSAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A4FB1BE177DF00115880 /* DLSAlphabet.m */; };
 		44E3A5021BE17A3900115880 /* DLSAlphabetWithAlphabets.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5011BE17A3900115880 /* DLSAlphabetWithAlphabets.m */; };
 		44E3A5051BE17A5000115880 /* DLSAlphabetWithRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5041BE17A5000115880 /* DLSAlphabetWithRange.m */; };
-		44E3A5081BE17A6600115880 /* DLSAlphabetWithStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5071BE17A6600115880 /* DLSAlphabetWithStrings.m */; };
+		44E3A5081BE17A6600115880 /* DLSAlphabetWithString.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5071BE17A6600115880 /* DLSAlphabetWithString.m */; };
 		44E3A50F1BE17F6D00115880 /* DLSLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E3A50E1BE17F6D00115880 /* DLSLoadingView.xib */; };
 		44E3A5121BE17F8100115880 /* DLSLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5111BE17F8100115880 /* DLSLoadingView.m */; };
 		44E3A5171BE189D200115880 /* DLSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3A5161BE189D200115880 /* DLSTableViewCell.m */; };
@@ -138,8 +138,8 @@
 		44E3A5011BE17A3900115880 /* DLSAlphabetWithAlphabets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSAlphabetWithAlphabets.m; sourceTree = "<group>"; };
 		44E3A5031BE17A5000115880 /* DLSAlphabetWithRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSAlphabetWithRange.h; sourceTree = "<group>"; };
 		44E3A5041BE17A5000115880 /* DLSAlphabetWithRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSAlphabetWithRange.m; sourceTree = "<group>"; };
-		44E3A5061BE17A6600115880 /* DLSAlphabetWithStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSAlphabetWithStrings.h; sourceTree = "<group>"; };
-		44E3A5071BE17A6600115880 /* DLSAlphabetWithStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSAlphabetWithStrings.m; sourceTree = "<group>"; };
+		44E3A5061BE17A6600115880 /* DLSAlphabetWithString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSAlphabetWithString.h; sourceTree = "<group>"; };
+		44E3A5071BE17A6600115880 /* DLSAlphabetWithString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSAlphabetWithString.m; sourceTree = "<group>"; };
 		44E3A50E1BE17F6D00115880 /* DLSLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLSLoadingView.xib; sourceTree = "<group>"; };
 		44E3A5101BE17F8100115880 /* DLSLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSLoadingView.h; sourceTree = "<group>"; };
 		44E3A5111BE17F8100115880 /* DLSLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSLoadingView.m; sourceTree = "<group>"; };
@@ -508,18 +508,17 @@
 			children = (
 				44E3A4FF1BE179A100115880 /* DLSAlphabetWithAlphabets */,
 				44E3A4FE1BE1797300115880 /* DLSAlphabetWithRange */,
-				44E3A4FD1BE1788700115880 /* DLSAlphabetWithStrings */,
+				44E3A4FD1BE1788700115880 /* DLSAlphabetWithString */,
 			);
 			path = Private;
 			sourceTree = "<group>";
 		};
-		44E3A4FD1BE1788700115880 /* DLSAlphabetWithStrings */ = {
+		44E3A4FD1BE1788700115880 /* DLSAlphabetWithString */ = {
 			isa = PBXGroup;
 			children = (
-				44E3A5061BE17A6600115880 /* DLSAlphabetWithStrings.h */,
-				44E3A5071BE17A6600115880 /* DLSAlphabetWithStrings.m */,
+				44E3A5061BE17A6600115880 /* DLSAlphabetWithString.h */,
+				44E3A5071BE17A6600115880 /* DLSAlphabetWithString.m */,
 			);
-			name = DLSAlphabetWithStrings;
 			path = DLSAlphabetWithString;
 			sourceTree = "<group>";
 		};
@@ -970,7 +969,7 @@
 				44E3A5361BE1A47100115880 /* DLSImageModel.m in Sources */,
 				44E3A52D1BE19C4E00115880 /* DLSUserArrayModel.m in Sources */,
 				44E3A5021BE17A3900115880 /* DLSAlphabetWithAlphabets.m in Sources */,
-				44E3A5081BE17A6600115880 /* DLSAlphabetWithStrings.m in Sources */,
+				44E3A5081BE17A6600115880 /* DLSAlphabetWithString.m in Sources */,
 				44EE74E61BE6B0A4008B7498 /* DLSDispatch.m in Sources */,
 				44EE751A1BE6F383008B7498 /* UIViewController+DLSExtensions.m in Sources */,
 				44E3A51A1BE18ACB00115880 /* DLSUserCell.m in Sources */,

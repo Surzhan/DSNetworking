@@ -11,6 +11,7 @@
 @interface DLSAlphabet : NSObject  <NSFastEnumeration>
 
 + (instancetype)alphabetWithString:(NSString *)string;
++ (instancetype)alphabetWithStrings:(NSArray *)strings;
 + (instancetype)alphabetWithRange:(NSRange)range;
 + (instancetype)alphabetWithAlphabets:(NSArray *)alphabets;
 
@@ -18,6 +19,14 @@
 + (instancetype)alphabetWithLowercaseLetters;
 + (instancetype)alphabetWithUppercaseLetters;
 
-- (NSString*)getRandomLetter;
+- (instancetype)initWithString:(NSString *)string;
+- (instancetype)initWithStrings:(NSArray *)strings;
+- (instancetype)initWithUnicodeRange:(NSRange)range;
+- (instancetype)initWithAlphabets:(NSArray *)alphabets;
+
+- (NSString *)string;
+- (NSUInteger)count;
+- (NSString *)stringAtIndex:(NSUInteger)index;
+- (NSString *)objectAtIndexedSubscript:(NSUInteger)index;
 
 @end

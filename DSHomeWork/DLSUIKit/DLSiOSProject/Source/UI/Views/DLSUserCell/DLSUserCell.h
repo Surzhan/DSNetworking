@@ -8,8 +8,9 @@
 
 #import "DLSTableViewCell.h"
 
-@class DLSImageView;
-@class DLSUser;
+#import "DLSImageView.h"
+#import "DLSUser.h"
+#import "DLSModel.h"
 
 @interface DLSUserCell : DLSTableViewCell
 @property (nonatomic, strong) IBOutlet DLSImageView             *userImageView;

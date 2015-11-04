@@ -29,7 +29,7 @@ static NSString * const kDLSImageURL    = @"http://img4.wikia.nocookie.net/__cb2
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.name = [NSString randomName];
+        self.name = [NSString randomString];
     }
     
     return self;
