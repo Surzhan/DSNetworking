@@ -11,6 +11,15 @@
 		4410BDC71BAFDB7300912BD7 /* DLSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4410BDC61BAFDB7300912BD7 /* DLSAppDelegate.m */; };
 		441E900F1BE893F400342F23 /* DLSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 441E900E1BE893F400342F23 /* DLSCache.m */; };
 		441E90101BE893F400342F23 /* DLSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 441E900E1BE893F400342F23 /* DLSCache.m */; };
+		441E90161BEAD40E00342F23 /* DLSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 441E90141BEAD40E00342F23 /* DLSLoginViewController.m */; };
+		441E90171BEAD40E00342F23 /* DLSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 441E90151BEAD40E00342F23 /* DLSLoginViewController.xib */; };
+		441E901A1BEAD4CC00342F23 /* DLSLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 441E90191BEAD4CC00342F23 /* DLSLoginView.m */; };
+		441E901F1BEAD58100342F23 /* DLSFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 441E901D1BEAD58100342F23 /* DLSFriendsViewController.m */; };
+		441E90201BEAD58100342F23 /* DLSFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 441E901E1BEAD58100342F23 /* DLSFriendsViewController.xib */; };
+		441E90261BEAD5E800342F23 /* DLSFriendsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 441E90251BEAD5E800342F23 /* DLSFriendsView.m */; };
+		441E902B1BEAD6A000342F23 /* DLSFriendDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 441E90291BEAD6A000342F23 /* DLSFriendDetailViewController.m */; };
+		441E902C1BEAD6A000342F23 /* DLSFriendDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 441E902A1BEAD6A000342F23 /* DLSFriendDetailViewController.xib */; };
+		441E902F1BEAD6EB00342F23 /* DLSFriendDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 441E902E1BEAD6EB00342F23 /* DLSFriendDetailView.m */; };
 		443B53DB1BAFE89E00922534 /* DLSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443B53D91BAFE89E00922534 /* DLSTableViewController.m */; };
 		443B53DC1BAFE89E00922534 /* DLSTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443B53DA1BAFE89E00922534 /* DLSTableViewController.xib */; };
 		443B53E11BAFEBD500922534 /* DLSObservableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 443B53E01BAFEBD500922534 /* DLSObservableObject.m */; };
@@ -74,6 +83,7 @@
 		44EE751E1BE6F49A008B7498 /* UINib+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE751C1BE6F49A008B7498 /* UINib+DLSExtensions.m */; };
 		44EE75221BE6F614008B7498 /* UITableView+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE75211BE6F614008B7498 /* UITableView+DLSExtensions.m */; };
 		44EE75231BE6F614008B7498 /* UITableView+DLSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EE75211BE6F614008B7498 /* UITableView+DLSExtensions.m */; };
+		82F5FD8919AF7C2F408235B9 /* libPods-Task2_UITableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70602CFA2C53E202A32C4847 /* libPods-Task2_UITableView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +112,21 @@
 		4410BDD31BAFDB7300912BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		441E900D1BE893F400342F23 /* DLSCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSCache.h; sourceTree = "<group>"; };
 		441E900E1BE893F400342F23 /* DLSCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSCache.m; sourceTree = "<group>"; };
+		441E90131BEAD40E00342F23 /* DLSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSLoginViewController.h; sourceTree = "<group>"; };
+		441E90141BEAD40E00342F23 /* DLSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSLoginViewController.m; sourceTree = "<group>"; };
+		441E90151BEAD40E00342F23 /* DLSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLSLoginViewController.xib; sourceTree = "<group>"; };
+		441E90181BEAD4CC00342F23 /* DLSLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSLoginView.h; sourceTree = "<group>"; };
+		441E90191BEAD4CC00342F23 /* DLSLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSLoginView.m; sourceTree = "<group>"; };
+		441E901C1BEAD58100342F23 /* DLSFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSFriendsViewController.h; sourceTree = "<group>"; };
+		441E901D1BEAD58100342F23 /* DLSFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSFriendsViewController.m; sourceTree = "<group>"; };
+		441E901E1BEAD58100342F23 /* DLSFriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLSFriendsViewController.xib; sourceTree = "<group>"; };
+		441E90241BEAD5E800342F23 /* DLSFriendsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSFriendsView.h; sourceTree = "<group>"; };
+		441E90251BEAD5E800342F23 /* DLSFriendsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSFriendsView.m; sourceTree = "<group>"; };
+		441E90281BEAD6A000342F23 /* DLSFriendDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSFriendDetailViewController.h; sourceTree = "<group>"; };
+		441E90291BEAD6A000342F23 /* DLSFriendDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSFriendDetailViewController.m; sourceTree = "<group>"; };
+		441E902A1BEAD6A000342F23 /* DLSFriendDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLSFriendDetailViewController.xib; sourceTree = "<group>"; };
+		441E902D1BEAD6EB00342F23 /* DLSFriendDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSFriendDetailView.h; sourceTree = "<group>"; };
+		441E902E1BEAD6EB00342F23 /* DLSFriendDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSFriendDetailView.m; sourceTree = "<group>"; };
 		443B53D81BAFE89E00922534 /* DLSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSTableViewController.h; sourceTree = "<group>"; };
 		443B53D91BAFE89E00922534 /* DLSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSTableViewController.m; sourceTree = "<group>"; };
 		443B53DA1BAFE89E00922534 /* DLSTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLSTableViewController.xib; sourceTree = "<group>"; };
@@ -194,7 +219,10 @@
 		44EE751C1BE6F49A008B7498 /* UINib+DLSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINib+DLSExtensions.m"; path = "Source/Library/DLSCategories/UINib+DLSExtensions/UINib+DLSExtensions.m"; sourceTree = SOURCE_ROOT; };
 		44EE75201BE6F614008B7498 /* UITableView+DLSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+DLSExtensions.h"; sourceTree = "<group>"; };
 		44EE75211BE6F614008B7498 /* UITableView+DLSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DLSExtensions.m"; sourceTree = "<group>"; };
+		69508F183852714431489970 /* Pods-Task2_UITableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task2_UITableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Task2_UITableView/Pods-Task2_UITableView.debug.xcconfig"; sourceTree = "<group>"; };
 		6C1CD52294499A49585D4348 /* libPods-DLSiOSProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLSiOSProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70602CFA2C53E202A32C4847 /* libPods-Task2_UITableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Task2_UITableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BF4F1EE4DE2A5695CEEF168 /* Pods-Task2_UITableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task2_UITableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-Task2_UITableView/Pods-Task2_UITableView.release.xcconfig"; sourceTree = "<group>"; };
 		BE77F5E4D0285693357AC05E /* Pods-DLSiOSProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLSiOSProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLSiOSProjectTests/Pods-DLSiOSProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F5FD8919AF7C2F408235B9 /* libPods-Task2_UITableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +279,8 @@
 				44EE75131BE6E08C008B7498 /* DLSUsersView.h */,
 				44EE75141BE6E08C008B7498 /* DLSUsersView.m */,
 			);
-			path = DLSTableViewController;
+			name = DLSTableViewController;
+			path = ../DLSTableViewController;
 			sourceTree = "<group>";
 		};
 		441E900C1BE893C300342F23 /* DLSCache */ = {
@@ -260,6 +290,54 @@
 				441E900E1BE893F400342F23 /* DLSCache.m */,
 			);
 			path = DLSCache;
+			sourceTree = "<group>";
+		};
+		441E90111BEAD2B500342F23 /* DLSLoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				441E90131BEAD40E00342F23 /* DLSLoginViewController.h */,
+				441E90141BEAD40E00342F23 /* DLSLoginViewController.m */,
+				441E90151BEAD40E00342F23 /* DLSLoginViewController.xib */,
+				441E90181BEAD4CC00342F23 /* DLSLoginView.h */,
+				441E90191BEAD4CC00342F23 /* DLSLoginView.m */,
+			);
+			path = DLSLoginViewController;
+			sourceTree = "<group>";
+		};
+		441E90121BEAD2F900342F23 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44D3581F1B9F729800B111D6 /* DLSSquareViewController */,
+				4410BDF31BAFE0A800912BD7 /* DLSTableViewController */,
+				441E90111BEAD2B500342F23 /* DLSLoginViewController */,
+				441E901B1BEAD51400342F23 /* DLSFriendsViewController */,
+				441E90271BEAD66900342F23 /* DLSFriendDetailViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		441E901B1BEAD51400342F23 /* DLSFriendsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				441E901C1BEAD58100342F23 /* DLSFriendsViewController.h */,
+				441E901D1BEAD58100342F23 /* DLSFriendsViewController.m */,
+				441E901E1BEAD58100342F23 /* DLSFriendsViewController.xib */,
+				441E90241BEAD5E800342F23 /* DLSFriendsView.h */,
+				441E90251BEAD5E800342F23 /* DLSFriendsView.m */,
+			);
+			path = DLSFriendsViewController;
+			sourceTree = "<group>";
+		};
+		441E90271BEAD66900342F23 /* DLSFriendDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				441E90281BEAD6A000342F23 /* DLSFriendDetailViewController.h */,
+				441E90291BEAD6A000342F23 /* DLSFriendDetailViewController.m */,
+				441E902A1BEAD6A000342F23 /* DLSFriendDetailViewController.xib */,
+				441E902D1BEAD6EB00342F23 /* DLSFriendDetailView.h */,
+				441E902E1BEAD6EB00342F23 /* DLSFriendDetailView.m */,
+			);
+			path = DLSFriendDetailViewController;
 			sourceTree = "<group>";
 		};
 		443B53DD1BAFEB5A00922534 /* DLSClasses */ = {
@@ -447,9 +525,8 @@
 		44D3581C1B9F6E3600B111D6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				441E90121BEAD2F900342F23 /* Controllers */,
 				44E3A5091BE17DAD00115880 /* Views */,
-				44D3581F1B9F729800B111D6 /* DLSSquareViewController */,
-				4410BDF31BAFE0A800912BD7 /* DLSTableViewController */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -480,7 +557,7 @@
 				44D358331B9F8E0100B111D6 /* DLSSquareViewController.xib */,
 			);
 			name = DLSSquareViewController;
-			path = DLSUserViewController;
+			path = ../DLSUserViewController;
 			sourceTree = "<group>";
 		};
 		44D3582D1B9F8D2400B111D6 /* DLSSquareHolderView */ = {
@@ -763,6 +840,7 @@
 			isa = PBXGroup;
 			children = (
 				6C1CD52294499A49585D4348 /* libPods-DLSiOSProjectTests.a */,
+				70602CFA2C53E202A32C4847 /* libPods-Task2_UITableView.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -772,6 +850,8 @@
 			children = (
 				1EA679365432FA879AEBC945 /* Pods-DLSiOSProjectTests.debug.xcconfig */,
 				BE77F5E4D0285693357AC05E /* Pods-DLSiOSProjectTests.release.xcconfig */,
+				69508F183852714431489970 /* Pods-Task2_UITableView.debug.xcconfig */,
+				8BF4F1EE4DE2A5695CEEF168 /* Pods-Task2_UITableView.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -783,9 +863,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4410BDEA1BAFDB7400912BD7 /* Build configuration list for PBXNativeTarget "Task2_UITableView" */;
 			buildPhases = (
+				6BD8413530D93DABCBE5BC13 /* Check Pods Manifest.lock */,
 				4410BDBC1BAFDB7300912BD7 /* Sources */,
 				4410BDBD1BAFDB7300912BD7 /* Frameworks */,
 				4410BDBE1BAFDB7300912BD7 /* Resources */,
+				33BFD13CD238B0875C09CD1F /* Embed Pods Frameworks */,
+				E08E413F3FA50F9934ECEEED /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -909,6 +992,9 @@
 				44EE75121BE6D9DD008B7498 /* Muse.jpg in Resources */,
 				44E3A50F1BE17F6D00115880 /* DLSLoadingView.xib in Resources */,
 				44E3A51E1BE18CC200115880 /* DLSUserCell.xib in Resources */,
+				441E902C1BEAD6A000342F23 /* DLSFriendDetailViewController.xib in Resources */,
+				441E90201BEAD58100342F23 /* DLSFriendsViewController.xib in Resources */,
+				441E90171BEAD40E00342F23 /* DLSLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -940,14 +1026,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33BFD13CD238B0875C09CD1F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Task2_UITableView/Pods-Task2_UITableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BD8413530D93DABCBE5BC13 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E08E413F3FA50F9934ECEEED /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Task2_UITableView/Pods-Task2_UITableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4410BDBC1BAFDB7300912BD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441E90161BEAD40E00342F23 /* DLSLoginViewController.m in Sources */,
 				441E90101BE893F400342F23 /* DLSCache.m in Sources */,
 				44E54F101BE20CB300CC939A /* DLSURLImageModel.m in Sources */,
 				44E3A5171BE189D200115880 /* DLSTableViewCell.m in Sources */,
+				441E901A1BEAD4CC00342F23 /* DLSLoginView.m in Sources */,
 				44EE751E1BE6F49A008B7498 /* UINib+DLSExtensions.m in Sources */,
 				44EE750F1BE6D57F008B7498 /* NSIndexPath+DLSExtensions.m in Sources */,
 				44EE74F71BE6C555008B7498 /* DLSChangesModelOneIndex.m in Sources */,
@@ -955,16 +1091,20 @@
 				443B53E41BAFEBF000922534 /* NSObject+DLSExtensions.m in Sources */,
 				44E3A5121BE17F8100115880 /* DLSLoadingView.m in Sources */,
 				44E3A4FC1BE177DF00115880 /* DLSAlphabet.m in Sources */,
+				441E90261BEAD5E800342F23 /* DLSFriendsView.m in Sources */,
 				44E3A53B1BE1A66000115880 /* DLSView.m in Sources */,
 				44E54F0D1BE20C6D00CC939A /* DLSFileImageModel.m in Sources */,
 				443B53E21BAFEBD500922534 /* DLSObservableObject.m in Sources */,
 				443B53DB1BAFE89E00922534 /* DLSTableViewController.m in Sources */,
 				44E54F081BE209E700CC939A /* NSString+DLSExtensions.m in Sources */,
 				44E3A52A1BE19C2B00115880 /* DLSArrayModel.m in Sources */,
+				441E901F1BEAD58100342F23 /* DLSFriendsViewController.m in Sources */,
+				441E902B1BEAD6A000342F23 /* DLSFriendDetailViewController.m in Sources */,
 				4410BDC71BAFDB7300912BD7 /* DLSAppDelegate.m in Sources */,
 				44E3A5051BE17A5000115880 /* DLSAlphabetWithRange.m in Sources */,
 				44EE75231BE6F614008B7498 /* UITableView+DLSExtensions.m in Sources */,
 				44EE75161BE6E08C008B7498 /* DLSUsersView.m in Sources */,
+				441E902F1BEAD6EB00342F23 /* DLSFriendDetailView.m in Sources */,
 				44E3A5271BE19BF800115880 /* DLSModel.m in Sources */,
 				44E3A5361BE1A47100115880 /* DLSImageModel.m in Sources */,
 				44E3A52D1BE19C4E00115880 /* DLSUserArrayModel.m in Sources */,
@@ -1056,6 +1196,7 @@
 /* Begin XCBuildConfiguration section */
 		4410BDEB1BAFDB7400912BD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69508F183852714431489970 /* Pods-Task2_UITableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1069,6 +1210,7 @@
 		};
 		4410BDEC1BAFDB7400912BD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BF4F1EE4DE2A5695CEEF168 /* Pods-Task2_UITableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Task2_UITableView/Info.plist;

@@ -57,9 +57,9 @@ static const NSUInteger kDLSDefaultSleepTimeInterval = 3;
     }
     
     DLSCache *imageCache = [DLSImageModel sharedCache];
-    id userImageModel = [imageCache objectForKey:url];
     
-    @synchronized(self) {
+    @synchronized(imageCache) {
+        id userImageModel = [imageCache objectForKey:url];
         if (userImageModel) {
             return userImageModel;
             

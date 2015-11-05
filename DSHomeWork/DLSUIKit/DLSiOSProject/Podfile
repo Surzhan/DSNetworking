@@ -1,8 +1,10 @@
 
 
-target 'DLSiOSProjectTests' do
+target 'Task2_UITableView' do
 
 pod 'Kiwi', '~> 2.3.1'
+pod 'FBSDKLoginKit', '~> 4.7'
+pod 'FBSDKCoreKit', '~> 4.7'
 
 end
 
